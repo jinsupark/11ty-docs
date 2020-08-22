@@ -1,0 +1,71 @@
+@use "uniform/_core";
+@use "sass:map";
+
+$keyword: translate-x !default;
+$responsive: false !default;
+$responsive-pseudos: true !default;
+
+$properties: (--translate-x) !default;
+
+$core-variants: (
+	n100p: -100%,
+	100p: 100%,
+	n50p: -50%,
+	50p: 50%,
+	0: 0,
+	1: core.size(1),
+	2: core.size(2),
+	3: core.size(3),
+	4: core.size(4),
+	5: core.size(5),
+	6: core.size(6),
+	7: core.size(7),
+	8: core.size(8),
+	9: core.size(9),
+	10: core.size(10),
+	11: core.size(11),
+	12: core.size(12),
+	13: core.size(13),
+	14: core.size(14),
+	15: core.size(15),
+	16: core.size(16),
+	17: core.size(17),
+	18: core.size(18),
+	19: core.size(19),
+	20: core.size(20),
+	n1: core.size(n1),
+	n2: core.size(n2),
+	n3: core.size(n3),
+	n4: core.size(n4),
+	n5: core.size(n5),
+	n6: core.size(n6),
+	n7: core.size(n7),
+	n8: core.size(n8),
+	n9: core.size(n9),
+	n10: core.size(n10),
+	n11: core.size(n11),
+	n12: core.size(n12),
+	n13: core.size(n13),
+	n14: core.size(n14),
+	n15: core.size(n15),
+	n16: core.size(n16),
+	n17: core.size(n17),
+	n18: core.size(n18),
+	n19: core.size(n19),
+	n20: core.size(n20),
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$pseudos: (hover, group-hover) !default;
+
+@include core.constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $pseudos
+);

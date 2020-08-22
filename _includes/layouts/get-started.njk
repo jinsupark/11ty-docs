@@ -1,0 +1,94 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="fixed t-0 l-0 h-28 w-100p z-n1 bg-hero-short">
+
+</div>
+
+<section>
+  {% include "partials/nav.njk" %}
+  <div class="wrapper">
+    <div class="align-center py-17 pb-19">
+      <h2 class="font-7xl font-300 align-center mb-6 tracking-n1 color-white">
+        {{ title }}
+      </h2>
+
+      <p class="max-w-26 mx-auto mb-10 font-lg font-400 color-white align-center opacity-70">
+        Welcome to Uniform CSS, here you will find information on how to implement, customize and get started with Uniform CSS.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+	<div class="wrapper">
+		<div class="grid grid-cols-12 bg-white radius-md shadow-3">
+			<aside class="hidden md.block col-12 md.col-3 pl-8 radius-l-md" style="background: #d8e9ff47;">
+        <div class="t-0 sticky h-100vh pt-11 pb-13 overflow-auto">
+
+          <div class="mb-10 last.mb-0">
+            <div class="font-sm font-600 color-gray-900 mb-4">
+              <i class="fas fa-adjust mr-2"></i> Introduction
+            </div>
+            <nav class="flex flex-col">
+              {%- for post in collections.introduction -%}
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-10 last.mb-0">
+            <div class="font-sm font-600 color-gray-900 mb-4">
+              <i class="fas fa-book-reader mr-2"></i> Fundamentals
+            </div>
+            <nav class="flex flex-col">
+              {%- for post in collections.fundamentals -%}
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-10 last.mb-0">
+            <div class="font-sm font-600 color-gray-900 mb-4">
+              <i class="fas fa-cogs mr-2"></i> Customization
+            </div>
+            <nav class="flex flex-col">
+              {%- for post in collections.customization -%}
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-10 last.mb-0">
+            <div class="font-sm font-600 color-gray-900 mb-4">
+              <i class="fas fa-paint-brush mr-2"></i> Theme
+            </div>
+            <nav class="flex flex-col">
+              {%- for post in collections.theme -%}
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-10 last.mb-0">
+            <div class="font-sm font-600 color-gray-900 mb-4">
+              <i class="fas fa-box-open mr-2"></i> Module
+            </div>
+            <nav class="flex flex-col">
+              {%- for post in collections.modules -%}
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+        </div>
+      </aside>
+
+
+			<div class="col-12 col-12 md.col-9 px-19 py-16 pb-19 markdown">
+				{{ content | safe }}
+			</div>
+		</div>
+	</div>
+</section>

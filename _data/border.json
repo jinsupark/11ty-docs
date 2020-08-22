@@ -1,0 +1,433 @@
+[
+  {
+    "title": "border-collapse",
+    "family": "core",
+    "description": "The `border-collapse` property sets whether table borders should collapse into a single border or be separated as in standard HTML.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.border-separate`",
+        "properties": [
+          "`border-collapse: separate;`"
+        ]
+      },
+      {
+        "class": "`.border-collapse`",
+        "properties": [
+          "`border-collapse: collapse;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-color",
+    "family": "core",
+    "description": "The `border-color` property sets the color of an element's four borders.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.border-{color}`",
+        "properties": [
+          "`border-color: {color}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-style",
+    "family": "core",
+    "description": "The `border-style` property sets the style of an element's four borders. This property can have from one to four values.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.border-solid`",
+        "properties": [
+          "`property: solid;`"
+        ]
+      },
+      {
+        "class": "`.border-dashed`",
+        "properties": [
+          "`property: dashed;`"
+        ]
+      },
+      {
+        "class": "`.border-dotted`",
+        "properties": [
+          "`property: dotted;`"
+        ]
+      },
+      {
+        "class": "`.border-double`",
+        "properties": [
+          "`property: double;`"
+        ]
+      },
+      {
+        "class": "`.border-none`",
+        "properties": [
+          "`property: none;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-radius",
+    "family": "core",
+    "description": "The `border-radius` property defines the radius of the element's corners.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-{variant}`",
+        "properties": [
+          "`border-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-bottom-radius",
+    "family": "extension",
+    "description": "The `border-bottom-radius` extension modifies the bottom border radius of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-b-{variant}`",
+        "properties": [
+          "`border-bottom-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
+          "`border-bottom-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-left-radius",
+    "family": "extension",
+    "description": "The `border-left-radius` extension modifies the left border radius of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-l-{variant}`",
+        "properties": [
+          "`border-top-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
+          "`border-bottom-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-right-radius",
+    "family": "extension",
+    "description": "The `border-right-radius` extension modifies the right border radius of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-r-{variant}`",
+        "properties": [
+          "`border-top-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
+          "`border-bottom-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-top-radius",
+    "family": "extension",
+    "description": "The `border-top-radius` extension modifies the top border radius of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-t-{variant}`",
+        "properties": [
+          "`border-top-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
+          "`border-top-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-bottom-left-radius",
+    "family": "core",
+    "description": "The `border-bottom-left-radius` property defines the radius of the bottom-left corner.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-bl-{variant}`",
+        "properties": [
+          "`border-bottom-left-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-bottom-right-radius",
+    "family": "core",
+    "description": "The `border-bottom-right-radius` property defines the radius of the bottom-right corner.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-br-{variant}`",
+        "properties": [
+          "`border-bottom-right-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-top-left-radius",
+    "family": "core",
+    "description": "The `border-top-left-radius` property defines the radius of the top-left corner.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-tl-{variant}`",
+        "properties": [
+          "`border-top-left-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-top-right-radius",
+    "family": "core",
+    "description": "The `border-top-right-radius` property defines the radius of the top-right corner.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.radius-tr-{variant}`",
+        "properties": [
+          "`border-top-right-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-width",
+    "family": "core",
+    "description": "The `border-width` property sets the width of an element's four borders. ",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.border-0`",
+        "properties": [
+          "`border-width: 0`"
+        ]
+      },
+      {
+        "class": "`.border-px`",
+        "properties": [
+          "`border-width: 1px`"
+        ]
+      },
+      {
+        "class": "`.border-2px`",
+        "properties": [
+          "`border-width: 2px`"
+        ]
+      },
+      {
+        "class": "`.border-3px`",
+        "properties": [
+          "`border-width: 3px`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-bottom-width",
+    "family": "core",
+    "description": "The `border-bottom-width` property sets the width of an element's bottom border.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.border-b-0`",
+        "properties": [
+          "`border-bottom-width: 0`"
+        ]
+      },
+      {
+        "class": "`.border-b-px`",
+        "properties": [
+          "`border-bottom-width: 1px`"
+        ]
+      },
+      {
+        "class": "`.border-b-2px`",
+        "properties": [
+          "`border-bottom-width: 2px`"
+        ]
+      },
+      {
+        "class": "`.border-b-3px`",
+        "properties": [
+          "`border-bottom-width: 3px`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-left-width",
+    "family": "core",
+    "description": "The `border-left-width` property sets the width of an element's left border.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.border-l-0`",
+        "properties": [
+          "`border-left-width: 0`"
+        ]
+      },
+      {
+        "class": "`.border-l-px`",
+        "properties": [
+          "`border-left-width: 1px`"
+        ]
+      },
+      {
+        "class": "`.border-l-2px`",
+        "properties": [
+          "`border-left-width: 2px`"
+        ]
+      },
+      {
+        "class": "`.border-l-3px`",
+        "properties": [
+          "`border-left-width: 3px`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-right-width",
+    "family": "core",
+    "description": "The `border-right-width` property sets the width of an element's right border.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.border-r-0`",
+        "properties": [
+          "`border-right-width: 0`"
+        ]
+      },
+      {
+        "class": "`.border-r-px`",
+        "properties": [
+          "`border-right-width: 1px`"
+        ]
+      },
+      {
+        "class": "`.border-r-2px`",
+        "properties": [
+          "`border-right-width: 2px`"
+        ]
+      },
+      {
+        "class": "`.border-r-3px`",
+        "properties": [
+          "`border-right-width: 3px`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "border-top-width",
+    "family": "core",
+    "description": "The `border-top-width` property sets the width of an element's top border.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.border-t-0`",
+        "properties": [
+          "`border-top-width: 0`"
+        ]
+      },
+      {
+        "class": "`.border-t-px`",
+        "properties": [
+          "`border-top-width: 1px`"
+        ]
+      },
+      {
+        "class": "`.border-t-2px`",
+        "properties": [
+          "`border-top-width: 2px`"
+        ]
+      },
+      {
+        "class": "`.border-t-3px`",
+        "properties": [
+          "`border-top-width: 3px`"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "title": "transition-duration",
+    "family": "core",
+    "description": "The `transition-duration` property specifies how long the transition effect takes to complete.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.transition-slow`",
+        "properties": [
+          "`transition-duration: .4s;`"
+        ]
+      },
+      {
+        "class": "`.transition-steady`",
+        "properties": [
+          "`transition-duration: .2s;`"
+        ]
+      },
+      {
+        "class": "`.transition-fast`",
+        "properties": [
+          "`transition-duration: .1s;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "transition-delay",
+    "family": "core",
+    "description": "The `transition-property` property specifies the name of the CSS property the transition effect is for.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.transition-none`",
+        "properties": [
+          "`transition-property: none;`"
+        ]
+      },
+      {
+        "class": "`.transition`",
+        "properties": [
+          "`transition-property: all;`"
+        ]
+      },
+      {
+        "class": "`.transition-visuals`",
+        "properties": [
+          "`transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;`"
+        ]
+      },
+      {
+        "class": "`.transition-colors`",
+        "properties": [
+          "`transition-property: background-color, border-color, color, fill, stroke;`"
+        ]
+      },
+      {
+        "class": "`.transition-opacity`",
+        "properties": [
+          "`transition-property: opacity;`"
+        ]
+      },
+      {
+        "class": "`.transition-shadow`",
+        "properties": [
+          "`transition-property: box-shadow;`"
+        ]
+      },
+      {
+        "class": "`.transition-transform`",
+        "properties": [
+          "`transition-property: transform;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "transition-property",
+    "family": "core",
+    "description": "The `transition-property` property specifies the name of the CSS property the transition effect is for.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.transition-none`",
+        "properties": [
+          "`transition-property: none;`"
+        ]
+      },
+      {
+        "class": "`.transition`",
+        "properties": [
+          "`transition-property: all;`"
+        ]
+      },
+      {
+        "class": "`.transition-visuals`",
+        "properties": [
+          "`transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;`"
+        ]
+      },
+      {
+        "class": "`.transition-colors`",
+        "properties": [
+          "`transition-property: background-color, border-color, color, fill, stroke;`"
+        ]
+      },
+      {
+        "class": "`.transition-opacity`",
+        "properties": [
+          "`transition-property: opacity;`"
+        ]
+      },
+      {
+        "class": "`.transition-shadow`",
+        "properties": [
+          "`transition-property: box-shadow;`"
+        ]
+      },
+      {
+        "class": "`.transition-transform`",
+        "properties": [
+          "`transition-property: transform;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "transition-timing-function",
+    "family": "core",
+    "description": "The `transition-timing-function` property specifies the speed curve of the transition effect.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.linear`",
+        "properties": [
+          "`transition-timing-function: linear;`"
+        ]
+      },
+      {
+        "class": "`.ease`",
+        "properties": [
+          "`transition-timing-function: ease;`"
+        ]
+      },
+      {
+        "class": "`.ease-in`",
+        "properties": [
+          "`transition-timing-function: ease-in;`"
+        ]
+      },
+      {
+        "class": "`.ease-in-out`",
+        "properties": [
+          "`transition-timing-function: ease-in-out;`"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "title": "cursor",
+    "family": "core",
+    "description": "The `cursor` property specifies the mouse cursor to be displayed when pointing over an element.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "active"
+    ],
+    "classes": [
+      {
+        "class": "`.cursor-auto`",
+        "properties": [
+          "`cursor: auto;`"
+        ]
+      },
+      {
+        "class": "`.cursor-default`",
+        "properties": [
+          "`cursor: default;`"
+        ]
+      },
+      {
+        "class": "`.cursor-pointer`",
+        "properties": [
+          "`cursor: pointer;`"
+        ]
+      },
+      {
+        "class": "`.cursor-wait`",
+        "properties": [
+          "`cursor: wait;`"
+        ]
+      },
+      {
+        "class": "`.cursor-text`",
+        "properties": [
+          "`cursor: text;`"
+        ]
+      },
+      {
+        "class": "`.cursor-move`",
+        "properties": [
+          "`cursor: move;`"
+        ]
+      },
+      {
+        "class": "`.cursor-not-allowed`",
+        "properties": [
+          "`cursor: not-allowed;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "pointer-events",
+    "family": "core",
+    "description": "The `pointer-events` property defines whether or not an element reacts to pointer events.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pointer-events-none`",
+        "properties": [
+          "`property: none;`"
+        ]
+      },
+      {
+        "class": "`.pointer-events-auto`",
+        "properties": [
+          "`property: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "resize",
+    "family": "core",
+    "description": "The `scrolling` property controls whether or not touch devices use momentum-based scrolling for a given element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.scrolling-auto`",
+        "properties": [
+          "`-webkit-overflow-scrolling: auto;`"
+        ]
+      },
+      {
+        "class": "`.scrolling-touch`",
+        "properties": [
+          "`-webkit-overflow-scrolling: touch;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "scrolling",
+    "family": "core",
+    "description": "The `scrolling` property controls whether or not touch devices use momentum-based scrolling for a given element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.scrolling-auto`",
+        "properties": [
+          "`-webkit-overflow-scrolling: auto;`"
+        ]
+      },
+      {
+        "class": "`.scrolling-touch`",
+        "properties": [
+          "`-webkit-overflow-scrolling: touch;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "user-select",
+    "family": "core",
+    "description": "The `user-select` property specifies whether the text of an element can be selected.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.select-none`",
+        "properties": [
+          "`user-select: none;`"
+        ]
+      },
+      {
+        "class": "`.select-text`",
+        "properties": [
+          "`user-select: text;`"
+        ]
+      },
+      {
+        "class": "`.select-all`",
+        "properties": [
+          "`user-select: all;`"
+        ]
+      },
+      {
+        "class": "`.select-auto`",
+        "properties": [
+          "`user-select: auto;`"
+        ]
+      }
+    ]
+  }
+]

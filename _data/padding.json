@@ -1,0 +1,161 @@
+[
+  {
+    "title": "padding",
+    "family": "core",
+    "description": "The `padding` property is a shorthand property for padding.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.p-{variant}`",
+        "properties": [
+          "`property:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-x",
+    "family": "extension",
+    "description": "The `padding-x` extension applies padding to the left and right of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.px-px`",
+        "properties": [
+          "`padding-left: 1px`",
+          "`padding-right: 1px`"
+        ]
+      },
+      {
+        "class": "`.px-{variant}`",
+        "properties": [
+          "`padding-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
+          "`padding-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-y",
+    "family": "extension",
+    "description": "The `padding-y` extension applies padding to the top and bottom of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.py-px`",
+        "properties": [
+          "`padding-top: 1px`",
+          "`padding-bottom: 1px`"
+        ]
+      },
+      {
+        "class": "`.py-{variant}`",
+        "properties": [
+          "`padding-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
+          "`padding-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-bottom",
+    "family": "core",
+    "description": "The `padding-bottom` property sets the bottom padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pb-px`",
+        "properties": [
+          "`padding-bottom: 1px;`"
+        ]
+      },
+      {
+        "class": "`.pb-{variant}`",
+        "properties": [
+          "`padding-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-left",
+    "family": "core",
+    "description": "The `padding-left` property sets the left padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pl-px`",
+        "properties": [
+          "`padding-left: 1px;`"
+        ]
+      },
+      {
+        "class": "`.pl-{variant}`",
+        "properties": [
+          "`padding-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-right",
+    "family": "core",
+    "description": "The `padding-right` property sets the right padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pr-px`",
+        "properties": [
+          "`padding-right: 1px;`"
+        ]
+      },
+      {
+        "class": "`.pr-{variant}`",
+        "properties": [
+          "`padding-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-top",
+    "family": "core",
+    "description": "The `padding-top` property sets the top padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pt-px`",
+        "properties": [
+          "`padding-top: 1px;`"
+        ]
+      },
+      {
+        "class": "`.pt-{variant}`",
+        "properties": [
+          "`padding-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "title": "box-sizing",
+    "family": "core",
+    "description": "The `box-sizing` property defines how the width and height of an element are calculated: should they include padding and borders, or not.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.border-box`",
+        "properties": [
+          "`box-sizing: border-box`"
+        ]
+      },
+      {
+        "class": "`.content-box`",
+        "properties": [
+          "`box-sizing: content-box`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "clear",
+    "family": "core",
+    "description": "The `clear` property specifies on which sides of an element floating elements are not allowed to float.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.clear-left`",
+        "properties": [
+          "`clear: left;`"
+        ]
+      },
+      {
+        "class": "`.clear-right`",
+        "properties": [
+          "`clear: right;`"
+        ]
+      },
+      {
+        "class": "`.clear-both`",
+        "properties": [
+          "`clear: both;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "float",
+    "family": "core",
+    "description": "The `float` property specifies how an element should float.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.float-l`",
+        "properties": [
+          "`float: left;`"
+        ]
+      },
+      {
+        "class": "`.float-r`",
+        "properties": [
+          "`float: right;`"
+        ]
+      },
+      {
+        "class": "`.float-none`",
+        "properties": [
+          "`float: none;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "object-fit",
+    "family": "core",
+    "description": "The `object-fit` property is used to specify how an `<img>` or `<video>` should be resized to fit its container.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.object-contain`",
+        "properties": [
+          "`object-fit: contain;`"
+        ]
+      },
+      {
+        "class": "`.object-cover`",
+        "properties": [
+          "`object-fit: cover;`"
+        ]
+      },
+      {
+        "class": "`.object-fill`",
+        "properties": [
+          "`object-fit: fill;`"
+        ]
+      },
+      {
+        "class": "`.object-none`",
+        "properties": [
+          "`object-fit: none;`"
+        ]
+      },
+      {
+        "class": "`.object-size-down`",
+        "properties": [
+          "`object-fit: size-down;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "object-position",
+    "family": "core",
+    "description": "The `object-position` property is used together with object-fit to specify how an `<img>` or `<video>` should be positioned with x/y coordinates inside its own content box.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.object-bottom`",
+        "properties": [
+          "`object-position: bottom;`"
+        ]
+      },
+      {
+        "class": "`.object-center`",
+        "properties": [
+          "`object-position: center;`"
+        ]
+      },
+      {
+        "class": "`.object-left`",
+        "properties": [
+          "`object-position: left;`"
+        ]
+      },
+      {
+        "class": "`.object-left-bottom`",
+        "properties": [
+          "`object-position: left-bottom;`"
+        ]
+      },
+      {
+        "class": "`.object-left-top`",
+        "properties": [
+          "`object-position: left-top;`"
+        ]
+      },
+      {
+        "class": "`.object-right`",
+        "properties": [
+          "`object-position: right;`"
+        ]
+      },
+      {
+        "class": "`.object-right-bottom`",
+        "properties": [
+          "`object-position: bottom;`"
+        ]
+      },
+      {
+        "class": "`.object-right-top`",
+        "properties": [
+          "`object-position: right-top;`"
+        ]
+      },
+      {
+        "class": "`.object-top`",
+        "properties": [
+          "`object-position: top;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "position",
+    "family": "core",
+    "description": "The `position` property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.static`",
+        "properties": [
+          "`position: static;`"
+        ]
+      },
+      {
+        "class": "`.fixed`",
+        "properties": [
+          "`position: fixed;`"
+        ]
+      },
+      {
+        "class": "`.absolute`",
+        "properties": [
+          "`position: absolute;`"
+        ]
+      },
+      {
+        "class": "`.relative`",
+        "properties": [
+          "`position: relative;`"
+        ]
+      },
+      {
+        "class": "`.sticky`",
+        "properties": [
+          "`position: sticky;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "table-layout",
+    "family": "core",
+    "description": "The `table-layout` property defines the algorithm used to lay out table cells, rows, and columns.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.table-auto`",
+        "properties": [
+          "`table-layout: auto;`"
+        ]
+      },
+      {
+        "class": "`.table-fixed`",
+        "properties": [
+          "`table-layout: fixed;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "clearfix",
+    "family": "extension",
+    "description": "The `clearfix` extension makes parent container respect the floated contents boundary.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.clearfix`",
+        "properties": [
+          "`multiple properties`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "ratio",
+    "family": "extension",
+    "description": "The `clearfix` extension makes parent container respect the floated contents boundary.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.clearfix`",
+        "properties": [
+          "`multiple properties`"
+        ]
+      }
+    ]
+  }
+]

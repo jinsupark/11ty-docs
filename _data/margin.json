@@ -1,0 +1,207 @@
+[
+  {
+    "title": "margin",
+    "family": "core",
+    "description": "The `margin` property sets the margins for an element, and is a shorthand property for the margin.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.m-auto`",
+        "properties": [
+          "`margin: auto;`"
+        ]
+      },
+      {
+        "class": "`.m-px`",
+        "properties": [
+          "`margin: 1px;`"
+        ]
+      },
+      {
+        "class": "`.m-{variant}`",
+        "properties": [
+          "`margin:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "margin-x",
+    "family": "extension",
+    "description": "The `margin-x` extension applies margins to the left and right of an element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.mx-auto`",
+        "properties": [
+          "`margin-left: auto`",
+          "`margin-right: auto`"
+        ]
+      },
+      {
+        "class": "`.mx-px`",
+        "properties": [
+          "`margin-left: 1px`",
+          "`margin-right: 1px`"
+        ]
+      },
+      {
+        "class": "`.mx-{variant}`",
+        "properties": [
+          "margin-left: <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
+          "margin-right: <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "margin-y",
+    "family": "extension",
+    "description": "The `margin-y` extension applies margins to the top and bottom of an element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.my-auto`",
+        "properties": [
+          "`margin-top: auto`",
+          "`margin-bottom: auto`"
+        ]
+      },
+      {
+        "class": "`.my-px`",
+        "properties": [
+          "`margin-top: 1px`",
+          "`margin-bottom: 1px`"
+        ]
+      },
+      {
+        "class": "`.my-{variant}`",
+        "properties": [
+          "`margin-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
+          "`margin-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "margin-bottom",
+    "family": "core",
+    "description": "The `margin-bottom` property sets the bottom margin of an element.",
+    "responsive": true,
+    "pseudos": [
+      "last"
+    ],
+    "classes": [
+      {
+        "class": "`.mb-auto`",
+        "properties": [
+          "`margin-bottom: auto;`"
+        ]
+      },
+      {
+        "class": "`.mb-px`",
+        "properties": [
+          "`margin-bottom: 1px;`"
+        ]
+      },
+      {
+        "class": "`.mb-{variant}`",
+        "properties": [
+          "`margin-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "margin-left",
+    "family": "core",
+    "description": "The `margin-left` property sets the left margin of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.ml-auto`",
+        "properties": [
+          "`margin-left: auto;`"
+        ]
+      },
+      {
+        "class": "`.ml-px`",
+        "properties": [
+          "`margin-left: 1px;`"
+        ]
+      },
+      {
+        "class": "`.ml-{variant}`",
+        "properties": [
+          "`margin-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "margin-right",
+    "family": "core",
+    "description": "The `margin-right` property sets the right margin of an element.",
+    "responsive": true,
+    "pseudos": [
+      "last"
+    ],
+    "classes": [
+      {
+        "class": "`.mr-auto`",
+        "properties": [
+          "`margin-right: auto;`"
+        ]
+      },
+      {
+        "class": "`.mr-px`",
+        "properties": [
+          "`margin-right: 1px;`"
+        ]
+      },
+      {
+        "class": "`.mr-{variant}`",
+        "properties": [
+          "`margin-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "margin-top",
+    "family": "core",
+    "description": "The `margin-top` property sets the top margin of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.mt-auto`",
+        "properties": [
+          "`margin-top: auto;`"
+        ]
+      },
+      {
+        "class": "`.mt-px`",
+        "properties": [
+          "`margin-top: 1px;`"
+        ]
+      },
+      {
+        "class": "`.mt-{variant}`",
+        "properties": [
+          "`margin-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  }
+]

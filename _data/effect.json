@@ -1,0 +1,71 @@
+[
+  {
+    "title": "box-shadow",
+    "family": "core",
+    "description": "The `box-shadow` property attaches one or more shadows to an element.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "focus",
+      "active",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.shadow-{variant}`",
+        "properties": [
+          "`box-shadow:` <a href=\"/get-started/effects\" class=\"font-sm hover.underline color-indigo-500\">See Effects</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "filter",
+    "family": "core",
+    "description": "The `filter` property defines visual effects (like blur and saturation) to an element.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "active"
+    ],
+    "classes": [
+      {
+        "class": "`.filter-none`",
+        "properties": [
+          "`filter: none;`"
+        ]
+      },
+      {
+        "class": "`.filter-graysize`",
+        "properties": [
+          "`filter: graysize(100%);`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "mix-blend-mode",
+    "family": "core",
+    "description": "The `filter` property defines visual effects (like blur and saturation) to an element.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "active"
+    ],
+    "classes": [
+      {
+        "class": "`.filter-none`",
+        "properties": [
+          "`filter: none;`"
+        ]
+      },
+      {
+        "class": "`.filter-graysize`",
+        "properties": [
+          "`filter: graysize(100%);`"
+        ]
+      }
+    ]
+  }
+]

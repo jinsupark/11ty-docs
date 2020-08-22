@@ -1,0 +1,152 @@
+---
+title: Home
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<section class="bg-hero">
+
+  {% include "partials/nav.njk" %}
+
+  <div class="wrapper">
+    <div class="align-center pt-10 pt-20 pb-18">
+      <h2 class="font-7xl font-300 align-center max-w-26 m-auto mb-6 tracking-n1 color-white">The only utility-first framework you will ever need</h2>
+
+      <p class="max-w-26 mx-auto mb-10 font-lg font-400 color-white align-center opacity-70">
+        Uniform is a super customizable and infinitely scalable CSS Framework that is designed to help teams bring pixel-crisp designs to life.
+      </p>
+
+      <div class="align-center mb-12">
+        <a href="#" class="group inline-flex align-items-center font-600 color-white">
+          <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-3 bg-white color-black group-hover.color-white group-hover.bg-black transition-appearance transition-200 mr-4">
+            <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
+          </div>
+          Try on Codepen
+        </a>
+      </div>
+
+      <div class="color-white">
+        Version <span class="color-yellow-500 font-600">0.1.0</span> Release
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery pb-6">
+    <div class="gallery__images">
+      {% include "partials/components.njk" %}
+    </div>
+    <div class="gallery__images">
+      {% include "partials/components.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="border-b-px">
+  <div class="wrapper">
+
+    <div class="py-18 align-center">
+      <h2 class="font-600 font-2xl tracking-n1 mb-6">
+        Here are some examples of what you can build
+      </h2>
+      <p class="max-w-26 m-auto mb-10">
+        Uniform is an eloquently packaged CSS Framework that is easily customizable, infinitely scalable and designed to work well with modern team workflows.
+      </p>
+      <a href="#" class="btn btn-dark radius-round shadow-3 hover.shadow-3">Get Started <i class="fas fa-angle-right ml-3"></i></a>
+    </div>
+
+    <div class="w-100p lg.max-w-9-12 m-auto">
+      <div class="radius-xl bg-black shadow-2 overflow-hidden mb-12">
+        <div class="border-b-px border-gray-800 h-14 flex align-items-center justify-content-center">
+          <div class="flex align-items-center justify-content-center font-xs font-600 tracking-1">
+            <a data-tab-family="highlight" data-tab-target="html" class="radius-round bg-gray-900 color-white px-3 py-2">HTML</a>
+            <a data-tab-family="highlight" data-tab-target="sass" class="radius-round color-white opacity-30 hover.opacity-100 px-3 py-2 mx-3">SCSS</a>
+            <a data-tab-family="highlight" data-tab-target="css" class="radius-round color-white opacity-30 hover.opacity-100 px-3 py-2">CSS</a>
+          </div>
+        </div>
+        <div class="home-highlight">
+          <div data-tab-family="highlight" data-tab-id="html" class="home-highlight__item">
+            
+
+
+          </div>
+          <div data-tab-family="highlight" data-tab-id="sass" class="home-highlight__item" style="display: none;">
+            
+            
+
+          </div>
+          <div data-tab-family="highlight" data-tab-id="css" class="home-highlight__item" style="display: none;">
+            
+            
+
+          </div>
+        </div>
+      </div>
+
+
+      <article class="radius-xl shadow-2 bg-white grid grid-cols-1 sm.grid-cols-2 md.grid-cols-4 align-center">
+        <div class="py-6 border-b-px sm.border-b-0 md.border-r-px border-silver-300">
+          <div class="mb-3 font-5xl font-300 tracking-n1 color-cyan-700">25kb</div>
+          <div class="font-xs font-500 tracking-1 uppercase">Gzipped Footprint</div>
+        </div>
+        <div class="py-6 border-b-px sm.border-b-0 md.border-r-px border-silver-300">
+          <div class="mb-3 font-5xl font-300 tracking-n1 color-orange-400">3</div>
+          <div class="font-xs font-500 tracking-1 uppercase">Pre-made Components</div>
+        </div>
+        <div class="py-6 border-b-px sm.border-b-0 md.border-r-px border-silver-300">
+          <div class="mb-3 font-5xl font-300 tracking-n1 color-blue-700">136</div>
+          <div class="font-xs font-500 tracking-1 uppercase">CSS Properties
+          </div>
+        </div>
+        <div class="py-6 border-b-px sm.border-b-0 md.border-r-px border-silver-300">
+          <div class="mb-3 font-5xl font-300 tracking-n1 color-violet-700">150</div>
+          <div class="font-xs font-500 tracking-1 uppercase">Colors</div>
+        </div>
+      </article>
+
+
+    </div>
+
+    <div class="w-100p lg.max-w-9-12 m-auto py-18">
+      <div class="flex flex-col sm.flex-row">
+        <div class="flex-1">
+          <h5 class="flex align-items-center color-black font-700 font-xl tracking-n1 mb-5">
+            Install the Package <span class="ml-3 p-1 px-2 radius-xs bg-blue-300 font-2xs font-700 tracking-2">NPM</span>
+          </h5>
+
+          <p class="font-sm mb-8">
+            Install Material-UI's source files via npm. We take care of injecting the CSS needed.
+          </p>
+
+          <pre
+          class="radius-sm bg-black color-white p-4 px-5 overflow-x-auto shadow-3"><code><span class="color-orange-700">npm</span> install <span class="color-blue-500">uniformcss</span></code></pre>
+        </div>
+        <div class="relative flex flex-0 h-20 sm.h-auto sm.w-18 justify-content-center align-items-center">
+          <div class="w-100p h-px sm.w-px sm.h-100p bg-silver-300">
+
+          </div>
+          <div class="absolute l-50p t-50p transform translate-x-n50p translate-y-n50p translate-x-n50p w-10 h-10 flex align-items-center justify-content-center radius-round bg-silver-200 font-600 font-sm color-gray-100">
+            OR
+          </div>
+        </div>
+        <div class="flex-1">
+          
+          <h5 class="flex align-items-center color-black font-700 font-xl tracking-n1 mb-5">
+            Load through CDN <span class="ml-3 p-1 px-2 radius-xs bg-purple-300 font-2xs font-700 tracking-2">CDN</span>
+          </h5>
+
+          <p class="font-sm mb-8">
+            Install Material-UI's source files via npm. We take care of injecting the CSS needed.
+          </p>
+
+          <pre
+          class="radius-sm bg-black color-white p-4 px-5 overflow-x-auto shadow-3"><code><span class="color-yellow-500">npm</span> install <span class="color-blue-500">uniformcss</span></code></pre>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+

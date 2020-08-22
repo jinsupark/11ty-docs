@@ -1,0 +1,742 @@
+[
+  {
+    "title": "grid-auto-flow",
+    "family": "core",
+    "description": "The `grid-auto-flow` property controls how auto-placed items get inserted in the grid.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.grid-flow-row`",
+        "properties": [
+          "`grid-auto-flow: row;`"
+        ]
+      },
+      {
+        "class": "`.grid-flow-col`",
+        "properties": [
+          "`grid-auto-flow: column;`"
+        ]
+      },
+      {
+        "class": "`.grid-flow-row-dense`",
+        "properties": [
+          "`grid-auto-flow: row dense;`"
+        ]
+      },
+      {
+        "class": "`.grid-flow-col-dense`",
+        "properties": [
+          "`grid-auto-flow: column dense;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-column",
+    "family": "core",
+    "description": "The `grid-column` property specifies a grid item's size and location in a grid layout, and is a shorthand property for grid-column-start and grid-column-end.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-auto`",
+        "properties": [
+          "`grid-column: auto;`"
+        ]
+      },
+      {
+        "class": "`.col-1`",
+        "properties": [
+          "`grid-column: span 1 / span 1;`"
+        ]
+      },
+      {
+        "class": "`.col-2`",
+        "properties": [
+          "`grid-column: span 2 / span 2;`"
+        ]
+      },
+      {
+        "class": "`.col-3`",
+        "properties": [
+          "`grid-column: span 3 / span 3;`"
+        ]
+      },
+      {
+        "class": "`.col-4`",
+        "properties": [
+          "`grid-column: span 4 / span 4;`"
+        ]
+      },
+      {
+        "class": "`.col-5`",
+        "properties": [
+          "`grid-column: span 5 / span 5;`"
+        ]
+      },
+      {
+        "class": "`.col-6`",
+        "properties": [
+          "`grid-column: span 6 / span 6;`"
+        ]
+      },
+      {
+        "class": "`.col-7`",
+        "properties": [
+          "`grid-column: span 7 / span 7;`"
+        ]
+      },
+      {
+        "class": "`.col-8`",
+        "properties": [
+          "`grid-column: span 8 / span 8;`"
+        ]
+      },
+      {
+        "class": "`.col-9`",
+        "properties": [
+          "`grid-column: span 9 / span 9;`"
+        ]
+      },
+      {
+        "class": "`.col-10`",
+        "properties": [
+          "`grid-column: span 10 / span 10;`"
+        ]
+      },
+      {
+        "class": "`.col-11`",
+        "properties": [
+          "`grid-column: span 11 / span 11;`"
+        ]
+      },
+      {
+        "class": "`.col-12`",
+        "properties": [
+          "`grid-column: span 12 / span 12;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-auto-flow",
+    "family": "core",
+    "description": "The `grid-auto-flow` property controls how auto-placed items get inserted in the grid.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.grid-flow-row`",
+        "properties": [
+          "`grid-auto-flow: row;`"
+        ]
+      },
+      {
+        "class": "`.grid-flow-col`",
+        "properties": [
+          "`grid-auto-flow: column;`"
+        ]
+      },
+      {
+        "class": "`.grid-flow-row-dense`",
+        "properties": [
+          "`grid-auto-flow: row dense;`"
+        ]
+      },
+      {
+        "class": "`.grid-flow-col-dense`",
+        "properties": [
+          "`grid-auto-flow: column dense;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-column-end",
+    "family": "core",
+    "description": "The `grid-column-end` property defines how many columns an item will span, or on which column-line the item will end.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-auto`",
+        "properties": [
+          "`grid-column-end: auto;`"
+        ]
+      },
+      {
+        "class": "`.col-end-1`",
+        "properties": [
+          "`grid-column-end: 1;`"
+        ]
+      },
+      {
+        "class": "`.col-end-2`",
+        "properties": [
+          "`grid-column-end: 2;`"
+        ]
+      },
+      {
+        "class": "`.col-end-3`",
+        "properties": [
+          "`grid-column-end: 3;`"
+        ]
+      },
+      {
+        "class": "`.col-end-4`",
+        "properties": [
+          "`grid-column-end: 4;`"
+        ]
+      },
+      {
+        "class": "`.col-end-5`",
+        "properties": [
+          "`grid-column-end: 5;`"
+        ]
+      },
+      {
+        "class": "`.col-end-6`",
+        "properties": [
+          "`grid-column-end: 6;`"
+        ]
+      },
+      {
+        "class": "`.col-end-7`",
+        "properties": [
+          "`grid-column-end: 7;`"
+        ]
+      },
+      {
+        "class": "`.col-end-8`",
+        "properties": [
+          "`grid-column-end: 8;`"
+        ]
+      },
+      {
+        "class": "`.col-end-9`",
+        "properties": [
+          "`grid-column-end: 9;`"
+        ]
+      },
+      {
+        "class": "`.col-end-10`",
+        "properties": [
+          "`grid-column-end: 10;`"
+        ]
+      },
+      {
+        "class": "`.col-end-11`",
+        "properties": [
+          "`grid-column-end: 11;`"
+        ]
+      },
+      {
+        "class": "`.col-end-12`",
+        "properties": [
+          "`grid-column-end: 12;`"
+        ]
+      },
+      {
+        "class": "`.col-end-13`",
+        "properties": [
+          "`grid-column-end: 13;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-column-start",
+    "family": "core",
+    "description": "The `grid-column-start` property defines on which column-line the item will start.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-auto`",
+        "properties": [
+          "`grid-column-start: auto;`"
+        ]
+      },
+      {
+        "class": "`.col-start-1`",
+        "properties": [
+          "`grid-column-start: 1;`"
+        ]
+      },
+      {
+        "class": "`.col-start-2`",
+        "properties": [
+          "`grid-column-start: 2;`"
+        ]
+      },
+      {
+        "class": "`.col-start-3`",
+        "properties": [
+          "`grid-column-start: 3;`"
+        ]
+      },
+      {
+        "class": "`.col-start-4`",
+        "properties": [
+          "`grid-column-start: 4;`"
+        ]
+      },
+      {
+        "class": "`.col-start-5`",
+        "properties": [
+          "`grid-column-start: 5;`"
+        ]
+      },
+      {
+        "class": "`.col-start-6`",
+        "properties": [
+          "`grid-column-start: 6;`"
+        ]
+      },
+      {
+        "class": "`.col-start-7`",
+        "properties": [
+          "`grid-column-start: 7;`"
+        ]
+      },
+      {
+        "class": "`.col-start-8`",
+        "properties": [
+          "`grid-column-start: 8;`"
+        ]
+      },
+      {
+        "class": "`.col-start-9`",
+        "properties": [
+          "`grid-column-start: 9;`"
+        ]
+      },
+      {
+        "class": "`.col-start-10`",
+        "properties": [
+          "`grid-column-start: 10;`"
+        ]
+      },
+      {
+        "class": "`.col-start-11`",
+        "properties": [
+          "`grid-column-start: 11;`"
+        ]
+      },
+      {
+        "class": "`.col-start-12`",
+        "properties": [
+          "`grid-column-start: 12;`"
+        ]
+      },
+      {
+        "class": "`.col-start-13`",
+        "properties": [
+          "`grid-column-start: 13;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-row",
+    "family": "core",
+    "description": "The `grid-row` property specifies a grid item's size and location in a grid layout, and is a shorthand property for grid-row-start and grid-row-end.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.row-auto`",
+        "properties": [
+          "`grid-row: auto;`"
+        ]
+      },
+      {
+        "class": "`.row-span-1`",
+        "properties": [
+          "`grid-row: span 1 /span 1;`"
+        ]
+      },
+      {
+        "class": "`.row-span-2`",
+        "properties": [
+          "`grid-row: span 2 /span 2;`"
+        ]
+      },
+      {
+        "class": "`.row-span-3`",
+        "properties": [
+          "`grid-row: span 3 /span 3;`"
+        ]
+      },
+      {
+        "class": "`.row-span-4`",
+        "properties": [
+          "`grid-row: span 4 /span 4;`"
+        ]
+      },
+      {
+        "class": "`.row-span-5`",
+        "properties": [
+          "`grid-row: span 5 /span 5;`"
+        ]
+      },
+      {
+        "class": "`.row-span-5`",
+        "properties": [
+          "`grid-row: span 5 /span 5;`"
+        ]
+      },
+      {
+        "class": "`.row-span-6`",
+        "properties": [
+          "`grid-row: span 6 /span 6;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-row-end",
+    "family": "core",
+    "description": "The `grid-row-end` property defines how many rows an item will span, or on which row-line the item will end (see example at the end of this page).",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.row-auto`",
+        "properties": [
+          "`grid-row-end: auto;`"
+        ]
+      },
+      {
+        "class": "`.row-end-1`",
+        "properties": [
+          "`grid-row-end: 1;`"
+        ]
+      },
+      {
+        "class": "`.row-end-2`",
+        "properties": [
+          "`grid-row-end: 2;`"
+        ]
+      },
+      {
+        "class": "`.row-end-3`",
+        "properties": [
+          "`grid-row-end: 3;`"
+        ]
+      },
+      {
+        "class": "`.row-end-4`",
+        "properties": [
+          "`grid-row-end: 4;`"
+        ]
+      },
+      {
+        "class": "`.row-end-5`",
+        "properties": [
+          "`grid-row-end: 5;`"
+        ]
+      },
+      {
+        "class": "`.row-end-6`",
+        "properties": [
+          "`grid-row-end: 6;`"
+        ]
+      },
+      {
+        "class": "`.row-end-7`",
+        "properties": [
+          "`grid-row-end: 7;`"
+        ]
+      },
+      {
+        "class": "`.row-end-8`",
+        "properties": [
+          "`grid-row-end: 8;`"
+        ]
+      },
+      {
+        "class": "`.row-end-9`",
+        "properties": [
+          "`grid-row-end: 9;`"
+        ]
+      },
+      {
+        "class": "`.row-end-10`",
+        "properties": [
+          "`grid-row-end: 10;`"
+        ]
+      },
+      {
+        "class": "`.row-end-11`",
+        "properties": [
+          "`grid-row-end: 11;`"
+        ]
+      },
+      {
+        "class": "`.row-end-12`",
+        "properties": [
+          "`grid-row-end: 12;`"
+        ]
+      },
+      {
+        "class": "`.row-end-13`",
+        "properties": [
+          "`grid-row-end: 13;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-row-start",
+    "family": "core",
+    "description": "The `grid-row-start` property defines on which row-line the item will start.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.row-auto`",
+        "properties": [
+          "`grid-row-start: auto;`"
+        ]
+      },
+      {
+        "class": "`.row-start-1`",
+        "properties": [
+          "`grid-row-start: 1;`"
+        ]
+      },
+      {
+        "class": "`.row-start-2`",
+        "properties": [
+          "`grid-row-start: 2;`"
+        ]
+      },
+      {
+        "class": "`.row-start-3`",
+        "properties": [
+          "`grid-row-start: 3;`"
+        ]
+      },
+      {
+        "class": "`.row-start-4`",
+        "properties": [
+          "`grid-row-start: 4;`"
+        ]
+      },
+      {
+        "class": "`.row-start-5`",
+        "properties": [
+          "`grid-row-start: 5;`"
+        ]
+      },
+      {
+        "class": "`.row-start-6`",
+        "properties": [
+          "`grid-row-start: 6;`"
+        ]
+      },
+      {
+        "class": "`.row-start-7`",
+        "properties": [
+          "`grid-row-start: 7;`"
+        ]
+      },
+      {
+        "class": "`.row-start-8`",
+        "properties": [
+          "`grid-row-start: 8;`"
+        ]
+      },
+      {
+        "class": "`.row-start-9`",
+        "properties": [
+          "`grid-row-start: 9;`"
+        ]
+      },
+      {
+        "class": "`.row-start-10`",
+        "properties": [
+          "`grid-row-start: 10;`"
+        ]
+      },
+      {
+        "class": "`.row-start-11`",
+        "properties": [
+          "`grid-row-start: 11;`"
+        ]
+      },
+      {
+        "class": "`.row-start-12`",
+        "properties": [
+          "`grid-row-start: 12;`"
+        ]
+      },
+      {
+        "class": "`.row-start-13`",
+        "properties": [
+          "`grid-row-start: 13;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-template-columns",
+    "family": "core",
+    "description": "The `grid-template-columns` property specifies the number (and the widths) of columns in a grid layout.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.grid-cols-none`",
+        "properties": [
+          "`grid-template-columns: none;`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-1`",
+        "properties": [
+          "`grid-template-columns: repeat(1, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-2`",
+        "properties": [
+          "`grid-template-columns: repeat(2, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-3`",
+        "properties": [
+          "`grid-template-columns: repeat(3, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-4`",
+        "properties": [
+          "`grid-template-columns: repeat(4, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-5`",
+        "properties": [
+          "`grid-template-columns: repeat(5, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-6`",
+        "properties": [
+          "`grid-template-columns: repeat(6, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-7`",
+        "properties": [
+          "`grid-template-columns: repeat(7, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-8`",
+        "properties": [
+          "`grid-template-columns: repeat(8, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-9`",
+        "properties": [
+          "`grid-template-columns: repeat(9, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-10`",
+        "properties": [
+          "`grid-template-columns: repeat(10, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-11`",
+        "properties": [
+          "`grid-template-columns: repeat(11, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-cols-12`",
+        "properties": [
+          "`grid-template-columns: repeat(12, minmax(0, 1fr));`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "grid-template-rows",
+    "family": "core",
+    "description": "The `grid-template-rows` property specifies the number (and the heights) of the rows in a grid layout.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.grid-rows-none`",
+        "properties": [
+          "`grid-template-rows: none;`"
+        ]
+      },
+      {
+        "class": "`.grid-rows-1`",
+        "properties": [
+          "`grid-template-rows: repeat(1, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-rows-2`",
+        "properties": [
+          "`grid-template-rows: repeat(2, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-rows-3`",
+        "properties": [
+          "`grid-template-rows: repeat(3, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-rows-4`",
+        "properties": [
+          "`grid-template-rows: repeat(4, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-rows-5`",
+        "properties": [
+          "`grid-template-rows: repeat(5, minmax(0, 1fr));`"
+        ]
+      },
+      {
+        "class": "`.grid-rows-6`",
+        "properties": [
+          "`grid-template-rows: repeat(6, minmax(0, 1fr));`"
+        ]
+      }
+    ]
+  }
+]

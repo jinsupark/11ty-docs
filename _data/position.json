@@ -1,0 +1,333 @@
+[
+  { 
+    "title": "top/right/bottom/left",
+    "family": "extension",
+    "description": "The `xy` extension affects the horizontal and vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.xy-0`",
+        "properties": [
+          "`top: 0;`",
+          "`right: 0;`",
+          "`bottom: 0;`",
+          "`left: 0;`"
+        ]
+      },
+      {
+        "class": "`.xy-auto`",
+        "properties": [
+          "`top: auto;`",
+          "`right: auto;`",
+          "`bottom: auto;`",
+          "`left: auto;`"
+        ]
+      }
+    ]
+  },
+  { 
+    "title": "left/right",
+    "family": "extension",
+    "description": "The `x` extension affects the horizontal position of a positioned element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.x-0`",
+        "properties": [
+          "`left: 0;`",
+          "`right: 0;`"
+        ]
+      },
+      {
+        "class": "`.x-auto`",
+        "properties": [
+          "`left: auto;`",
+          "`right: auto;`"
+        ]
+      }
+    ]
+  },
+  { 
+    "title": "top/bottom",
+    "family": "extension",
+    "description": "The `y` extension affects the vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.y-0`",
+        "properties": [
+          "`top: 0;`",
+          "`bottom: 0;`"
+        ]
+      },
+      {
+        "class": "`.y-auto`",
+        "properties": [
+          "`top: auto;`",
+          "`bottom: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "bottom",
+    "family": "core",
+    "description": "The `bottom` property affects the vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.bottom-0`",
+        "properties": [
+          "`bottom: 0;`"
+        ]
+      },
+      {
+        "class": "`.bottom-auto`",
+        "properties": [
+          "`bottom: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "left",
+    "family": "core",
+    "description": "The `left` property affects the horizontal position of a positioned element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.left-0`",
+        "properties": [
+          "`left: 0;`"
+        ]
+      },
+      {
+        "class": "`.left-auto`",
+        "properties": [
+          "`left: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "right",
+    "family": "core",
+    "description": "The `right` property affects the horizontal position of a positioned element. This property has no effect on non-positioned elements.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.right-0`",
+        "properties": [
+          "`right: 0;`"
+        ]
+      },
+      {
+        "class": "`.right-auto`",
+        "properties": [
+          "`right: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "top",
+    "family": "core",
+    "description": "The `top` property affects the vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.top-0`",
+        "properties": [
+          "`top: 0;`"
+        ]
+      },
+      {
+        "class": "`.top-auto`",
+        "properties": [
+          "`top: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "z-index",
+    "family": "core",
+    "description": "The `z-index` property specifies the stack order of an element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.z-auto`",
+        "properties": [
+          "`z-index: auto;`"
+        ]
+      },
+      {
+        "class": "`.z-0`",
+        "properties": [
+          "`z-index: 0;`"
+        ]
+      },
+      {
+        "class": "`.z-1`",
+        "properties": [
+          "`z-index: 1;`"
+        ]
+      },
+      {
+        "class": "`.z-2`",
+        "properties": [
+          "`z-index: 2;`"
+        ]
+      },
+      {
+        "class": "`.z-3`",
+        "properties": [
+          "`z-index: 3;`"
+        ]
+      },
+      {
+        "class": "`.z-4`",
+        "properties": [
+          "`z-index: 4;`"
+        ]
+      },
+      {
+        "class": "`.z-5`",
+        "properties": [
+          "`z-index: 5;`"
+        ]
+      },
+      {
+        "class": "`.z-6`",
+        "properties": [
+          "`z-index: 6;`"
+        ]
+      },
+      {
+        "class": "`.z-7`",
+        "properties": [
+          "`z-index: 7;`"
+        ]
+      },
+      {
+        "class": "`.z-8`",
+        "properties": [
+          "`z-index: 8;`"
+        ]
+      },
+      {
+        "class": "`.z-9`",
+        "properties": [
+          "`z-index: 9;`"
+        ]
+      },
+      {
+        "class": "`.z-10`",
+        "properties": [
+          "`z-index: 10;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "absolute-center",
+    "family": "core",
+    "description": "The `z-index` property specifies the stack order of an element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.z-auto`",
+        "properties": [
+          "`z-index: auto;`"
+        ]
+      },
+      {
+        "class": "`.z-0`",
+        "properties": [
+          "`z-index: 0;`"
+        ]
+      },
+      {
+        "class": "`.z-1`",
+        "properties": [
+          "`z-index: 1;`"
+        ]
+      },
+      {
+        "class": "`.z-2`",
+        "properties": [
+          "`z-index: 2;`"
+        ]
+      },
+      {
+        "class": "`.z-3`",
+        "properties": [
+          "`z-index: 3;`"
+        ]
+      },
+      {
+        "class": "`.z-4`",
+        "properties": [
+          "`z-index: 4;`"
+        ]
+      },
+      {
+        "class": "`.z-5`",
+        "properties": [
+          "`z-index: 5;`"
+        ]
+      },
+      {
+        "class": "`.z-6`",
+        "properties": [
+          "`z-index: 6;`"
+        ]
+      },
+      {
+        "class": "`.z-7`",
+        "properties": [
+          "`z-index: 7;`"
+        ]
+      },
+      {
+        "class": "`.z-8`",
+        "properties": [
+          "`z-index: 8;`"
+        ]
+      },
+      {
+        "class": "`.z-9`",
+        "properties": [
+          "`z-index: 9;`"
+        ]
+      },
+      {
+        "class": "`.z-10`",
+        "properties": [
+          "`z-index: 10;`"
+        ]
+      }
+    ]
+  }
+]

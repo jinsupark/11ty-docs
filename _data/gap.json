@@ -1,0 +1,191 @@
+[
+  {
+    "title": "gap",
+    "family": "core",
+    "description": "The grid-gap property defines the size of the gap between the rows and columns in a grid layout.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.gap-0`",
+        "properties": [
+          "`gap: 0;`"
+        ]
+      },
+      {
+        "class": "`.gap-px`",
+        "properties": [
+          "`gap: 1px;`"
+        ]
+      },
+      {
+        "class": "`.gap-1`",
+        "properties": [
+          "`gap: 0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-2`",
+        "properties": [
+          "`gap: 0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-3`",
+        "properties": [
+          "`gap: 0.75rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-xs`",
+        "properties": [
+          "`gap: 1rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-sm`",
+        "properties": [
+          "`gap: 1.5rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-md`",
+        "properties": [
+          "`gap: 2.5rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-lg`",
+        "properties": [
+          "`gap: 4rem;`"
+        ]
+      },
+      {
+        "class": "`.gap-xl`",
+        "properties": [
+          "`gap: 6rem;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "column-gap",
+    "family": "core",
+    "description": "The `column-gap` property specifies the gap between the columns.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-gap-0`",
+        "properties": [
+          "`column-gap: 0;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-1`",
+        "properties": [
+          "`column-gap: 0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-2`",
+        "properties": [
+          "`column-gap: 0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-3`",
+        "properties": [
+          "`column-gap: 0.75rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-px`",
+        "properties": [
+          "`column-gap: 1px;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-sm`",
+        "properties": [
+          "`column-gap: 1rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-md`",
+        "properties": [
+          "`column-gap: 1.5rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-lg`",
+        "properties": [
+          "`column-gap: 2.5rem;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "row-gap",
+    "family": "core",
+    "description": "The `column-gap` property specifies the gap between the columns.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-gap-0`",
+        "properties": [
+          "`column-gap: 0;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-1`",
+        "properties": [
+          "`column-gap: 0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-2`",
+        "properties": [
+          "`column-gap: 0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-3`",
+        "properties": [
+          "`column-gap: 0.75rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-px`",
+        "properties": [
+          "`column-gap: 1px;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-sm`",
+        "properties": [
+          "`column-gap: 1rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-md`",
+        "properties": [
+          "`column-gap: 1.5rem;`"
+        ]
+      },
+      {
+        "class": "`.col-gap-lg`",
+        "properties": [
+          "`column-gap: 2.5rem;`"
+        ]
+      }
+    ]
+  }
+]

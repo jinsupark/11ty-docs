@@ -1,0 +1,38 @@
+@use "uniform/_core";
+@use "sass:map";
+
+$keyword: skew-y !default;
+$responsive: false !default;
+$responsive-pseudos: true !default;
+
+$properties: (--skew-y) !default;
+
+$core-variants: (
+  n12: -12deg,
+	n8: -8deg,
+	n6: -6deg,
+	n4: -4deg,
+	n2: -2deg,
+	0: 0,
+	2: 2deg,
+	4: 4deg,
+	6: 6deg,
+  8: 8deg,
+	10: 10deg,
+	12: 12deg,
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$pseudos: (hover, group-hover) !default;
+
+@include core.constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $pseudos
+);

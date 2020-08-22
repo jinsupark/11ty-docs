@@ -1,0 +1,107 @@
+[
+  {
+    "title": "overflow",
+    "family": "core",
+    "description": "The `overflow` property specifies what should happen if content overflows an element's box.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.overflow-auto`",
+        "properties": [
+          "`overflow: auto;`"
+        ]
+      },
+      {
+        "class": "`.overflow-hidden`",
+        "properties": [
+          "`overflow: hidden;`"
+        ]
+      },
+      {
+        "class": "`.overflow-visible`",
+        "properties": [
+          "`overflow: visible;`"
+        ]
+      },
+      {
+        "class": "`.overflow-scroll`",
+        "properties": [
+          "`overflow: scroll;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "overflow-x",
+    "family": "core",
+    "description": "The `overflow-x` property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.overflow-x-auto`",
+        "properties": [
+          "`overflow-x: auto;`"
+        ]
+      },
+      {
+        "class": "`.overflow-x-hidden`",
+        "properties": [
+          "`overflow-x: hidden;`"
+        ]
+      },
+      {
+        "class": "`.overflow-x-visible`",
+        "properties": [
+          "`overflow-x: visible;`"
+        ]
+      },
+      {
+        "class": "`.overflow-x-scroll`",
+        "properties": [
+          "`overflow-x: scroll;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "overflow-y",
+    "family": "core",
+    "description": "The `overflow-y` property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the top and bottom edges.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.overflow-y-auto`",
+        "properties": [
+          "`overflow-y: auto;`"
+        ]
+      },
+      {
+        "class": "`.overflow-y-hidden`",
+        "properties": [
+          "`overflow-y: hidden;`"
+        ]
+      },
+      {
+        "class": "`.overflow-y-visible`",
+        "properties": [
+          "`overflow-y: visible;`"
+        ]
+      },
+      {
+        "class": "`.overflow-y-scroll`",
+        "properties": [
+          "`overflow-y: scroll;`"
+        ]
+      }
+    ]
+  }
+]

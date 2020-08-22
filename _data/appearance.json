@@ -1,0 +1,270 @@
+[
+  {
+    "title": "display",
+    "family": "core",
+    "description": "The `display property` specifies the display behavior (the type of rendering box) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.inline`",
+        "properties": [
+          "`display: inline;`"
+        ]
+      },
+      {
+        "class": "`.block`",
+        "properties": [
+          "`display: block;`"
+        ]
+      },
+      {
+        "class": "`.flex`",
+        "properties": [
+          "`display: flex;`"
+        ]
+      },
+      {
+        "class": "`.grid`",
+        "properties": [
+          "`display: grid;`"
+        ]
+      },
+      {
+        "class": "`.inline-block`",
+        "properties": [
+          "`display: inline-block;`"
+        ]
+      },
+      {
+        "class": "`.inline-flex`",
+        "properties": [
+          "`display: inline-flex;`"
+        ]
+      },
+      {
+        "class": "`.inline-grid`",
+        "properties": [
+          "`display: inline-grid;`"
+        ]
+      },
+      {
+        "class": "`.inline-table`",
+        "properties": [
+          "`display: inline-table;`"
+        ]
+      },
+      {
+        "class": "`.table`",
+        "properties": [
+          "`display: table;`"
+        ]
+      },
+      {
+        "class": "`.table-caption`",
+        "properties": [
+          "`display: table-caption;`"
+        ]
+      },
+      {
+        "class": "`.table-column-group`",
+        "properties": [
+          "`display: table-column-group;`"
+        ]
+      },
+      {
+        "class": "`.table-header-group`",
+        "properties": [
+          "`display: table-header-group;`"
+        ]
+      },
+      {
+        "class": "`.table-footer-group`",
+        "properties": [
+          "`display: table-footer-group;`"
+        ]
+      },
+      {
+        "class": "`.table-row-group`",
+        "properties": [
+          "`display: table-row-group;`"
+        ]
+      },
+      {
+        "class": "`.table-cell`",
+        "properties": [
+          "`display: table-cell;`"
+        ]
+      },
+      {
+        "class": "`.table-column`",
+        "properties": [
+          "`display: table-column;`"
+        ]
+      },
+      {
+        "class": "`.table-row`",
+        "properties": [
+          "`display: table-row;`"
+        ]
+      },
+      {
+        "class": "`.hidden`",
+        "properties": [
+          "`display: none;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "opacity",
+    "family": "core",
+    "description": "The `opacity` property sets the opacity level for an element.",
+    "responsive": true,
+    "pseudos": [
+      "hover",
+      "active"
+    ],
+    "classes": [
+      {
+        "class": "`.opacity-0`",
+        "properties": [
+          "`opacity: 0;`"
+        ]
+      },
+      {
+        "class": "`.opacity-10`",
+        "properties": [
+          "`opacity: .1;`"
+        ]
+      },
+      {
+        "class": "`.opacity-20`",
+        "properties": [
+          "`opacity: .2;`"
+        ]
+      },
+      {
+        "class": "`.opacity-30`",
+        "properties": [
+          "`opacity: .3;`"
+        ]
+      },
+      {
+        "class": "`.opacity-40`",
+        "properties": [
+          "`opacity: .4;`"
+        ]
+      },
+      {
+        "class": "`.opacity-50`",
+        "properties": [
+          "`opacity: .5;`"
+        ]
+      },
+      {
+        "class": "`.opacity-60`",
+        "properties": [
+          "`opacity: .6;`"
+        ]
+      },
+      {
+        "class": "`.opacity-70`",
+        "properties": [
+          "`opacity: .7;`"
+        ]
+      },
+      {
+        "class": "`.opacity-80`",
+        "properties": [
+          "`opacity: .8;`"
+        ]
+      },
+      {
+        "class": "`.opacity-100`",
+        "properties": [
+          "`opacity: 1;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "outline",
+    "family": "core",
+    "description": "An `outline` is a line that is drawn around elements, outside the borders, to make the element stand out.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.outline-none`",
+        "properties": [
+          "`outline: 0;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "visibility",
+    "family": "core",
+    "description": "The `visibility` property specifies whether or not an element is visible.",
+    "responsive": true,
+    "pseudos": [
+      "hover",
+      "active"
+    ],
+    "classes": [
+      {
+        "class": "`.visible`",
+        "properties": [
+          "`visibility: visible;`"
+        ]
+      },
+      {
+        "class": "`.invisible`",
+        "properties": [
+          "`visibility: invisible;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "appearance",
+    "family": "extension",
+    "description": "The `appearance` CSS property is used to control an element's native styling such as select arrows.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.appearance-none`",
+        "properties": ["`appearance: none;`"]
+      }
+    ]
+  },
+  { 
+    "title": "font-smooth",
+    "family": "extension",
+    "description": "The `font-smooth` extention controls the application of anti-aliasing when fonts are rendered. **This property has been included in as an extension because its specification is no longer on the standards track**.",
+    "responsive": false,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.antialiased`",
+        "properties": [
+          "`-webkit-font-smoothing: antialiased`",
+          "`-moz-osx-font-smoothing: graysize`"
+        ]
+      },
+      {
+        "class": "`.subpixel-antialiased`",
+        "properties": [
+          "`-webkit-font-smoothing: auto`",
+          "`-moz-osx-font-smoothing: auto`"
+        ]
+      }
+    ]
+  }
+]

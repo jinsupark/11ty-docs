@@ -1,0 +1,246 @@
+[
+  {
+    "title": "background",
+    "family": "core",
+    "description": "The `background` property is similar to the background-color property however, unlike background-color the background defines gradients.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "active"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-{color}`",
+        "properties": [
+          "`border-bottom-width:` <a href=\"/get-started/colors\" class=\"font-sm hover.underline color-indigo-500\">See Colors</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "background-attachment",
+    "family": "core",
+    "description": "The `background-attachment` property sets whether a background image scrolls with the rest of the page, or is fixed.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-scroll`",
+        "properties": [
+          "`background-attachment: scroll;`"
+        ]
+      },
+      {
+        "class": "`.bg-fixed`",
+        "properties": [
+          "`background-attachment: fixed;`"
+        ]
+      },
+      {
+        "class": "`.bg-local`",
+        "properties": [
+          "`background-attachment: local;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "background-attachment",
+    "family": "core",
+    "description": "The `background-attachment` property sets whether a background image scrolls with the rest of the page, or is fixed.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-scroll`",
+        "properties": [
+          "`background-attachment: scroll;`"
+        ]
+      },
+      {
+        "class": "`.bg-fixed`",
+        "properties": [
+          "`background-attachment: fixed;`"
+        ]
+      },
+      {
+        "class": "`.bg-local`",
+        "properties": [
+          "`background-attachment: local;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "background-color",
+    "family": "core",
+    "description": "The `background-color` property sets the background color of an element.",
+    "responsive": true,
+    "pseudos": [
+      "hover",
+      "focus",
+      "active",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-transparent`",
+        "properties": [
+          "`background-color: transparent;`"
+        ]
+      },
+      {
+        "class": "`.bg-{color}`",
+        "properties": [
+          "`background-color`: <a href=\"/get-started/colors\" class=\"font-sm hover.underline color-indigo-500\">See Colors</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "background-position",
+    "family": "core",
+    "description": "The `background-position` property sets the starting position of a background image.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-lt`",
+        "properties": [
+          "`background-position: left top;`"
+        ]
+      },
+      {
+        "class": "`.bg-l`",
+        "properties": [
+          "`background-position: left;`"
+        ]
+      },
+      {
+        "class": "`.bg-lb`",
+        "properties": [
+          "`background-position: left bottom;`"
+        ]
+      },
+      {
+        "class": "`.bg-rt`",
+        "properties": [
+          "`background-position: right bottom;`"
+        ]
+      },
+      {
+        "class": "`.bg-r`",
+        "properties": [
+          "`background-position: right;`"
+        ]
+      },
+      {
+        "class": "`.bg-rb`",
+        "properties": [
+          "`background-position: right bottom;`"
+        ]
+      },
+      {
+        "class": "`.bg-t`",
+        "properties": [
+          "`background-position: top;`"
+        ]
+      },
+      {
+        "class": "`.bg-b`",
+        "properties": [
+          "`background-position: bottom;`"
+        ]
+      },
+      {
+        "class": "`.bg-c`",
+        "properties": [
+          "`background-position: center;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "background-repeat",
+    "family": "core",
+    "description": "The `background-repeat` property sets if/how a background image will be repeated.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-repeat`",
+        "properties": [
+          "`background-repeat: repeat;`"
+        ]
+      },
+      {
+        "class": "`.bg-repeat-x`",
+        "properties": [
+          "`background-repeat: repeat-x;`"
+        ]
+      },
+      {
+        "class": "`.bg-repeat-y`",
+        "properties": [
+          "`background-repeat: repeat-y;`"
+        ]
+      },
+      {
+        "class": "`.bg-no-repeat`",
+        "properties": [
+          "`background-repeat: no-repeat;`"
+        ]
+      },
+      {
+        "class": "`.bg-space`",
+        "properties": [
+          "`background-repeat: space;`"
+        ]
+      },
+      {
+        "class": "`.bg-round`",
+        "properties": [
+          "`background-repeat: round;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "background-size",
+    "family": "core",
+    "description": "The `background-size` property specifies the size of the background images.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.bg-auto`",
+        "properties": [
+          "`background-size: auto;`"
+        ]
+      },
+      {
+        "class": "`.bg-cover`",
+        "properties": [
+          "`background-size: cover;`"
+        ]
+      },
+      {
+        "class": "`.bg-contain`",
+        "properties": [
+          "`background-size: contain;`"
+        ]
+      }
+    ]
+  }
+]

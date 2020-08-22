@@ -1,0 +1,32 @@
+@use "uniform/_core";
+@use "sass:map";
+
+$keyword: shadow !default;
+$responsive: false !default;
+$responsive-pseudos: true !default;
+
+$properties: (box-shadow) !default;
+
+$core-variants: (
+	core.merge(
+		core.shadows(),
+		(
+			none: none,
+		)
+	)
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$pseudos: (hover, active, focus) !default;
+
+@include core.constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $pseudos
+);

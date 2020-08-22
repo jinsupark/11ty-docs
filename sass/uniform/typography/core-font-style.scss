@@ -1,0 +1,28 @@
+@use "uniform/_core";
+@use "sass:map";
+
+$keyword: exempt !default;
+$responsive: false !default;
+$responsive-pseudos: true !default;
+
+$properties: (font-style) !default;
+
+$core-variants: (
+  italic: italic,
+  non-italic: normal
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$pseudos: () !default;
+
+@include core.constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $pseudos
+);

@@ -1,0 +1,71 @@
+[
+  {
+    "title": "fill",
+    "family": "core",
+    "description": "The `fill` property in CSS is for filling in the color of a SVG shape.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.fill-current`",
+        "properties": [
+          "`fill: currentColor;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "stroke",
+    "family": "core",
+    "description": "The `stroke` property in CSS is for adding a border to SVG shapes.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.stroke-current`",
+        "properties": [
+          "`stroke: currentColor;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "stroke-width",
+    "family": "core",
+    "description": "The `stroke-width` property defines the thickness of a line, text or outline of an SVG  element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.stroke-0`",
+        "properties": [
+          "`stroke-width: 0;`"
+        ]
+      },
+      {
+        "class": "`.stroke-1`",
+        "properties": [
+          "`stroke-width: 1;`"
+        ]
+      },
+      {
+        "class": "`.stroke-2`",
+        "properties": [
+          "`stroke-width: 2;`"
+        ]
+      },
+      {
+        "class": "`.stroke-3`",
+        "properties": [
+          "`stroke-width: 3;`"
+        ]
+      }
+    ]
+  }
+]

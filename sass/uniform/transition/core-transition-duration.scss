@@ -1,0 +1,36 @@
+@use "uniform/_core";
+@use "sass:map";
+
+$keyword: transition !default;
+$responsive: false !default;
+$responsive-pseudos: true !default;
+
+$properties: (transition-duration) !default;
+
+$core-variants: (
+	100: 100ms,
+	200: 200ms,
+	300: 300ms,
+	400: 400ms,
+	500: 500ms,
+	600: 600ms,
+	700: 700ms,
+	800: 800ms,
+	900: 900ms,
+	1000: 1000ms,
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$pseudos: () !default;
+
+@include core.constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $pseudos
+);

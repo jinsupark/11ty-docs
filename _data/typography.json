@@ -1,0 +1,370 @@
+[
+  {
+    "title": "color",
+    "family": "core",
+    "description": "The `color` property specifies the color of text.",
+    "responsive": true,
+    "pseudos": [
+      "hover",
+      "focus",
+      "group-hover",
+      "focus-within"
+    ],
+    "classes": [
+      {
+        "class": "`.color-{color}`",
+        "properties": [
+          "`color:` <a href=\"/get-started/colors\" class=\"font-sm hover.underline color-indigo-500\">See Colors</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "font-family",
+    "family": "core",
+    "description": "The `font-family` property specifies the font for an element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.font-{variant}`",
+        "properties": [
+          "`font-family:` <a href=\"/get-started/typography\" class=\"font-sm hover.underline color-indigo-500\">See Font Families</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "font-size",
+    "family": "core",
+    "description": "The `font-size` property sets the size of a font.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.font-{variant}`",
+        "properties": [
+          "`font-size:` <a class=\"font-sm hover.underline color-indigo-500\">See Font Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "font-style",
+    "family": "core",
+    "description": "The `font-style` property specifies the font style for a text.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.italic`",
+        "properties": [
+          "`font-style: italic;`"
+        ]
+      },
+      {
+        "class": "`.non-italic`",
+        "properties": [
+          "`font-style: normal;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "font-weight",
+    "family": "core",
+    "description": "The `font-weight` property sets how thick or thin characters in text should be displayed.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.font-{variant}`",
+        "properties": [
+          "`font-weight:` <a href=\"/get-started/typography\" class=\"font-sm hover.underline color-indigo-500\">See Font Weights</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "letter-spacing",
+    "family": "core",
+    "description": "The `letter-spacing` property increases or decreases the space between characters in a text.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.tracking-tightest`",
+        "properties": [
+          "`letter-spacing: -0.1em;`"
+        ]
+      },
+      {
+        "class": "`.tracking-tighter`",
+        "properties": [
+          "`letter-spacing: -0.075em;`"
+        ]
+      },
+      {
+        "class": "`.tracking-tight`",
+        "properties": [
+          "`letter-spacing: -0.05em;`"
+        ]
+      },
+      {
+        "class": "`.tracking-normal`",
+        "properties": [
+          "`letter-spacing: 0;`"
+        ]
+      },
+      {
+        "class": "`.tracking-loose`",
+        "properties": [
+          "`letter-spacing: 0.05em;`"
+        ]
+      },
+      {
+        "class": "`.tracking-looser`",
+        "properties": [
+          "`letter-spacing: 0.075em;`"
+        ]
+      },
+      {
+        "class": "`.tracking-loosest`",
+        "properties": [
+          "`letter-spacing: 0.1em;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "line-height",
+    "family": "core",
+    "description": "The `line-height` property specifies the height of a line.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.leading-{variant}`",
+        "properties": [
+          "`line-height:` <a href=\"/get-started/typography\" class=\"font-sm hover.underline color-indigo-500\">See Line Heights</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "list-style-position",
+    "family": "core",
+    "description": "The `list-style-position` property specifies the position of the list-item markers (bullet points).",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.list-inside`",
+        "properties": [
+          "`list-style-position: inside;`"
+        ]
+      },
+      {
+        "class": "`.list-outside`",
+        "properties": [
+          "`list-style-position: outside;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "list-style-type",
+    "family": "core",
+    "description": "The `list-style-type` specifies the type of list-item marker in a list.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.list-none`",
+        "properties": [
+          "`list-style-type: none;`"
+        ]
+      },
+      {
+        "class": "`.list-disc`",
+        "properties": [
+          "`list-style-type: disc;`"
+        ]
+      },
+      {
+        "class": "`.list-decimal`",
+        "properties": [
+          "`list-style-type: decimal;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "text-decoration",
+    "family": "core",
+    "description": "The `text-decoration` property specifies the decoration added to text, and is a shorthand property for:",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.underline`",
+        "properties": [
+          "`text-decoration: underline;`"
+        ]
+      },
+      {
+        "class": "`.line-through`",
+        "properties": [
+          "`text-decoration: line-through;`"
+        ]
+      },
+      {
+        "class": "`.no-underline`",
+        "properties": [
+          "`text-decoration: no-underline;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "text-overflow",
+    "family": "core",
+    "description": "The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.ellipsis`",
+        "properties": [
+          "`text-overflow: ellipsis;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "text-transform",
+    "family": "core",
+    "description": "The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.uppercase`",
+        "properties": [
+          "`text-decoration: uppercase;`"
+        ]
+      },
+      {
+        "class": "`.lowercase`",
+        "properties": [
+          "`text-decoration: lowercase;`"
+        ]
+      },
+      {
+        "class": "`.capitalize`",
+        "properties": [
+          "`text-decoration: capitalize;`"
+        ]
+      },
+      {
+        "class": "`.normal-case`",
+        "properties": [
+          "`text-decoration: normal-case;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "white-space",
+    "family": "core",
+    "description": "The `white-space` property specifies how white-space inside an element is handled.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.whitespace-normal`",
+        "properties": [
+          "`white-space: normal;`"
+        ]
+      },
+      {
+        "class": "`.whitespace-no-wrap`",
+        "properties": [
+          "`white-space: nowrap;`"
+        ]
+      },
+      {
+        "class": "`.whitespace-pre`",
+        "properties": [
+          "`white-space: pre;`"
+        ]
+      },
+      {
+        "class": "`.whitespace-pre-line`",
+        "properties": [
+          "`white-space: normal;`"
+        ]
+      },
+      {
+        "class": "`.whitespace-pre-wrap`",
+        "properties": [
+          "`white-space: pre-wrap;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "word-break",
+    "family": "core",
+    "description": "The `word-break` property specifies how words should break when reaching the end of a line.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.wordbreak-normal`",
+        "properties": [
+          "`word-break: normal;`"
+        ]
+      },
+      {
+        "class": "`.wordbreak-word`",
+        "properties": [
+          "`word-break: break-word;`"
+        ]
+      },
+      {
+        "class": "`.wordbreak-all`",
+        "properties": [
+          "`word-break: break-all;`"
+        ]
+      }
+    ]
+  }
+]

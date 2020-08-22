@@ -1,0 +1,34 @@
+@use "uniform/_core";
+@use "sass:map";
+
+$keyword: max-h !default;
+$responsive: true !default;
+$responsive-pseudos: true !default;
+
+$properties: (max-height) !default;
+
+$core-variants: (
+	core.merge(
+		core.positive-sizes(),
+		(
+			none: none,
+			100p: 100%,
+			100vh: 100vh,
+		)
+	)
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$pseudos: () !default;
+
+@include core.constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $pseudos
+);

@@ -1,0 +1,290 @@
+[
+  {
+    "title": "height",
+    "family": "core",
+    "description": "The `height` property sets the height of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.h-auto`",
+        "properties": [
+          "`height: auto;`"
+        ]
+      },
+      {
+        "class": "`.h-full`",
+        "properties": [
+          "`height: 100%;`"
+        ]
+      },
+      {
+        "class": "`.h-screen`",
+        "properties": [
+          "`height: 100vh;`"
+        ]
+      },
+      {
+        "class": "`.h-px`",
+        "properties": [
+          "`height: 1px;`"
+        ]
+      },
+      {
+        "class": "`.h-{variant}`",
+        "properties": [
+          "`height:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "width",
+    "family": "core",
+    "description": "The `width` property sets the width of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.w-auto`",
+        "properties": [
+          "`width: auto;`"
+        ]
+      },
+      {
+        "class": "`.w-100p`",
+        "properties": [
+          "`width: 100%;`"
+        ]
+      },
+      {
+        "class": "`.w-screen`",
+        "properties": [
+          "`width: 100vw;`"
+        ]
+      },
+      {
+        "class": "`.w-px`",
+        "properties": [
+          "`width: 1px;`"
+        ]
+      },
+      {
+        "class": "`.w-1-12`",
+        "properties": [
+          "`width: 8.333333%);`"
+        ]
+      },
+      {
+        "class": "`.w-2-12`",
+        "properties": [
+          "`width: 16.666667%;`"
+        ]
+      },
+      {
+        "class": "`.w-3-12`",
+        "properties": [
+          "`width: 25%;`"
+        ]
+      },
+      {
+        "class": "`.w-4-12`",
+        "properties": [
+          "`width: 33.333333%;`"
+        ]
+      },
+      {
+        "class": "`.w-5-12`",
+        "properties": [
+          "`width: 41.666667%;`"
+        ]
+      },
+      {
+        "class": "`.w-6-12`",
+        "properties": [
+          "`width: 50%;`"
+        ]
+      },
+      {
+        "class": "`.w-7-12`",
+        "properties": [
+          "`width: 58.333333%;`"
+        ]
+      },
+      {
+        "class": "`.w-8-12`",
+        "properties": [
+          "`width: 66.666667%;`"
+        ]
+      },
+      {
+        "class": "`.w-9-12`",
+        "properties": [
+          "`width: 75%;`"
+        ]
+      },
+      {
+        "class": "`.w-10-12`",
+        "properties": [
+          "`width: 83.333333%;`"
+        ]
+      },
+      {
+        "class": "`.w-11-12`",
+        "properties": [
+          "`width: 91.666667%;`"
+        ]
+      },
+      {
+        "class": "`.w-1-5`",
+        "properties": [
+          "`width: 20%;`"
+        ]
+      },
+      {
+        "class": "`.w-2-5`",
+        "properties": [
+          "`width: 40%;`"
+        ]
+      },
+      {
+        "class": "`.w-3-5`",
+        "properties": [
+          "`width: 60%;`"
+        ]
+      },
+      {
+        "class": "`.w-4-5`",
+        "properties": [
+          "`width: 80%;`"
+        ]
+      },
+      {
+        "class": "`.w-{variant}`",
+        "properties": [
+          "`width:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "min-width",
+    "family": "core",
+    "description": "The `min-width` property defines the minimum width of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.min-w-0`",
+        "properties": [
+          "`min-width: 0;`"
+        ]
+      },
+      {
+        "class": "`.min-w-100p`",
+        "properties": [
+          "`min-width: 100%;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "min-height",
+    "family": "core",
+    "description": "The `min-height` property defines the minimum height of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.min-h-0`",
+        "properties": [
+          "`max-height: 0;`"
+        ]
+      },
+      {
+        "class": "`.min-h-full`",
+        "properties": [
+          "`max-height: 100%;`"
+        ]
+      },
+      {
+        "class": "`.min-h-screen`",
+        "properties": [
+          "`max-height: 100vh;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "max-height",
+    "family": "core",
+    "description": "The `max-height` property defines the maximum height of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.max-h-full`",
+        "properties": [
+          "`max-height: 100%;`"
+        ]
+      },
+      {
+        "class": "`.max-h-screen`",
+        "properties": [
+          "`max-height: 100vh;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "max-width",
+    "family": "core",
+    "description": "The `max-width` property defines the maximum width of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.max-w-none`",
+        "properties": [
+          "`max-width: none;`"
+        ]
+      },
+      {
+        "class": "`.max-w-screen-sm`",
+        "properties": [
+          "`max-width: 768px;`"
+        ]
+      },
+      {
+        "class": "`.max-w-screen-md`",
+        "properties": [
+          "`max-width: 1024px;`"
+        ]
+      },
+      {
+        "class": "`.max-w-screen-lg`",
+        "properties": [
+          "`max-width: 1280px;`"
+        ]
+      },
+      {
+        "class": "`.max-w-{variant}`",
+        "properties": [
+          "`max-width:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+        ]
+      }
+    ]
+  }
+]

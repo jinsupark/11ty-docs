@@ -1,0 +1,254 @@
+[
+  {
+    "title": "align-content",
+    "family": "core",
+    "description": "The `align-content` property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.content-stretch`",
+        "properties": [
+          "`align-content: stretch;`"
+        ]
+      },
+      {
+        "class": "`.content-center`",
+        "properties": [
+          "`align-content: center;`"
+        ]
+      },
+      {
+        "class": "`.content-start`",
+        "properties": [
+          "`align-content: start;`"
+        ]
+      },
+      {
+        "class": "`.content-end`",
+        "properties": [
+          "`align-content: end;`"
+        ]
+      },
+      {
+        "class": "`.content-between`",
+        "properties": [
+          "`align-content: between;`"
+        ]
+      },
+      {
+        "class": "`.content-around`",
+        "properties": [
+          "`align-content: around;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "align-items",
+    "family": "core",
+    "description": "The `align-items` property specifies the default alignment for items inside the flexible container.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.items-stretch`",
+        "properties": [
+          "`align-items: stretch;`"
+        ]
+      },
+      {
+        "class": "`.items-center`",
+        "properties": [
+          "`align-items: center;`"
+        ]
+      },
+      {
+        "class": "`.items-start`",
+        "properties": [
+          "`align-items: flex-start;`"
+        ]
+      },
+      {
+        "class": "`.items-end`",
+        "properties": [
+          "`align-items: flex-end;`"
+        ]
+      },
+      {
+        "class": "`.items-baseline`",
+        "properties": [
+          "`align-items: baseline;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "align-self",
+    "family": "core",
+    "description": "The `align-self` property specifies the alignment for the selected item inside the flexible container.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.self-auto`",
+        "properties": [
+          "`align-self: auto;`"
+        ]
+      },
+      {
+        "class": "`.self-stretch`",
+        "properties": [
+          "`align-self: stretch;`"
+        ]
+      },
+      {
+        "class": "`.self-center`",
+        "properties": [
+          "`align-self: center;`"
+        ]
+      },
+      {
+        "class": "`.self-start`",
+        "properties": [
+          "`align-self: flex-start;`"
+        ]
+      },
+      {
+        "class": "`.self-end`",
+        "properties": [
+          "`align-self: flex-end;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "justify-content",
+    "family": "core",
+    "description": "The `justify-content` property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.justify-start`",
+        "properties": [
+          "`justify-content: flex-start;`"
+        ]
+      },
+      {
+        "class": "`.justify-center`",
+        "properties": [
+          "`justify-content: flex-center;`"
+        ]
+      },
+      {
+        "class": "`.justify-end`",
+        "properties": [
+          "`justify-content: flex-end;`"
+        ]
+      },
+      {
+        "class": "`.justify-between`",
+        "properties": [
+          "`justify-content: space-between;`"
+        ]
+      },
+      {
+        "class": "`.justify-around`",
+        "properties": [
+          "`justify-content: flex-space-around;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "text-align",
+    "family": "core",
+    "description": "The `text-align` property specifies the horizontal alignment of text in an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.align-left`",
+        "properties": [
+          "`text-align: left;`"
+        ]
+      },
+      {
+        "class": "`.align-center`",
+        "properties": [
+          "`text-align: center;`"
+        ]
+      },
+      {
+        "class": "`.align-right`",
+        "properties": [
+          "`text-align: right;`"
+        ]
+      },
+      {
+        "class": "`.align-justify`",
+        "properties": [
+          "`text-align: justify;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "vertical-align",
+    "family": "core",
+    "description": "The `vertical-align` property sets the vertical alignment of an element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.align-baseline`",
+        "properties": [
+          "`vertical-aligh: baseline;`"
+        ]
+      },
+      {
+        "class": "`.align-top`",
+        "properties": [
+          "`vertical-align: top;`"
+        ]
+      },
+      {
+        "class": "`.align-middle`",
+        "properties": [
+          "`vertical-align: middle;`"
+        ]
+      },
+      {
+        "class": "`.align-bottom`",
+        "properties": [
+          "`vertical-align: bottom;`"
+        ]
+      },
+      {
+        "class": "`.align-text-top`",
+        "properties": [
+          "`vertical-align: text-top;`"
+        ]
+      },
+      {
+        "class": "`.align-text-bottom`",
+        "properties": [
+          "`vertical-align: text-bottom;`"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "title": "column-count",
+    "family": "core",
+    "description": "The `column-count` property specifies the number of columns an element should be divided into.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-count-1`",
+        "properties": [
+          "`column-count: 1;`"
+        ]
+      },
+      {
+        "class": "`.col-count-2`",
+        "properties": [
+          "`column-count: 2;`"
+        ]
+      },
+      {
+        "class": "`.col-count-3`",
+        "properties": [
+          "`column-count: 3;`"
+        ]
+      },
+      {
+        "class": "`.col-count-4`",
+        "properties": [
+          "`column-count: 4;`"
+        ]
+      },
+      {
+        "class": "`.col-count-5`",
+        "properties": [
+          "`column-count: 5;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "column-fill",
+    "family": "core",
+    "description": "The `column-fill` property specifies how to fill columns, balanced or not.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-fill-balance`",
+        "properties": [
+          "`column-fill: balance;`"
+        ]
+      },
+      {
+        "class": "`.col-fill-auto`",
+        "properties": [
+          "`column-fill: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "column-rule-color",
+    "family": "core",
+    "description": "The `column-rule-color` property specifies the color of the rule between columns.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-rule-{color}`",
+        "properties": [
+          "`column-rule-color:` <a href=\"/get-started/colors\" class=\"font-sm hover.underline color-indigo-500\">See Colors</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "column-rule-style",
+    "family": "core",
+    "description": "The `column-rule-style` property specifies the style of the rule between columns.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-rule-dotted`",
+        "properties": [
+          "`column-rule-style: dotted;`"
+        ]
+      },
+      {
+        "class": "`.col-rule-solid`",
+        "properties": [
+          "`column-rule-style: solid;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "column-rule-width",
+    "family": "core",
+    "description": "The `column-rule-width` property specifies the width of the rule between columns.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-rule-0`",
+        "properties": [
+          "`column-rule-width: 0;`"
+        ]
+      },
+      {
+        "class": "`.col-rule-px`",
+        "properties": [
+          "`column-rule-width: 1px;`"
+        ]
+      },
+      {
+        "class": "`.col-rule-2px`",
+        "properties": [
+          "`column-rule-width: 2px;`"
+        ]
+      },
+      {
+        "class": "`.col-rule-3px`",
+        "properties": [
+          "`column-rule-width: 3px;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "column-span",
+    "family": "core",
+    "description": "The `column-span` property specifies how many columns an element should span across.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.col-none`",
+        "properties": [
+          "`column-span: none;`"
+        ]
+      },
+      {
+        "class": "`.col-all`",
+        "properties": [
+          "`column-span: all;`"
+        ]
+      }
+    ]
+  }
+]
