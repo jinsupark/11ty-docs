@@ -24,7 +24,7 @@
 @forward "alignment/core-vertical-align" as vertical-align-*;
 
 
-// // CORE - APPEARANCE (6)
+// CORE - APPEARANCE (6)
 @forward "appearance/core-display" as display-*;
 @forward "appearance/core-opacity" as opacity-*;
 @forward "appearance/core-outline" as outline-*;
@@ -33,7 +33,7 @@
 @forward "appearance/extension-font-smooth" as font-smooth-*;
 
 
-// // CORE - BACKGROUND (7)
+// CORE - BACKGROUND (7)
 @forward "background/core-background" as background-*;
 @forward "background/core-background-attachment" as background-attachment-*;
 @forward "background/core-background-clip" as background-clip-*;
@@ -43,7 +43,7 @@
 @forward "background/core-background-size" as background-size-*;
 
 
-// // CORE - BORDER (17)
+// CORE - BORDER (17)
 @forward "border/core-border-collapse" as border-collapse-*;
 @forward "border/core-border-color" as border-color-*;
 @forward "border/core-border-style" as border-style-*;
@@ -63,7 +63,7 @@
 @forward "border/core-border-top-width" as border-top-width-*;
 
 
-// // CORE - COMPOSITION (9)
+// CORE - COMPOSITION (9)
 @forward "composition/core-box-sizing" as box-sizing-*;
 @forward "composition/core-clear" as clear-*;
 @forward "composition/core-float" as float-*;
@@ -75,19 +75,19 @@
 @forward "composition/extension-ratio" as rotate-*;
 
 
-// // CORE - OVERFLOW (3)
+// CORE - OVERFLOW (3)
 @forward "overflow/core-overflow" as overflow-*;
 @forward "overflow/core-overflow-x" as overflow-x-*;
 @forward "overflow/core-overflow-y" as overflow-y-*;
 
 
-// // CORE - EFFECT (3)
+// CORE - EFFECT (3)
 @forward "effect/core-box-shadow" as box-shadow-*;
 @forward "effect/core-filter" as filter-*;
 @forward "effect/core-mix-blend-mode" as mix-blend-mode-*;
 
 
-// // CORE - SIZING (6)
+// CORE - SIZING (6)
 @forward "sizing/core-height" as height-*;
 @forward "sizing/core-width" as width-*;
 @forward "sizing/core-min-height" as min-height-*;
@@ -96,7 +96,7 @@
 @forward "sizing/core-max-width" as max-width-*;
 
 
-// // CORE - POSITION (9)
+// CORE - POSITION (9)
 @forward "position/extension-xy" as xy-*;
 @forward "position/extension-x" as x-*;
 @forward "position/extension-y" as y-*;
@@ -108,7 +108,7 @@
 @forward "position/extension-absolute-center" as rotate-*;
 
 
-// // CORE - MARGIN (7)
+// CORE - MARGIN (7)
 @forward "margin/core-margin" as margin-*;
 @forward "margin/extension-margin-x" as margin-x-*;
 @forward "margin/extension-margin-y" as margin-y-*;
@@ -118,7 +118,7 @@
 @forward "margin/core-margin-top" as margin-top-*;
 
 
-// // CORE - PADDING (7)
+// CORE - PADDING (7)
 @forward "padding/core-padding" as padding-*;
 @forward "padding/extension-padding-x" as padding-x-*;
 @forward "padding/extension-padding-y" as padding-y-*;
@@ -128,7 +128,7 @@
 @forward "padding/core-padding-top" as padding-top-*;
 
 
-// // CORE - TYPOGRAPHY (14)
+// CORE - TYPOGRAPHY (14)
 @forward "typography/core-color" as color-*;
 @forward "typography/core-font-family" as font-family-*;
 @forward "typography/core-font-size" as font-size-*;
@@ -145,7 +145,7 @@
 @forward "typography/core-word-break" as word-break-*;
 
 
-// // CORE - GRID (9)
+// CORE - GRID (9)
 @forward "grid/core-grid-auto-flow" as grid-auto-flow-*;
 @forward "grid/core-grid-column" as grid-column-*;
 @forward "grid/core-grid-column-end" as grid-column-end-*;
@@ -157,7 +157,7 @@
 @forward "grid/core-grid-template-rows" as grid-template-rows-*;
 
 
-// // CORE - FLEXBOX (6)
+// CORE - FLEXBOX (6)
 @forward "flexbox/core-flex" as flex-*;
 @forward "flexbox/core-flex-direction" as flex-direction-*;
 @forward "flexbox/core-flex-grow" as flex-grow-*;
@@ -166,13 +166,13 @@
 @forward "flexbox/core-order" as order-*;
 
 
-// // CORE - GAP (3)
+// CORE - GAP (3)
 @forward "gap/core-gap" as gap-*;
 @forward "gap/core-column-gap" as column-gap-*;
 @forward "gap/core-row-gap" as row-gap-*;
 
 
-// // CORE - MULTI-COLUMN (6)
+// CORE - MULTI-COLUMN (6)
 @forward "multi-column/core-column-count" as column-count-*;
 @forward "multi-column/core-column-fill" as column-fill-*;
 @forward "multi-column/core-column-rule-color" as column-rule-color-*;
@@ -181,7 +181,7 @@
 @forward "multi-column/core-column-span" as column-span-*;
 
 
-// // CORE - TRANSFORM (9)
+// CORE - TRANSFORM (9)
 @forward "transform/core-transform" as transform-*;
 @forward "transform/core-transform-origin" as transform-origin-*;
 @forward "transform/extension-translate-x" as translate-x-*;
@@ -193,14 +193,14 @@
 @forward "transform/extension-rotate" as rotate-*;
 
 
-// // CORE - TRANSITION (4)
+// CORE - TRANSITION (4)
 @forward "transition/core-transition-duration" as transition-duration-*;
 @forward "transition/core-transition-delay" as transition-delay-*;
 @forward "transition/core-transition-property" as transition-property-*;
 @forward "transition/core-transition-timing-function" as transition-timing-function-*;
 
 
-// // CORE - INTERACTIVE (5)
+// CORE - INTERACTIVE (5)
 @forward "interactive/core-cursor" as cursor-*;
 @forward "interactive/core-pointer-events" as pointer-events-*;
 @forward "interactive/core-resize" as resize-*;
@@ -208,7 +208,7 @@
 @forward "interactive/core-user-select" as user-select-*;
 
 
-// // CORE - SVG (3)
+// CORE - SVG (3)
 @forward "svg/core-fill" as fill-*;
 @forward "svg/core-stroke" as stroke-*;
 @forward "svg/core-stroke-width" as stroke-width-*;

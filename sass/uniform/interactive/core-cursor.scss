@@ -1,4 +1,4 @@
-@use "uniform/_core";
+@use "uniform/_core" as *;
 @use "sass:map";
 
 $keyword: cursor !default;
@@ -23,7 +23,7 @@ $final-variants: map.merge($core-variants, $variants) !default;
 
 $pseudos: (hover, active) !default;
 
-@include core.constructor(
+@include constructor(
   $keyword,
   $responsive,
   $responsive-pseudos,

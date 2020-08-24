@@ -1,4 +1,4 @@
-@use "uniform/_core";
+@use "uniform/_core" as *;
 @use "sass:map";
 
 $keyword: bg !default;
@@ -7,7 +7,7 @@ $responsive-pseudos: true !default;
 
 $properties: (background) !default;
 
-$core-variants: (core.gradients()) !default;
+$core-variants: (gradients()) !default;
 
 $variants: () !default;
 
@@ -15,7 +15,7 @@ $final-variants: map.merge($core-variants, $variants) !default;
 
 $pseudos: () !default;
 
-@include core.constructor(
+@include constructor(
   $keyword,
   $responsive,
   $responsive-pseudos,

@@ -9,11 +9,16 @@
 		hover, group-hover, group-focus
 	)
 );
+
 @use "vendors/prism" as *;
 
 :root {
 	--font-sans: 'Inter';
 	--font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier;
+}
+
+.table-colors {
+	--table-radius: 0;
 }
 
 .markdown {

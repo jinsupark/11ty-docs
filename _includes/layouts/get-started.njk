@@ -62,10 +62,10 @@ layout: layouts/base.njk
 
           <div class="mb-10 last.mb-0">
             <div class="font-sm font-600 color-gray-900 mb-4">
-              <i class="fas fa-paint-brush mr-2"></i> Theme
+              <i class="fas fa-paint-brush mr-2"></i> Theming
             </div>
             <nav class="flex flex-col">
-              {%- for post in collections.theme -%}
+              {%- for post in collections.theming -%}
                 <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>

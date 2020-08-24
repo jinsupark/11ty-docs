@@ -1,6 +1,6 @@
 ---
 title: Build Settings
-date: 1000-01-04
+date: 1000-01-03
 ---
 
 {% include shortcodes/chapter, text: 'Customization', color: 'yellow' %}

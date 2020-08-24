@@ -1,19 +1,26 @@
 ---
 title: Customizing Properties
-date: 1000-01-03
+date: 1000-01-04
 ---
 
 {% include shortcodes/chapter, text: 'Customization', color: 'teal' %}
 
 ### Customizing CSS Properties
 
-You can customize almost every aspect of a CSS property. To customize a CSS property, simply pass property variables to the Uniform module configuration.
+You can customize almost every aspect of a CSS property. To customize a CSS property, simply pass property variables in your Uniform module configuration.
 
 ```scss
 @use "uniform" as * with (
-  // CSS property settings
+  $background-color-keyword: bg,
+  $background-color-responsive: true,
+  $background-color-responsive-pseudos: true,
+  $background-color-properties: (background-color),
+  $background-color-core-variants: (core.colors()),
+  $background-color-variants: (),
+  $background-color-pseudos: (hover, focus, active, group-hover),
 );
 ```
+
 
 ---
 
@@ -122,23 +129,78 @@ The `$<property>-responsive-pseudos` variable enables or disables responsiveness
 
 #### Customizing Variants
 
-The `$<property>-variants` map sets the variant name and property value.
+If you find yourself wanting an extra variant for a CSS property that is not available in the default set, simply add key value pairs to the `$<property>-variants` map in your module configuration. Note, if you pass in a key that already exists, the original will be overwritten with the latest variant.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
-  $max-height-variants: (
-    100p: 100%,
-    screen: 100vh
+  $font-size-variants: (
+    big: 72px,
+    small: 14px,
+  ),
+  $height-variants: (
+    tall: 100px,
+    short: 14px,
+  ),
+  $background-color-variants: (
+    sunset: 'red',
+    bloodorange: 'orange',
   )
 );
 ```
 
 ```css
 /* styles.css */
-.max-h-100p {max-height: 100%;}
-.max-h-screen {max-height: 100vh;}
+.font-big {font-size: 72px;}
+.font-small {font-size: 14px;}
 ...
+
+.height-tall {height: 100px;}
+.height-short {height: 14px;}
+...
+
+.bg-sunset {background-color: red;}
+.bg-bloodorange {background-color: orange;}
+...
+```
+
+---
+
+#### Replacing Default Variants
+
+By default, adding new variants to the property variant map is an additive process. The original default set of variants will still be available. To replace the default variants, add key value pairs to the `$<property>-core-variants` map in your module configuration.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $font-size-core-variants: (
+    big: 72px,
+    small: 14px,
+  ),
+  $height-core-variants: (
+    tall: 100px,
+    short: 14px,
+  ),
+  $background-color-core-variants: (
+    sunset: 'red',
+    bloodorange: 'orange',
+  )
+);
+```
+
+```css
+/* styles.css */
+.font-big {font-size: 72px;}
+.font-small {font-size: 14px;}
+/* no other variants available */
+
+.height-tall {height: 100px;}
+.height-short {height: 14px;}
+/* no other variants available */
+
+.bg-sunset {background-color: red;}
+.bg-bloodorange {background-color: orange;}
+/* no other variants available */
 ```
 
 ---
@@ -188,138 +250,4 @@ The `$<property>-pseudos` controls which pseudo interaction will be activated fo
 .active\.opacity-10:active {opacity: 0.1;}
 ...
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-### Customizing your Build
-
-By default, Uniform has default settings already set, however almost every aspect of this framework can be overwritten. To customize, simply load the Uniform module with `with: (<variable>: <value>, <variable>: <value>)`.
-
-```scss
-// styles.scss
-@use "uniform" as * with (
-  $important: true,
-  $prefix: 'myPrefix-',
-  $colors: (
-    custom-color-1: '#000000',
-    custom-color-2: '#ffffff'
-  ),
-  // chain as many variable overrides as you like here
-);
-```
-
-```css
-/* styles.css */
-.myPrefix-block {display: block !important;}
-.myPrefix-bg-custom-red {background-color: red !important;}
-.myPrefix-bg-custom-blue {background-color: blue !important;}
-...
-```
-
----
-
-### Extending CSS Property Variants
-
-If you find yourself wanting an extra variant for a particular CSS property that is not available in the default set, simply add key value pairs to the `$<property-name>-variants` map in your module configuration.
-
-```scss
-// styles.scss
-@use "uniform" as * with (
-  $font-size-variants: (
-    big: 72px,
-    small: 14px,
-  ),
-  $height-variants: (
-    tall: 100px,
-    short: 14px,
-  ),
-  $background-color-variants: (
-    sunset: 'red',
-    bloodorange: 'orange',
-  )
-);
-```
-
-```css
-/* styles.css */
-.font-big {font-size: 72px;}
-.font-small {font-size: 14px;}
-...
-
-.height-tall {height: 100px;}
-.height-short {height: 14px;}
-...
-
-.bg-sunset {background-color: red;}
-.bg-bloodorange {background-color: orange;}
-...
-```
-
----
-
-### Replacing Default CSS Property Variants
-
-You can reduce the number of default variants and even remove them by overriding the core variant set. To do this, add key value pairs to the `$<property-name>-core-variants` map in your module configuration.
-
-```scss
-// styles.scss
-@use "uniform" as * with (
-  $font-size-core-variants: (
-    big: 72px,
-    small: 14px,
-  ),
-  $height-core-variants: (
-    tall: 100px,
-    short: 14px,
-  ),
-  $background-color-core-variants: (
-    sunset: 'red',
-    bloodorange: 'orange',
-  )
-);
-```
-
-```css
-/* styles.css */
-.font-big {font-size: 72px;}
-.font-small {font-size: 14px;}
-/* no other variants available */
-
-.height-tall {height: 100px;}
-.height-short {height: 14px;}
-/* no other variants available */
-
-.bg-sunset {background-color: red;}
-.bg-bloodorange {background-color: orange;}
-/* no other variants available */
-```
-
 

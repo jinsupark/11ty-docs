@@ -1,73 +1,13 @@
 ---
 title: Wrapper
-date: 1000-01-01
+date: 1000-01-04
 ---
+
+{% include shortcodes/chapter, text: 'Modules', color: 'red' %}
 
 ### Wrapper Module
 
-Wrapper is an optional module that provides set of `max-width` properties based on various breakpoints. This module is useful for design layouts that have a fixed width.
-
-<table>
-  <thead>
-    <tr>
-      <th>
-        Breakpoint
-      </th>
-      <th>
-        Property
-      </th>
-      <th>
-        Padding Applied
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code class="color-teal-500">sm</code>
-      </td>
-      <td>
-        <code>max-width: 768px</code>
-      </td>
-      <td>
-        <code class="color-gray-600">1.5rem</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code class="color-teal-500">md</code>
-      </td>
-      <td>
-        <code>max-width: 1024px</code>
-      </td>
-      <td>
-        <code class="color-gray-600">1.5rem</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code class="color-teal-500">lg</code>
-      </td>
-      <td>
-        <code>max-width: 1280px</code>
-      </td>
-      <td>
-        <code class="color-gray-600">5rem</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code class="color-teal-500">xl</code>
-      </td>
-      <td>
-        <code>max-width: 1440px</code>
-      </td>
-      <td>
-        <code class="color-gray-600">0</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+The Wrapper module is an optional pre-built component that provides `max-width` set containerization to your page layout.
 
 ```html
 <div class="wrapper">
@@ -75,14 +15,38 @@ Wrapper is an optional module that provides set of `max-width` properties based 
 </div>
 ```
 
+<div class="mb-10"></div>
+
+#### Wrapper root variables
+
+To customize the wrapper module, override the following root variables.
+
+<div class="bg-black radius-sm overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --wrapper-padding: ...;
+  --wrapper-sm-padding: ...;
+  --wrapper-md-padding: ...;
+  --wrapper-lg-padding: ...;
+  --wrapper-xl-padding: ...;
+
+  --wrapper-sm-max-width: ...;
+  --wrapper-md-max-width: ...;
+  --wrapper-lg-max-width: ...;
+  --wrapper-xl-max-width: ...;
+}
+{% endhighlight %}
+</div>
+
 ---
 
-### How to Enable this Module
+### How to Disable this Module
 
-By default, all modules are disabled. To enable this wrapper module, set the `$include-wrapper-module` variable to `true`.
+By default, all modules are enabled. To disable this module, set the `$include-wrapper-module` variable to `false` in your module configuration.
 
 ```scss
 @use "uniform" as * with (
-  $include-wrapper-module: true
+  $include-wrapper-module: false
 );
 ```

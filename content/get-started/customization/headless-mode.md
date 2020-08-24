@@ -1,6 +1,6 @@
 ---
 title: Headless Mode
-date: 1000-01-05
+date: 1000-01-07
 ---
 
 {% include shortcodes/chapter, text: 'Customization', color: 'teal' %}
@@ -39,7 +39,7 @@ Enabling headless mode will include Uniform as a standalone module without any r
 
 ### Headless Mode with Root
 
-If you would like to load root variables only, you can achieve this by enabling the `$headless-with-root` setting.
+By default, headless mode will not include any root variables to your stylesheet, to include root variables enable the `$headless-with-root` setting.
 
 ```scss
 // styles.scss

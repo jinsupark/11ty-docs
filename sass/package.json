@@ -5,7 +5,7 @@
 	"main": "styles.sass",
 	"scripts": {
 		"uniform:compile": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css",
-		"uniform:dev": "npm run uniform:compile && npm run uniform:groupmedia && npm run uniform:autoprefix",
+		"uniform:dev": "npm run uniform:compile && npm run uniform:groupmedia",
 		"uniform:watch": "onchange --await-write-finish 100 --initial '**/*.scss' -- npm run uniform:dev",
 		"uniform:autoprefix": "postcss --no-map --use autoprefixer --replace ../assets/css/styles.css",
 		"uniform:groupmedia": "postcss --no-map --use postcss-combine-media-query --replace ../assets/css/styles.css",

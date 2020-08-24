@@ -1,4 +1,4 @@
-@use "uniform/_core";
+@use "uniform/_core" as *;
 @use "sass:map";
 
 $keyword: scale-x !default;
@@ -21,7 +21,7 @@ $final-variants: map.merge($core-variants, $variants) !default;
 
 $pseudos: (hover, group-hover) !default;
 
-@include core.constructor(
+@include constructor(
   $keyword,
   $responsive,
   $responsive-pseudos,

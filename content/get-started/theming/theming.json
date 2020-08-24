@@ -2,6 +2,6 @@
   "layout": "layouts/get-started.njk",
   "permalink": "get-started/{{ title | slug }}/index.html",
   "tags": [
-    "theme"
+    "theming"
   ]
 }

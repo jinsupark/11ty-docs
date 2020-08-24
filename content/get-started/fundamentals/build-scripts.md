@@ -70,7 +70,7 @@ npm run uniform:autoprefix
 The following command will group similar media queries and put them at the end of your stylesheet in the order of breakpoint pixel size.
 
 ```bash
-npm run uniform:cleancss
+npm run uniform:groupmedia
 ```
 
 > It is important to note, due to the way Uniform is built, you must run this command after compiling or include this build process in your own project in order to ensure your styles are ordered and displayed correctly.

@@ -1,378 +1,668 @@
 ---
 title: Form
-date: 1000-01-01
+date: 1000-01-02
 ---
+
+{% include shortcodes/chapter, text: 'Modules', color: 'purple' %}
 
 ### Form Module
 
-Form is an optional module that extends the default functionality and styling of forms and input fields. You can group your fields with the `form__group` child element.
+The Form module is an optional pre-built component that provides customizable styling of input text fieds, checkboxes, select dropdown etc.
 
-<section class="radius-lg bg-gray-100 p-6">
-  <div class="bg-white shadow-3 max-w-18 mx-auto p-5 radius-lg">
-    <h5 class="font-600 align-center mt-2 mb-4">Sign Up</h5>
-    <form class="form">
-      <div class="form__group">
-        <label class="label is-required">Email</label>
-        <input placeholder=" " required>
+<section class="radius-sm bg-silver-100 p-6">
+  <form>
+    <div class="mb-6 last.mb-0">
+      <label class="label mb-2">Email</label>
+      <input class="input" placeholder="Email" value="Placeholder Text">
+    </div>
+    <div class="mb-6 last.mb-0">
+      <label class="checkbox">
+        <input type="checkbox" checked required />
+        <div class="checkbox__checkmark"></div>
+        Checkbox
+      </label>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <label class="radio mr-4">
+        <input type="radio" name="radio" checked />
+        <div class="radio__checkmark"></div>
+        Radio
+      </label>
+      <label class="radio">
+        <input type="radio" name="radio" checked />
+        <div class="radio__checkmark"></div>
+        Radio
+      </label>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <label class="toggle">
+        <input type="checkbox" checked />
+        <div class="toggle__switch"></div>
+      </label>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <div class="select">
+        <select>
+          <option selected>Selected</option>
+          <option>Option</option>
+          <option>Option</option>
+        </select>
+        <div class="select__angle"></div>
       </div>
-      <div class="form__group">
-        <label class="label is-required">Password</label>
-        <input type="password" placeholder=" " required>
-      </div>
-      <div class="form__group">
-        <label class="input-checkbox">
-          <input type="checkbox" required/>
-          <div class="input-checkbox/box"></div>
-          I agree to the Terms and Conditions
-        </label>
-      </div>
-      <div class="form__group flex justify-content-end">
-        <button class="btn px-6">Sign Up</button>
-      </div>
-    </form>
-  </div>
+    </div>
+  </form>
 </section>
 
-```html
-<form class="form">
-	<div class="form__group">
-		<label class="label is-required">Email</label>
-		<input placeholder=" " required />
-	</div>
-	<div class="form__group">
-		<label class="label is-required">Password</label>
-		<input type="password" placeholder=" " required />
-	</div>
-	<div class="form__group">
-		<label class="input-checkbox">
-			<input type="checkbox" required />
-			<div class="input-checkbox/box"></div>
-			I agree to the Terms and Conditions
-		</label>
-	</div>
-	<div class="form__group flex justify-content-end">
-		<button class="btn px-6">Sign Up</button>
-	</div>
+<div class="mb-6"></div>
+
+<div class="bg-black radius-sm h-24 overflow-auto">
+{% highlight html %}
+<form>
+  <div class="mb-6 last.mb-0">
+    <label class="label mb-2">Email</label>
+    <input class="input" placeholder="Email" value="Placeholder Text">
+  </div>
+
+  <div class="mb-6 last.mb-0">
+    <label class="checkbox">
+      <input type="checkbox" checked required />
+      <div class="checkbox__checkmark"></div>
+      Checkbox
+    </label>
+  </div>
+
+  <div class="mb-6 last.mb-0">
+    <label class="radio mr-4">
+      <input type="radio" name="radio" checked />
+      <div class="radio__checkmark"></div>
+      Radio
+    </label>
+    <label class="radio">
+      <input type="radio" name="radio" checked />
+      <div class="radio__checkmark"></div>
+      Radio
+    </label>
+  </div>
+
+  <div class="mb-6 last.mb-0">
+    <label class="toggle">
+      <input type="checkbox" checked />
+      <div class="toggle__switch"></div>
+    </label>
+  </div>
+
+  <div class="mb-6 last.mb-0">
+    <div class="select">
+      <select>
+        <option selected>Selected</option>
+        <option>Option</option>
+        <option>Option</option>
+      </select>
+      <div class="select__angle"></div>
+    </div>
+  </div>
 </form>
-```
+{% endhighlight %}
+</div>
 
 ---
 
-### Input Fields
+### Labels and Textfields
 
-The Form module also provides styling for common input types such as checkboxes, radio buttons, and toggles. Focus box shadow and selected fill colors are all styled using the core theme values.
+To add a required asterisk append the class `is-required` to your label.
 
-<section class="radius-lg bg-gray-100 p-6">
-  <div class="bg-white shadow-3 p-4 radius-lg">
-    <form class="form">
-      <div class="form__group">
-        <label class="label">Email</label>
-        <input placeholder="Email" value="john.titor@apple.com">
-      </div>
-      <div class="form__group">
-        <label class="label">Username</label>
-        <input type="text" placeholder="UniformCSS" value="@UniformCSS">
-      </div>
-      <div class="form__group">
-        <label class="input-checkbox">
-          <input type="checkbox" checked required />
-          <div class="input-checkbox/box"></div>
-          Checkbox
-        </label>
-      </div>
-      <div class="form__group">
-        <label class="input-radio mr-4">
-          <input type="radio" name="radio" checked />
-          <div class="input-radio/selection"></div>
-          Radio
-        </label>
-        <label class="input-radio">
-          <input type="radio" name="radio" checked />
-          <div class="input-radio/selection"></div>
-          Radio
-        </label>
-      </div>
-      <div class="form__group">
-        <label class="input-toggle">
-          <input type="checkbox" checked />
-          <div class="input-toggle/slide"></div>
-        </label>
-      </div>
-      <div class="form__group">
-        <div class="input-select">
-          <select>
-            <option selected>Selected</option>
-            <option>Option</option>
-            <option>Option</option>
-          </select>
-          <div class="input-select/angle"></div>
-        </div>
-      </div>
-    </form>
-  </div>
+<section class="radius-sm bg-silver-100 p-6">
+  <label class="label is-required mb-2">Email</label>
+  <input class="input" placeholder="Email" value="Placeholder Text" required>
 </section>
 
 ```html
-<form class="form">
-	<div class="form__group">
-		<label class="label">Email</label>
-		<input placeholder="Email" value="john.titor@apple.com" />
-	</div>
-	<div class="form__group">
-		<label class="label">Username</label>
-		<input type="text" placeholder="UniformCSS" value="@UniformCSS" />
-	</div>
-	<div class="form__group">
-		<label class="input-checkbox">
-			<input type="checkbox" checked required />
-			<div class="input-checkbox/box"></div>
-			Checkbox
-		</label>
-	</div>
-	<div class="form__group">
-		<label class="input-radio mr-4">
-			<input type="radio" name="radio" checked />
-			<div class="input-radio/selection"></div>
-			Radio
-		</label>
-		<label class="input-radio">
-			<input type="radio" name="radio" checked />
-			<div class="input-radio/selection"></div>
-			Radio
-		</label>
-	</div>
-	<div class="form__group">
-		<label class="input-toggle">
-			<input type="checkbox" checked />
-			<div class="input-toggle/slide"></div>
-		</label>
-	</div>
-	<div class="form__group">
-		<div class="input-select">
-			<select>
-				<option selected>Selected</option>
-				<option>Option</option>
-				<option>Option</option>
-			</select>
-			<div class="input-select/angle"></div>
-		</div>
-	</div>
-</form>
+<label class="label is-required mb-2">Email</label>
+<input class="input" placeholder="Email" value="Placeholder Text" required>
 ```
+
+
+<div class="mb-10"></div>
+
+#### Label and Textfield root variables
+
+To customize the look of your label and textfields, override the following root variables.
+
+<div class="bg-black radius-sm h-24 overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --label-font-size: ...;
+  --label-font-weight: ...;
+  --label-color: ...;
+  --label-tracking: ...;
+  --label-text-transform: ...;
+  --label-required-color: ...;
+
+  --input-height: ...;
+  --input-padding: ...;
+  --input-bg: ...;
+  --input-border: ...;
+  --input-radius: ...;
+  --input-shadow: ...;
+  --input-transition: ...;
+
+  --input-hover-border: ...;
+  --input-hover-shadow: ...;
+
+  --input-focus-border: ...;
+  --input-focus-shadow: ...;
+}
+{% endhighlight %}
+</div>
+
 
 ---
 
-### Disabled Input Fields
+### Input field sizes
 
-Input types can also be disabled with the `disabled` attribute. You can also disable the hover pointer state by applying `is-disabled` to the parent input element.
+Text fields come in **5 sizes**.
 
-<section class="radius-lg bg-gray-100 p-6">
-  <div class="bg-white shadow-3 p-4 radius-lg">
-    <form class="form">
-      <div class="form__group">
-        <label class="label">Email</label>
-        <input placeholder="Email" value="john.titor@apple.com" disabled>
-      </div>
-      <div class="form__group">
-        <label class="label">Username</label>
-        <input type="text" placeholder="UniformCSS" value="@UniformCSS" disabled>
-      </div>
-      <div class="form__group">
-        <label class="input-checkbox is-disabled">
-          <input type="checkbox" disabled checked required />
-          <div class="input-checkbox/box"></div>
-          Disabled checkbox
-        </label>
-      </div>
-      <div class="form__group">
-        <label class="input-radio is-disabled mr-4">
-          <input type="radio" name="radio" disabled checked />
-          <div class="input-radio/selection"></div>
-          Disabled radio
-        </label>
-        <label class="input-radio is-disabled">
-          <input type="radio" name="radio" disabled checked />
-          <div class="input-radio/selection"></div>
-          Disabled radio
-        </label>
-      </div>
-      <div class="form__group">
-        <label class="input-toggle is-disabled">
-          <input type="checkbox" disabled />
-          <div class="input-toggle/slide"></div>
-        </label>
-      </div>
-      <div class="form__group">
-        <div class="input-select">
-          <select disabled>
-            <option selected>Disabled</option>
-            <option>Option</option>
-            <option>Option</option>
-          </select>
-          <div class="input-select/angle"></div>
-        </div>
-      </div>
-    </form>
-  </div>
+<section class="radius-sm bg-silver-100 p-6">
+  <input class="input input-xs mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-sm mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-md mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-lg mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-xl mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
 </section>
 
 ```html
-<form class="form">
-	<div class="form__group">
-		<label class="label">Email</label>
-		<input placeholder="Email" value="john.titor@apple.com" disabled />
-	</div>
-	<div class="form__group">
-		<label class="label">Username</label>
-		<input type="text" placeholder="UniformCSS" value="@UniformCSS" disabled />
-	</div>
-	<div class="form__group">
-		<label class="input-checkbox is-disabled">
-			<input type="checkbox" disabled checked required />
-			<div class="input-checkbox/box"></div>
-			Disabled checkbox
-		</label>
-	</div>
-	<div class="form__group">
-		<label class="input-radio is-disabled mr-4">
-			<input type="radio" name="radio" disabled checked />
-			<div class="input-radio/selection"></div>
-			Disabled radio
-		</label>
-		<label class="input-radio is-disabled">
-			<input type="radio" name="radio" disabled checked />
-			<div class="input-radio/selection"></div>
-			Disabled radio
-		</label>
-	</div>
-	<div class="form__group">
-		<label class="input-toggle is-disabled">
-			<input type="checkbox" disabled />
-			<div class="input-toggle/slide"></div>
-		</label>
-	</div>
-	<div class="form__group">
-		<div class="input-select">
-			<select disabled>
-				<option selected>Disabled</option>
-				<option>Option</option>
-				<option>Option</option>
-			</select>
-			<div class="input-select/angle"></div>
-		</div>
-	</div>
-</form>
+<input class="input input-xs" placeholder="Email" value="Placeholder Text">
+<input class="input input-sm" placeholder="Email" value="Placeholder Text">
+<input class="input input-md" placeholder="Email" value="Placeholder Text">
+<input class="input input-lg" placeholder="Email" value="Placeholder Text">
+<input class="input input-xl" placeholder="Email" value="Placeholder Text">
 ```
+
+
+<div class="mb-10"></div>
+
+#### Input size root variables
+
+To customize your text and select input field sizes, override the following root variables.
+
+<div class="bg-black radius-sm h-24 overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --input-xs-height: ...;
+  --input-xs-padding: ...;
+  --input-xs-font-size: ...;
+
+  --input-sm-height: ...;
+  --input-sm-padding: ...;
+  --input-sm-font-size: ...;
+
+  --input-md-height: ...;
+  --input-md-padding: ...;
+  --input-md-font-size: ...;
+
+  --input-lg-height: ...;
+  --input-lg-padding: ...;
+  --input-lg-font-size: ...;
+
+  --input-xl-height: ...;
+  --input-xl-padding: ...;
+  --input-xl-font-size: ...;
+}
+{% endhighlight %}
+</div>
 
 ---
 
-### Input Sizes
+### Select Fields
 
-Text or select type input fields come in three different sizes.
 
-<section class="radius-lg bg-gray-100 p-6">
-  <input type="text" placeholder="Small Input" class="input-sm">
-  <input type="text" placeholder="Medium Input" class="input-md">
-  <input type="text" placeholder="Large Input" class="input-lg">
-  <div class="input-select">
-    <select class="input-sm">
-      <option>Small</option>
+<section class="radius-sm bg-silver-100 p-6">
+  <div class="select">
+    <select>
+      <option selected>Selected</option>
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="input-select/angle"></div>
-  </div>
-  <div class="input-select">
-    <select class="input-md">
-      <option>Medium</option>
-      <option>Option</option>
-      <option>Option</option>
-    </select>
-    <div class="input-select/angle"></div>
-  </div>
-  <div class="input-select">
-    <select class="input-lg">
-      <option>Large</option>
-      <option>Option</option>
-      <option>Option</option>
-    </select>
-    <div class="input-select/angle"></div>
+    <div class="select__angle"></div>
   </div>
 </section>
 
 ```html
-<input type="text" placeholder="Small Input" class="input-sm" />
-<input type="text" placeholder="Medium Input" class="input-md" />
-<input type="text" placeholder="Large Input" class="input-lg" />
-
-<div class="input-select">
-	<select class="input-sm">
-		<option>Small</option>
-		<option>Option</option>
-		<option>Option</option>
-	</select>
-	<div class="input-select/angle"></div>
-</div>
-
-<div class="input-select">
-	<select class="input-md">
-		<option>Medium</option>
-		<option>Option</option>
-		<option>Option</option>
-	</select>
-	<div class="input-select/angle"></div>
-</div>
-
-<div class="input-select">
-	<select class="input-lg">
-		<option>Large</option>
-		<option>Option</option>
-		<option>Option</option>
-	</select>
-	<div class="input-select/angle"></div>
+<div class="select">
+  <select>
+    <option selected>Selected</option>
+    <option>Option</option>
+    <option>Option</option>
+  </select>
+  <div class="select__angle"></div>
 </div>
 ```
 
+
+<div class="mb-10"></div>
+
+#### Select root variables
+
+To customize your select input field sizes, override the following root variables.
+
+<div class="bg-black radius-sm h-24 overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --select-height: ...;
+  --select-padding: ...;
+  --select-bg: ...;
+  --select-border: ...;
+  --select-radius: ...;
+  --select-shadow: ...;
+  --select-font-size: ...;
+  --select-transition: ...;
+  --select-hover-border: ...;
+  --select-hover-shadow: ...;
+  --select-focus-border: ...;
+  --select-focus-shadow: ...;
+  --select-disabled-bg: ...;
+  --select-disabled-color: ...;
+  --select-hover-angle-color: ...;
+  --select-hover-focus-color: ...;
+  --select-success-border: ...;
+  --select-focus-success-shadow: ...;
+  --select-warning-border: ...;
+  --select-focus-warning-shadow: ...;
+  --select-danger-border: ...;
+  --select-focus-danger-shadow: ...;
+}
+{% endhighlight %}
+</div>
+
 ---
 
-### Responsive Input Sizes
+### Select field sizes
 
-Input sizes can change based on breakpoint
+Select fields come in **5 sizes**.
 
-<section class="radius-lg bg-gray-100 p-6">
-  <input class="input-lg sm.input-md">
+<section class="radius-sm bg-silver-100 p-6">
+  <div class="select select-xs mb-4 last.mb-0">
+    <select>
+      <option selected>Selected</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__angle"></div>
+  </div>
+
+  <div class="select select-sm mb-4 last.mb-0">
+    <select>
+      <option selected>Selected</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__angle"></div>
+  </div>
+
+  <div class="select select-md mb-4 last.mb-0">
+    <select>
+      <option selected>Selected</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__angle"></div>
+  </div>
+
+  <div class="select select-lg mb-4 last.mb-0">
+    <select>
+      <option selected>Selected</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__angle"></div>
+  </div>
+
+  <div class="select select-xl mb-4 last.mb-0">
+    <select>
+      <option selected>Selected</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__angle"></div>
+  </div>
 </section>
 
 ```html
-<input class="input-lg sm.input-md" />
+<div class="select select-xs">...</div>
+<div class="select select-sm">...</div>
+<div class="select select-md">...</div>
+<div class="select select-lg">...</div>
+<div class="select select-xl">...</div>
+```
+
+
+<div class="mb-10"></div>
+
+#### Select size root variables
+
+To customize your select input field sizes, override the following root variables.
+
+<div class="bg-black radius-sm h-24 overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --select-xs-height: ...;
+  --select-xs-padding: ...;
+  --select-xs-font-size: ...;
+
+  --select-sm-height: ...;
+  --select-sm-padding: ...;
+  --select-sm-font-size: ...;
+
+  --select-md-height: ...;
+  --select-md-padding: ...;
+  --select-md-font-size: ...;
+
+  --select-lg-height: ...;
+  --select-lg-padding: ...;
+  --select-lg-font-size: ...;
+
+  --select-xl-height: ...;
+  --select-xl-padding: ...;
+  --select-xl-font-size: ...;
+}
+{% endhighlight %}
+</div>
+
+
+---
+
+### Responsive Text and Select Sizes
+
+Both text and select field sizes can vary depending on breakpoint.
+
+<section class="radius-sm bg-silver-100 p-6">
+  <input class="input input-xs lg.input-xl" placeholder="Resize browser to see change">
+</section>
+
+```html
+<input class="input input-xs lg.input-xl" placeholder="Resize browser to see change">
 ```
 
 ---
 
 ### Input States
 
-Text or select type input fields come in three different states.
+Text, select, and textarea fields come in *4* different states.
 
-<section class="radius-lg bg-gray-100 p-6">
-  <input type="text" placeholder="Valid" class="is-valid">
-  <input type="text" placeholder="Warning" class="is-warning">
-  <input type="text" placeholder="Error" class="is-error">
+<section class="radius-sm bg-silver-100 p-6">
+  <input class="input mb-4 last.mb-0" placeholder="Disabled" disabled>
+  <input class="input is-success mb-4 last.mb-0" placeholder="Success">
+  <input class="input is-warning mb-4 last.mb-0" placeholder="Warning">
+  <input class="input is-danger mb-4 last.mb-0" placeholder="Danger">
+  <textarea class="textarea is-warning leading-8" rows="4">Warning textarea</textarea>
 </section>
 
 ```html
-<input type="text" placeholder="Valid" class="is-valid" />
-<input type="text" placeholder="Warning" class="is-warning" />
-<input type="text" placeholder="Error" class="is-error" />
+<input class="input" placeholder="Success" disabled>
+<input class="input is-success" placeholder="Success">
+<input class="input is-warning" placeholder="Warning">
+<input class="input is-danger" placeholder="Danger">
+<textarea class="textarea is-warning leading-8" rows="4">Warning textarea</textarea>
 ```
+
+<div class="mb-10"></div>
+
+#### State field root variables
+
+To customize your state fields, override the following root variables.
+
+<div class="bg-black radius-sm overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --input-disabled-bg: ...;
+  --input-disabled-color: ...;
+
+  --input-success-border: ...;
+  --input-focus-success-shadow: ...;
+
+  --input-warning-border: ...;
+  --input-focus-warning-shadow: ...;
+
+  --input-danger-border: ...;
+  --input-focus-danger-shadow: ...;
+}
+{% endhighlight %}
+</div>
+
 
 ---
 
-### How to Enable this Module
+### Radio and Checkboxes
 
-By default, all modules are disabled. To enable this form module, set the `$include-form-module` variable to `true`.
+Text and select input fields come in **5 sizes**.
+
+<section class="radius-sm bg-silver-100 p-6">
+  <div class="mb-6">
+    <label class="radio mr-4">
+      <input type="radio" name="radio" checked />
+      <div class="radio__checkmark"></div>
+      Radio
+    </label>
+    <label class="radio">
+      <input type="radio" name="radio" checked />
+      <div class="radio__checkmark"></div>
+      Radio
+    </label>
+  </div>
+  <div>
+    <label class="checkbox">
+      <input type="checkbox" checked required />
+      <div class="checkbox__checkmark"></div>
+      I agree to the terms and agreement.
+    </label>
+  </div>
+</section>
+
+```html
+<label class="radio mr-4">
+  <input type="radio" name="radio" checked />
+  <div class="radio__checkmark"></div>
+  Radio
+</label>
+<label class="radio">
+  <input type="radio" name="radio" checked />
+  <div class="radio__checkmark"></div>
+  Radio
+</label>
+
+<label class="checkbox">
+  <input type="checkbox" checked required />
+  <div class="checkbox__checkmark"></div>
+  I agree to the terms and agreement.
+</label>
+```
+
+
+<div class="mb-10"></div>
+
+#### Radio and Checkbox root variables
+
+To customize your radio or checkbox input fields, override the following root variables.
+
+<div class="bg-black radius-sm h-24 overflow-auto">
+{% highlight css %}
+/* styles.css */
+:root {
+  --checkbox-size: ...;
+  --checkbox-margin: ...;
+  --checkbox-radius: ...;
+  --checkbox-border: ...;
+  --checkbox-bg: ...;
+  --checkbox-transition: ...;
+  --checkbox-hover-border: ...;
+  --checkbox-checked-bg: ...;
+  --checkbox-checked-border: ...;
+  --checkbox-disabled-bg: ...;
+  --checkbox-disabled-color: ...;
+
+  --radio-size: ...;
+  --radio-margin: ...;
+  --radio-radius: ...;
+  --radio-border: ...;
+  --radio-bg: ...;
+  --radio-transition: ...;
+  --radio-hover-border: ...;
+  --radio-checked-bg: ...;
+  --radio-checked-border: ...;
+  --radio-disabled-bg: ...;
+  --radio-disabled-color: ...;
+}
+{% endhighlight %}
+</div>
+
+
+
+---
+
+### Toggle switch
+
+Checkboxes can also be transformed into a toggle switch.
+
+<section class="radius-sm bg-silver-100 p-6 flex justify-content-center">
+  <label class="toggle">
+    <input type="checkbox" checked />
+    <div class="toggle__switch"></div>
+  </label>
+</section>
+
+```html
+<label class="toggle">
+  <input type="checkbox" checked />
+  <div class="toggle__switch"></div>
+</label>
+```
+
+
+<div class="mb-10"></div>
+
+#### Toggle switch root variables
+
+To customize your toggle switch, override the following root variables.
+
+{% highlight css %}
+/* styles.css */
+:root {
+  --toggle-width: ...;
+  --toggle-height: ...;
+  --toggle-bg: ...;
+  --toggle-transition: ...;
+  --toggle-radius: ...;
+  --toggle-hover-bg: ...;
+  --toggle-checked-bg: ...;
+  --toggle-checked-translate: ...;
+  --toggle-disabled-bg: ...;
+}
+{% endhighlight %}
+
+
+---
+
+### Textarea
+
+Checkboxes can also be transformed into a toggle switch. Note, to set a default line-height apply the leading property.
+
+<section class="radius-sm bg-silver-100 p-6 flex justify-content-center">
+  <textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
+</section>
+
+```html
+<textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
+```
+
+
+<div class="mb-10"></div>
+
+#### Textarea root variables
+
+To customize your textarea, override the following root variables.
+
+{% highlight css %}
+/* styles.css */
+:root {
+  --textarea-hover-border: ...;
+  --textarea-hover-shadow: ...;
+  --textarea-focus-border: ...;
+  --textarea-focus-shadow: ...;
+  --textarea-disabled-bg: ...;
+  --textarea-disabled-color: ...;
+  --textarea-success-border: ...;
+  --textarea-focus-success-shadow: ...;
+  --textarea-warning-border: ...;
+  --textarea-focus-warning-shadow: ...;
+  --textarea-danger-border: ...;
+  --textarea-focus-danger-shadow: ...;
+}
+{% endhighlight %}
+
+---
+
+### Disabled form fields
+
+All form field elements can be disabled with assigning the `disabled` attribute.
+
+<section class="radius-sm bg-silver-100 p-6">
+  <form>
+    <div class="mb-6 last.mb-0">
+      <label class="label mb-2">Email</label>
+      <input class="input" placeholder="Email" value="Placeholder Text" disabled>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <label class="checkbox pointer-events-none">
+        <input type="checkbox" checked required disabled />
+        <div class="checkbox__checkmark"></div>
+        Checkbox
+      </label>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <label class="radio pointer-events-none mr-4">
+        <input type="radio" name="radio" checked disabled />
+        <div class="radio__checkmark"></div>
+        Radio
+      </label>
+      <label class="radio pointer-events-none">
+        <input type="radio" name="radio" checked disabled />
+        <div class="radio__checkmark"></div>
+        Radio
+      </label>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <label class="toggle pointer-events-none">
+        <input type="checkbox" checked disabled />
+        <div class="toggle__switch"></div>
+      </label>
+    </div>
+    <div class="mb-6 last.mb-0">
+      <div class="select">
+        <select disabled>
+          <option selected>Selected</option>
+          <option>Option</option>
+          <option>Option</option>
+        </select>
+        <div class="select__angle"></div>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+---
+
+### How to Disable this Module
+
+By default, all modules are enabled. To disable this module, set the `$include-form-module` variable to `false` in your module configuration.
 
 ```scss
 @use "uniform" as * with (
-  $include-form-module: true
+  $include-form-module: false
 );
 ```

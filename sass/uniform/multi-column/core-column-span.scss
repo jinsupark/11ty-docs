@@ -1,4 +1,4 @@
-@use "uniform/_core";
+@use "uniform/_core" as *;
 @use "sass:map";
 
 $keyword: col-span !default;
@@ -18,7 +18,7 @@ $final-variants: map.merge($core-variants, $variants) !default;
 
 $pseudos: () !default;
 
-@include core.constructor(
+@include constructor(
   $keyword,
   $responsive,
   $responsive-pseudos,

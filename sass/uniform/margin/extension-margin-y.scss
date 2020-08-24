@@ -1,4 +1,4 @@
-@use "uniform/_core";
+@use "uniform/_core" as *;
 @use "sass:map";
 
 $keyword: my !default;
@@ -8,8 +8,8 @@ $responsive-pseudos: true !default;
 $properties: (margin-top, margin-bottom) !default;
 
 $core-variants: (
-	core.merge(
-		core.positive-sizes(),
+	merge(
+		positive-sizes(),
 		(
 			auto: auto,
 			px: 1px,
@@ -23,7 +23,7 @@ $final-variants: map.merge($core-variants, $variants) !default;
 
 $pseudos: () !default;
 
-@include core.constructor(
+@include constructor(
   $keyword,
   $responsive,
   $responsive-pseudos,

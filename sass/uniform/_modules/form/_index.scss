@@ -10,6 +10,8 @@ CUSTOM PROPERTIES
 --label-text-transform
 --label-required-color
 
+
+
 --input-height
 --input-padding
 --input-bg
@@ -17,41 +19,36 @@ CUSTOM PROPERTIES
 --input-radius
 --input-shadow
 --input-transition
-
 --input-hover-border
 --input-hover-shadow
-
 --input-focus-border
 --input-focus-shadow
 
+
+
 --input-disabled-bg
 --input-disabled-color
-
 --input-success-border
 --input-focus-success-shadow
-
 --input-warning-border
 --input-focus-warning-shadow
-
 --input-danger-border
 --input-focus-danger-shadow
+
+
 
 --input-xs-height
 --input-xs-padding
 --input-xs-font-size
-
 --input-sm-height
 --input-sm-padding
 --input-sm-font-size
-
 --input-md-height
 --input-md-padding
 --input-md-font-size
-
 --input-lg-height
 --input-lg-padding
 --input-lg-font-size
-
 --input-xl-height
 --input-xl-padding
 --input-xl-font-size
@@ -64,12 +61,9 @@ CUSTOM PROPERTIES
 --checkbox-border
 --checkbox-bg
 --checkbox-transition
-
 --checkbox-hover-border
-
 --checkbox-checked-bg
 --checkbox-checked-border
-
 --checkbox-disabled-bg
 --checkbox-disabled-color
 
@@ -81,12 +75,9 @@ CUSTOM PROPERTIES
 --radio-border
 --radio-bg
 --radio-transition
-
 --radio-hover-border
-
 --radio-checked-bg
 --radio-checked-border
-
 --radio-disabled-bg
 --radio-disabled-color
 
@@ -97,12 +88,9 @@ CUSTOM PROPERTIES
 --toggle-bg
 --toggle-transition
 --toggle-radius
-
 --toggle-hover-bg
-
 --toggle-checked-bg
 --toggle-checked-translate
-
 --toggle-disabled-bg
 
 
@@ -115,25 +103,18 @@ CUSTOM PROPERTIES
 --select-shadow
 --select-font-size
 --select-transition
-
 --select-hover-border
 --select-hover-shadow
-
 --select-focus-border
 --select-focus-shadow
-
 --select-disabled-bg
 --select-disabled-color
-
 --select-hover-angle-color
 --select-hover-focus-color
-
 --select-success-border
 --select-focus-success-shadow
-
 --select-warning-border
 --select-focus-warning-shadow
-
 --select-danger-border
 --select-focus-danger-shadow
 
@@ -168,19 +149,14 @@ CUSTOM PROPERTIES
 
 --textarea-hover-border
 --textarea-hover-shadow
-
 --textarea-focus-border
 --textarea-focus-shadow
-
 --textarea-disabled-bg
 --textarea-disabled-color
-
 --textarea-success-border
 --textarea-focus-success-shadow
-
 --textarea-warning-border
 --textarea-focus-warning-shadow
-
 --textarea-danger-border
 --textarea-focus-danger-shadow
 */
@@ -355,7 +331,6 @@ CUSTOM PROPERTIES
 				& ~ .checkbox#{$child-delimiter}checkmark {
 					background: var(--checkbox-disabled-bg, fill(silver-500));
 					border-color: var(--checkbox-disabled-bg, fill(silver-500));
-					pointer-events: none;
 					&:after {
 						border-color: var(--checkbox-disabled-color, fill(gray-400));
 					}
@@ -422,7 +397,6 @@ CUSTOM PROPERTIES
 				& ~ .radio#{$child-delimiter}checkmark {
 					background: var(--radio-disabled-bg, fill(silver-500));
 					border-color: var(--radio-disabled-bg, fill(silver-500));
-					pointer-events: none;
 					&:after {
 						border-color: var(--radio-disabled-color, fill(gray-400));
 					}
@@ -480,8 +454,7 @@ CUSTOM PROPERTIES
 				transform: translateX(var(--toggle-checked-translate, 24px));
 			}
 			&:disabled + .toggle#{$child-delimiter}switch {
-				background: var(--toggle-disabled-bg, fill(gray-200));
-				pointer-events: none;
+				background: var(--toggle-disabled-bg, fill(gray-100));
 			}
 		}
 	}

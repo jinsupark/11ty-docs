@@ -14,6 +14,8 @@ CUSTOM PROPERTIES
 --table-td-height
 --table-td-padding
 
+--table-alt-bg
+
 --table-stack-margin
 
 --table-label-margin
@@ -22,13 +24,11 @@ CUSTOM PROPERTIES
 --table-label-text-transform
 --table-label-tracking
 --table-label-color
-
---table-hover-bg
---table-active-bg
 */
 
 @mixin table-stack {
 	box-shadow: none;
+	background-color: transparent;
 	thead {
 		display: none;
 	}
@@ -52,11 +52,13 @@ CUSTOM PROPERTIES
 	td {
 		display: block;
 		padding: var(--table-td-padding, size(3, 4));
+		background-color: var(--table-bg, white);
 		&:first-child {
 			border-top-right-radius: var(--table-radius, radius(sm));
 			border-top-left-radius: var(--table-radius, radius(sm));
 		}
 		&:last-child {
+			border-bottom: 0;
 			border-bottom-right-radius: var(--table-radius, radius(sm));
 			border-bottom-left-radius: var(--table-radius, radius(sm));
 		}
@@ -83,6 +85,7 @@ CUSTOM PROPERTIES
 
 @mixin table-unstack {
 	box-shadow: var(--table-shadow, shadow(1));
+	background-color: var(--table-bg, white);
 	thead {
 		display: table-header-group;
 	}
@@ -108,6 +111,7 @@ CUSTOM PROPERTIES
 	th {
 		height: var(--table-th-height, size(12));
 		padding: var(--table-th-padding, size(2, 4));
+		background: transparent;
 		&:first-child {
 			border-top-left-radius: var(--table-radius, radius(sm));
 		}
@@ -146,6 +150,7 @@ CUSTOM PROPERTIES
 		tr {
 			&:last-child {
 				td {
+					border-bottom: 0;
 					&:first-child {
 						border-bottom-left-radius: var(--table-radius, radius(sm));
 					}
@@ -159,6 +164,8 @@ CUSTOM PROPERTIES
 		th {
 			height: var(--table-th-height, size(12));
 			padding: var(--table-th-padding, size(3, 4));
+			// Inset instead of border to allow for sticky headers to have border
+			box-shadow: var(--table-th-border, inset 0px -1px 0 0 fill(silver-200));
 			white-space: nowrap;
 			
 			&:first-child {
@@ -172,7 +179,7 @@ CUSTOM PROPERTIES
 		td {
 			height: var(--table-td-height, size(12));
 			padding: var(--table-td-padding, size(3, 4));
-			border-top: var(--table-border, 1px solid fill(silver-200));
+			border-bottom: var(--table-td-border, 1px solid fill(silver-200));
 		}
 	}
 
