@@ -13,7 +13,7 @@ You can customize almost every aspect of a CSS property. To customize a CSS prop
 @use "uniform" as * with (
   $background-color-keyword: bg,
   $background-color-responsive: true,
-  $background-color-responsive-pseudos: true,
+  $background-color-responsive-pseudos: false,
   $background-color-properties: (background-color),
   $background-color-core-variants: (core.colors()),
   $background-color-variants: (),

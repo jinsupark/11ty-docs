@@ -3,7 +3,7 @@
 
 $keyword: mr !default;
 $responsive: true !default;
-$responsive-pseudos: true !default;
+$responsive-pseudos: false !default;
 
 $properties: (margin-right) !default;
 
@@ -11,8 +11,7 @@ $core-variants: (
 	merge(
 		sizes(),
 		(
-      auto: auto,
-      px: 1px,
+      auto: auto
 		)
 	)
 ) !default;

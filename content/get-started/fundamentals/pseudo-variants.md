@@ -452,26 +452,6 @@ You can enable a pseudo variants with the `$<property>-pseudos` variable.
 
 ---
 
-### Responsive Pseudos
-
-By default, Uniform does not allow for pseudo and responsive variants to operate together. This helps keep file-size small, however you can override this behavior by simply passing `true` to `$responsive-pseudos` in the configuration.
-
-```scss
-@use "uniform" as * with (
-  $responsive-pseudos: true
-);
-```
-
-If the responsive pseudo setting is enabled you can simply prefix your pseudo with any breakpoint variant like you would with any property.
-
-```html
-<div class="bg-white sm.hover.bg-green-500 md.hover.bg-blue-500">
-	...
-</div>
-```
-
----
-
 ### Pseudo Delimiter
 
 By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default pseudo delimiter by defining `$pseudo-delimiter` in your configuration.

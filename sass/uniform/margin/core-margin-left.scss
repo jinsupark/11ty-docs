@@ -3,7 +3,7 @@
 
 $keyword: ml !default;
 $responsive: true !default;
-$responsive-pseudos: true !default;
+$responsive-pseudos: false !default;
 
 $properties: (margin-left) !default;
 
@@ -11,8 +11,7 @@ $core-variants: (
 	merge(
 		sizes(),
 		(
-      auto: auto,
-      px: 1px,
+      auto: auto
 		)
 	)
 ) !default;
@@ -21,7 +20,7 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$pseudos: (first) !default;
+$pseudos: () !default;
 
 @include constructor(
   $keyword,

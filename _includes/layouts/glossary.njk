@@ -10,16 +10,17 @@ layout: layouts/base.njk
   Back to top
 </a>
 
+
 <section>
   {% include "partials/nav.njk" %}
   <div class="wrapper">
-    <div class="align-center py-17 pb-19">
-      <h2 class="font-7xl font-300 align-center mb-6 tracking-n1 color-white">
+    <div class="pt-15 pb-18">
+      <h1 class="font-6xl font-300 mb-6 tracking-n1 color-white">
         {{ title }}
-      </h2>
+      </h1>
 
-      <p class="max-w-27 mx-auto mb-10 font-lg font-400 color-white align-center opacity-70">
-        List of all available CSS properties and variants. If a variant, pseudo, or responsive setting is not available please refer to the docs on how you can customize this.
+      <p class="max-w-26 font-lg font-400 color-white opacity-70">
+        A simple and useful list of all available CSS properties and variants.
       </p>
     </div>
   </div>
@@ -326,9 +327,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -388,9 +395,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -450,9 +463,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -512,9 +531,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -574,9 +599,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -636,9 +667,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -698,9 +735,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -760,9 +803,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -822,9 +871,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -884,9 +939,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -946,9 +1007,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1008,9 +1075,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1070,9 +1143,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1132,9 +1211,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1194,9 +1279,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1256,9 +1347,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1318,9 +1415,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1380,9 +1483,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>
@@ -1442,9 +1551,15 @@ layout: layouts/base.njk
                   PSEUDOS
                 </div>
                 {%- for pseudo in property.pseudos -%}
-                  <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                    {{ pseudo }}
-                  </div>
+                  {% if pseudo == "none" %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% else %}
+                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                      {{ pseudo }}
+                    </div>
+                  {% endif %}
                 {%- endfor -%}
               </div>
             </div>

@@ -26,7 +26,7 @@ Use the following boilerplate template to add in details about the CSS property 
 
 $keyword: customProperty !default;
 $responsive: false !default;
-$responsive-pseudos: true !default;
+$responsive-pseudos: false !default;
 
 $properties: (css-property) !default;
 

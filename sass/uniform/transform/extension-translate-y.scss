@@ -3,7 +3,7 @@
 
 $keyword: translate-y !default;
 $responsive: false !default;
-$responsive-pseudos: true !default;
+$responsive-pseudos: false !default;
 
 $properties: (--translate-y) !default;
 
@@ -16,44 +16,16 @@ $core-variants: (
 	0: 0,
 	1: size(1),
 	2: size(2),
-	3: size(3),
 	4: size(4),
-	5: size(5),
-	6: size(6),
-	7: size(7),
 	8: size(8),
-	9: size(9),
-	10: size(10),
-	11: size(11),
-	12: size(12),
-	13: size(13),
-	14: size(14),
-	15: size(15),
-	16: size(16),
-	17: size(17),
-	18: size(18),
+	14: size(64),
 	19: size(19),
-	20: size(20),
 	n1: size(n1),
 	n2: size(n2),
-	n3: size(n3),
 	n4: size(n4),
-	n5: size(n5),
-	n6: size(n6),
-	n7: size(n7),
 	n8: size(n8),
-	n9: size(n9),
-	n10: size(n10),
-	n11: size(n11),
-	n12: size(n12),
-	n13: size(n13),
-	n14: size(n14),
-	n15: size(n15),
-	n16: size(n16),
-	n17: size(n17),
-	n18: size(n18),
+	n14: size(n64),
 	n19: size(n19),
-	n20: size(n20),
 ) !default;
 
 $variants: () !default;

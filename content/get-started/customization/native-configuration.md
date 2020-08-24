@@ -95,7 +95,7 @@ Unlike Global variables, each CSS property has Locally scoped variables that con
 @use "uniform" as * with (
   $background-color-keyword: bg,
   $background-color-responsive: true,
-  $background-color-responsive-pseudos: true,
+  $background-color-responsive-pseudos: false,
   $background-color-properties: (background-color),
   $background-color-core-variants: (core.colors()),
   $background-color-variants: (),
