@@ -29,9 +29,7 @@
     "responsive": false,
     "pseudos": [
       "hover",
-      "focus",
-      "group-hover",
-      "focus-within"
+      "focus"
     ],
     "classes": [
       {
@@ -93,9 +91,15 @@
     ],
     "classes": [
       {
-        "class": "`.radius-{variant}`",
+        "class": "`.radius-0`",
         "properties": [
-          "`border-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-radius: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-{scale-variant}`",
+        "properties": [
+          "`border-radius: {scale-variant}`"
         ]
       }
     ]
@@ -110,10 +114,17 @@
     ],
     "classes": [
       {
-        "class": "`.radius-b-{variant}`",
+        "class": "`.radius-b-0`",
         "properties": [
-          "`border-bottom-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
-          "`border-bottom-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-bottom-left: 0`",
+          "`border-bottom-right: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-b-{scale-variant}`",
+        "properties": [
+          "`border-bottom-left: {scale-variant}`",
+          "`border-bottom-right: {scale-variant}`"
         ]
       }
     ]
@@ -128,10 +139,17 @@
     ],
     "classes": [
       {
-        "class": "`.radius-l-{variant}`",
+        "class": "`.radius-l-0`",
         "properties": [
-          "`border-top-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
-          "`border-bottom-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-top-left: 0`",
+          "`border-bottom-left: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-l-{scale-variant}`",
+        "properties": [
+          "`border-top-left: {scale-variant}`",
+          "`border-bottom-left: {scale-variant}`"
         ]
       }
     ]
@@ -146,10 +164,17 @@
     ],
     "classes": [
       {
-        "class": "`.radius-r-{variant}`",
+        "class": "`.radius-r-0`",
         "properties": [
-          "`border-top-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
-          "`border-bottom-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-top-right: 0`",
+          "`border-bottom-right: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-r-{scale-variant}`",
+        "properties": [
+          "`border-top-right: {scale-variant}`",
+          "`border-bottom-right: {scale-variant}`"
         ]
       }
     ]
@@ -164,10 +189,17 @@
     ],
     "classes": [
       {
-        "class": "`.radius-t-{variant}`",
+        "class": "`.radius-t-0`",
         "properties": [
-          "`border-top-left:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>",
-          "`border-top-right:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-top-left: 0`",
+          "`border-top-right: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-t-{scale-variant}`",
+        "properties": [
+          "`border-top-left: {scale-variant}`",
+          "`border-top-right: {scale-variant}`"
         ]
       }
     ]
@@ -182,9 +214,15 @@
     ],
     "classes": [
       {
-        "class": "`.radius-bl-{variant}`",
+        "class": "`.radius-bl-0`",
         "properties": [
-          "`border-bottom-left-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-bottom-left-radius: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-bl-{scale-variant}`",
+        "properties": [
+          "`border-bottom-left-radius: {scale-variant}`"
         ]
       }
     ]
@@ -199,9 +237,15 @@
     ],
     "classes": [
       {
-        "class": "`.radius-br-{variant}`",
+        "class": "`.radius-br-0`",
         "properties": [
-          "`border-bottom-right-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-bottom-right-radius: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-br-{scale-variant}`",
+        "properties": [
+          "`border-bottom-right-radius: {scale-variant}`"
         ]
       }
     ]
@@ -216,9 +260,15 @@
     ],
     "classes": [
       {
-        "class": "`.radius-tl-{variant}`",
+        "class": "`.radius-tl-0`",
         "properties": [
-          "`border-top-left-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-top-left-radius: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-tl-{scale-variant}`",
+        "properties": [
+          "`border-top-left-radius: {scale-variant}`"
         ]
       }
     ]
@@ -233,9 +283,15 @@
     ],
     "classes": [
       {
-        "class": "`.radius-tr-{variant}`",
+        "class": "`.radius-tr-0`",
         "properties": [
-          "`border-top-right-radius:` <a href=\"/get-started/radius\" class=\"font-sm hover.underline color-indigo-500\">See Radius</a>"
+          "`border-top-right-radius: 0`"
+        ]
+      },
+      {
+        "class": "`.radius-tr-{scale-variant}`",
+        "properties": [
+          "`border-top-right-radius: {scale-variant}`"
         ]
       }
     ]
@@ -246,10 +302,7 @@
     "description": "The `border-width` property sets the width of an element's four borders. ",
     "responsive": false,
     "pseudos": [
-      "hover",
-      "focus",
-      "group-hover",
-      "focus-within"
+      "none"
     ],
     "classes": [
       {
@@ -275,6 +328,30 @@
         "properties": [
           "`border-width: 3px`"
         ]
+      },
+      {
+        "class": "`.border-4px`",
+        "properties": [
+          "`border-width: 4px`"
+        ]
+      },
+      {
+        "class": "`.border-6px`",
+        "properties": [
+          "`border-width: 6px`"
+        ]
+      },
+      {
+        "class": "`.border-8px`",
+        "properties": [
+          "`border-width: 8px`"
+        ]
+      },
+      {
+        "class": "`.border-12px`",
+        "properties": [
+          "`border-width: 12px`"
+        ]
       }
     ]
   },
@@ -284,10 +361,7 @@
     "description": "The `border-bottom-width` property sets the width of an element's bottom border.",
     "responsive": false,
     "pseudos": [
-      "hover",
-      "focus",
-      "group-hover",
-      "focus-within"
+      "last"
     ],
     "classes": [
       {
@@ -313,6 +387,30 @@
         "properties": [
           "`border-bottom-width: 3px`"
         ]
+      },
+      {
+        "class": "`.border-b-4px`",
+        "properties": [
+          "`border-bottom-width: 4px`"
+        ]
+      },
+      {
+        "class": "`.border-b-6px`",
+        "properties": [
+          "`border-bottom-width: 6px`"
+        ]
+      },
+      {
+        "class": "`.border-b-8px`",
+        "properties": [
+          "`border-bottom-width: 8px`"
+        ]
+      },
+      {
+        "class": "`.border-b-12px`",
+        "properties": [
+          "`border-bottom-width: 12px`"
+        ]
       }
     ]
   },
@@ -322,10 +420,7 @@
     "description": "The `border-left-width` property sets the width of an element's left border.",
     "responsive": false,
     "pseudos": [
-      "hover",
-      "focus",
-      "group-hover",
-      "focus-within"
+      "first"
     ],
     "classes": [
       {
@@ -351,6 +446,30 @@
         "properties": [
           "`border-left-width: 3px`"
         ]
+      },
+      {
+        "class": "`.border-l-4px`",
+        "properties": [
+          "`border-left-width: 4px`"
+        ]
+      },
+      {
+        "class": "`.border-l-6px`",
+        "properties": [
+          "`border-left-width: 6px`"
+        ]
+      },
+      {
+        "class": "`.border-l-8px`",
+        "properties": [
+          "`border-left-width: 8px`"
+        ]
+      },
+      {
+        "class": "`.border-l-12px`",
+        "properties": [
+          "`border-left-width: 12px`"
+        ]
       }
     ]
   },
@@ -360,10 +479,7 @@
     "description": "The `border-right-width` property sets the width of an element's right border.",
     "responsive": false,
     "pseudos": [
-      "hover",
-      "focus",
-      "group-hover",
-      "focus-within"
+      "last"
     ],
     "classes": [
       {
@@ -389,6 +505,30 @@
         "properties": [
           "`border-right-width: 3px`"
         ]
+      },
+      {
+        "class": "`.border-r-4px`",
+        "properties": [
+          "`border-right-width: 4px`"
+        ]
+      },
+      {
+        "class": "`.border-r-6px`",
+        "properties": [
+          "`border-right-width: 6px`"
+        ]
+      },
+      {
+        "class": "`.border-r-8px`",
+        "properties": [
+          "`border-right-width: 8px`"
+        ]
+      },
+      {
+        "class": "`.border-r-12px`",
+        "properties": [
+          "`border-right-width: 12px`"
+        ]
       }
     ]
   },
@@ -398,10 +538,7 @@
     "description": "The `border-top-width` property sets the width of an element's top border.",
     "responsive": false,
     "pseudos": [
-      "hover",
-      "focus",
-      "group-hover",
-      "focus-within"
+      "first"
     ],
     "classes": [
       {
@@ -426,6 +563,30 @@
         "class": "`.border-t-3px`",
         "properties": [
           "`border-top-width: 3px`"
+        ]
+      },
+      {
+        "class": "`.border-t-4px`",
+        "properties": [
+          "`border-top-width: 4px`"
+        ]
+      },
+      {
+        "class": "`.border-t-6px`",
+        "properties": [
+          "`border-top-width: 6px`"
+        ]
+      },
+      {
+        "class": "`.border-t-8px`",
+        "properties": [
+          "`border-top-width: 8px`"
+        ]
+      },
+      {
+        "class": "`.border-t-12px`",
+        "properties": [
+          "`border-top-width: 12px`"
         ]
       }
     ]

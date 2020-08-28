@@ -1,21 +1,19 @@
 @use "uniform/_core" as *;
 @use "sass:map";
 
-$keyword: outline !default;
+$keyword: bg !default;
 $responsive: false !default;
 $responsive-pseudos: false !default;
 
-$properties: (outline) !default;
+$properties: (background) !default;
 
-$core-variants: (
-  none: 0
-) !default;
+$core-variants: (gradients()) !default;
 
 $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$pseudos: (hover, focus) !default;
+$pseudos: () !default;
 
 @include constructor(
   $keyword,

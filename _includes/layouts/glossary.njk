@@ -2,8 +2,13 @@
 layout: layouts/base.njk
 ---
 
-<div class="fixed t-0 l-0 h-28 w-100p z-n1 bg-hero-short">
+<div class="fixed t-0 l-0 w-100p z-n1 bg-hero-short">
+  <div class="h-26">
 
+  </div>
+  <div class="h-20">
+
+  </div>
 </div>
 
 <a href="#nav" class="flex bg-white shadow-2 color-black align-items-center justify-content-center px-5 h-11 radius-round fixed b-0 r-0 mb-6 mr-6 font-400 font-sm">
@@ -303,7 +308,7 @@ layout: layouts/base.njk
 
 				{%- for property in alignment -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -340,7 +345,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -371,7 +376,7 @@ layout: layouts/base.njk
 
         {%- for property in appearance -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -408,7 +413,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -439,7 +444,7 @@ layout: layouts/base.njk
 
         {%- for property in background -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -476,7 +481,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -507,7 +512,7 @@ layout: layouts/base.njk
 
         {%- for property in border -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -544,7 +549,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -575,7 +580,7 @@ layout: layouts/base.njk
 
         {%- for property in composition -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -612,7 +617,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -643,7 +648,7 @@ layout: layouts/base.njk
 
         {%- for property in overflow -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -680,7 +685,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -711,7 +716,7 @@ layout: layouts/base.njk
 
         {%- for property in sizing -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -748,7 +753,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -779,7 +784,7 @@ layout: layouts/base.njk
 
         {%- for property in position -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -816,7 +821,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -847,7 +852,7 @@ layout: layouts/base.njk
 
         {%- for property in margin -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -884,7 +889,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -915,7 +920,7 @@ layout: layouts/base.njk
 
         {%- for property in padding -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -952,7 +957,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -983,7 +988,7 @@ layout: layouts/base.njk
 
         {%- for property in typography -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1020,7 +1025,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1051,7 +1056,7 @@ layout: layouts/base.njk
 
         {%- for property in grid -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1088,7 +1093,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1119,7 +1124,7 @@ layout: layouts/base.njk
 
         {%- for property in flexbox -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1156,7 +1161,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1187,7 +1192,7 @@ layout: layouts/base.njk
 
         {%- for property in gap -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1224,7 +1229,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1255,7 +1260,7 @@ layout: layouts/base.njk
 
         {%- for property in multi-column -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1292,7 +1297,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1323,7 +1328,7 @@ layout: layouts/base.njk
 
         {%- for property in transform -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1360,7 +1365,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1391,7 +1396,7 @@ layout: layouts/base.njk
 
         {%- for property in transition -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1428,7 +1433,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1459,7 +1464,7 @@ layout: layouts/base.njk
 
         {%- for property in interactive -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1496,7 +1501,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 
@@ -1527,7 +1532,7 @@ layout: layouts/base.njk
 
         {%- for property in svg -%}
           <article class="mb-8 last.mb-0">
-            <div class="reference">
+            <div class="markdown">
               <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
                 <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
 
@@ -1564,7 +1569,7 @@ layout: layouts/base.njk
               </div>
             </div>
 
-            <div class="font-sm md.font-md reference">
+            <div class="font-sm md.font-md markdown">
               {{ property.description | markdownify | safe }}
             </div>
 

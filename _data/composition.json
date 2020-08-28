@@ -270,16 +270,28 @@
   {
     "title": "ratio",
     "family": "extension",
-    "description": "The `clearfix` extension makes parent container respect the floated contents boundary.",
+    "description": "The ratio extension applies various percentage based padding to simulate an aspect ratio",
     "responsive": false,
     "pseudos": [
       "none"
     ],
     "classes": [
       {
-        "class": "`.clearfix`",
+        "class": "`.ratio-square`",
         "properties": [
-          "`multiple properties`"
+          "`1:1`"
+        ]
+      },
+      {
+        "class": "`.ratio-16-9`",
+        "properties": [
+          "`16:9`"
+        ]
+      },
+      {
+        "class": "`.ratio-4-3`",
+        "properties": [
+          "`4:3`"
         ]
       }
     ]

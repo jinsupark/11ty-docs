@@ -1,11 +1,11 @@
 @use "uniform/_core" as *;
 @use "sass:map";
 
-$keyword: border-t !default;
+$keyword: border-r !default;
 $responsive: true !default;
 $responsive-pseudos: false !default;
 
-$properties: (border-top-width) !default;
+$properties: (border-right-width) !default;
 
 $core-variants: (
 	0: 0,
@@ -24,7 +24,7 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$pseudos: (first, last) !default;
+$pseudos: (last) !default;
 
 @include constructor(
   $keyword,

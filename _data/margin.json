@@ -21,7 +21,7 @@
         ]
       },
       {
-        "class": "`.m-{variant}`",
+        "class": "`.m-{scale-variant}`",
         "properties": [
           "`margin:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "class": "`.mx-{variant}`",
+        "class": "`.mx-{scale-variant}`",
         "properties": [
           "margin-left: <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
           "margin-right: <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
@@ -80,7 +80,7 @@
         ]
       },
       {
-        "class": "`.my-{variant}`",
+        "class": "`.my-{scale-variant}`",
         "properties": [
           "`margin-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
           "`margin-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
@@ -110,7 +110,7 @@
         ]
       },
       {
-        "class": "`.mb-{variant}`",
+        "class": "`.mb-{scale-variant}`",
         "properties": [
           "`margin-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -139,7 +139,7 @@
         ]
       },
       {
-        "class": "`.ml-{variant}`",
+        "class": "`.ml-{scale-variant}`",
         "properties": [
           "`margin-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "class": "`.mr-{variant}`",
+        "class": "`.mr-{scale-variant}`",
         "properties": [
           "`margin-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -197,7 +197,7 @@
         ]
       },
       {
-        "class": "`.mt-{variant}`",
+        "class": "`.mt-{scale-variant}`",
         "properties": [
           "`margin-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]

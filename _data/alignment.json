@@ -9,37 +9,37 @@
     ],
     "classes": [
       {
-        "class": "`.content-stretch`",
+        "class": "`.align-content-stretch`",
         "properties": [
           "`align-content: stretch;`"
         ]
       },
       {
-        "class": "`.content-center`",
+        "class": "`.align-content-center`",
         "properties": [
           "`align-content: center;`"
         ]
       },
       {
-        "class": "`.content-start`",
+        "class": "`.align-content-start`",
         "properties": [
           "`align-content: start;`"
         ]
       },
       {
-        "class": "`.content-end`",
+        "class": "`.align-content-end`",
         "properties": [
           "`align-content: end;`"
         ]
       },
       {
-        "class": "`.content-between`",
+        "class": "`.align-content-between`",
         "properties": [
           "`align-content: between;`"
         ]
       },
       {
-        "class": "`.content-around`",
+        "class": "`.align-content-around`",
         "properties": [
           "`align-content: around;`"
         ]
@@ -56,31 +56,31 @@
     ],
     "classes": [
       {
-        "class": "`.items-stretch`",
+        "class": "`.align-items-stretch`",
         "properties": [
           "`align-items: stretch;`"
         ]
       },
       {
-        "class": "`.items-center`",
+        "class": "`.align-items-center`",
         "properties": [
           "`align-items: center;`"
         ]
       },
       {
-        "class": "`.items-start`",
+        "class": "`.align-items-start`",
         "properties": [
           "`align-items: flex-start;`"
         ]
       },
       {
-        "class": "`.items-end`",
+        "class": "`.align-items-end`",
         "properties": [
           "`align-items: flex-end;`"
         ]
       },
       {
-        "class": "`.items-baseline`",
+        "class": "`.align-items-baseline`",
         "properties": [
           "`align-items: baseline;`"
         ]
@@ -97,31 +97,31 @@
     ],
     "classes": [
       {
-        "class": "`.self-auto`",
+        "class": "`.align-self-auto`",
         "properties": [
           "`align-self: auto;`"
         ]
       },
       {
-        "class": "`.self-stretch`",
+        "class": "`.align-self-stretch`",
         "properties": [
           "`align-self: stretch;`"
         ]
       },
       {
-        "class": "`.self-center`",
+        "class": "`.align-self-center`",
         "properties": [
           "`align-self: center;`"
         ]
       },
       {
-        "class": "`.self-start`",
+        "class": "`.align-self-start`",
         "properties": [
           "`align-self: flex-start;`"
         ]
       },
       {
-        "class": "`.self-end`",
+        "class": "`.align-self-end`",
         "properties": [
           "`align-self: flex-end;`"
         ]
@@ -138,31 +138,31 @@
     ],
     "classes": [
       {
-        "class": "`.justify-start`",
+        "class": "`.justify-content-start`",
         "properties": [
           "`justify-content: flex-start;`"
         ]
       },
       {
-        "class": "`.justify-center`",
+        "class": "`.justify-content-center`",
         "properties": [
           "`justify-content: flex-center;`"
         ]
       },
       {
-        "class": "`.justify-end`",
+        "class": "`.justify-content-end`",
         "properties": [
           "`justify-content: flex-end;`"
         ]
       },
       {
-        "class": "`.justify-between`",
+        "class": "`.justify-content-between`",
         "properties": [
           "`justify-content: space-between;`"
         ]
       },
       {
-        "class": "`.justify-around`",
+        "class": "`.justify-content-around`",
         "properties": [
           "`justify-content: flex-space-around;`"
         ]
@@ -208,7 +208,7 @@
     "title": "vertical-align",
     "family": "core",
     "description": "The `vertical-align` property sets the vertical alignment of an element.",
-    "responsive": false,
+    "responsive": true,
     "pseudos": [
       "none"
     ],

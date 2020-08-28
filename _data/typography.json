@@ -29,7 +29,7 @@
     ],
     "classes": [
       {
-        "class": "`.font-{variant}`",
+        "class": "`.font-{scale-variant}`",
         "properties": [
           "`font-family:` <a href=\"/get-started/typography\" class=\"font-sm hover.underline color-indigo-500\">See Font Families</a>"
         ]
@@ -46,7 +46,7 @@
     ],
     "classes": [
       {
-        "class": "`.font-{variant}`",
+        "class": "`.font-{scale-variant}`",
         "properties": [
           "`font-size:` <a class=\"font-sm hover.underline color-indigo-500\">See Font Sizes</a>"
         ]
@@ -86,7 +86,7 @@
     ],
     "classes": [
       {
-        "class": "`.font-{variant}`",
+        "class": "`.font-{scale-variant}`",
         "properties": [
           "`font-weight:` <a href=\"/get-started/typography\" class=\"font-sm hover.underline color-indigo-500\">See Font Weights</a>"
         ]
@@ -156,7 +156,7 @@
     ],
     "classes": [
       {
-        "class": "`.leading-{variant}`",
+        "class": "`.leading-{scale-variant}`",
         "properties": [
           "`line-height:` <a href=\"/get-started/typography\" class=\"font-sm hover.underline color-indigo-500\">See Line Heights</a>"
         ]

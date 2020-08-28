@@ -183,6 +183,12 @@
         ]
       },
       {
+        "class": "`.opacity-90`",
+        "properties": [
+          "`opacity: .9;`"
+        ]
+      },
+      {
         "class": "`.opacity-100`",
         "properties": [
           "`opacity: 1;`"
@@ -200,7 +206,7 @@
     ],
     "classes": [
       {
-        "class": "`.outline-none`",
+        "class": "`.outline-0`",
         "properties": [
           "`outline: 0;`"
         ]
@@ -212,10 +218,7 @@
     "family": "core",
     "description": "The `visibility` property specifies whether or not an element is visible.",
     "responsive": true,
-    "pseudos": [
-      "hover",
-      "active"
-    ],
+    "pseudos": ["none"],
     "classes": [
       {
         "class": "`.visible`",
@@ -226,7 +229,7 @@
       {
         "class": "`.invisible`",
         "properties": [
-          "`visibility: invisible;`"
+          "`visibility: hidden;`"
         ]
       }
     ]
@@ -235,7 +238,7 @@
     "title": "appearance",
     "family": "extension",
     "description": "The `appearance` CSS property is used to control an element's native styling such as select arrows.",
-    "responsive": true,
+    "responsive": false,
     "pseudos": ["none"],
     "classes": [
       {

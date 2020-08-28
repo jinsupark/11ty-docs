@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $keyword: align !default;
-$responsive: false !default;
+$responsive: true !default;
 $responsive-pseudos: false !default;
 
 $properties: (vertical-align) !default;

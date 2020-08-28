@@ -9,7 +9,7 @@
     ],
     "classes": [
       {
-        "class": "`.p-{variant}`",
+        "class": "`.p-{scale-variant}`",
         "properties": [
           "`property:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -33,7 +33,7 @@
         ]
       },
       {
-        "class": "`.px-{variant}`",
+        "class": "`.px-{scale-variant}`",
         "properties": [
           "`padding-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
           "`padding-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
@@ -58,7 +58,7 @@
         ]
       },
       {
-        "class": "`.py-{variant}`",
+        "class": "`.py-{scale-variant}`",
         "properties": [
           "`padding-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
           "`padding-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
@@ -82,7 +82,7 @@
         ]
       },
       {
-        "class": "`.pb-{variant}`",
+        "class": "`.pb-{scale-variant}`",
         "properties": [
           "`padding-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -105,7 +105,7 @@
         ]
       },
       {
-        "class": "`.pl-{variant}`",
+        "class": "`.pl-{scale-variant}`",
         "properties": [
           "`padding-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -128,7 +128,7 @@
         ]
       },
       {
-        "class": "`.pr-{variant}`",
+        "class": "`.pr-{scale-variant}`",
         "properties": [
           "`padding-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]
@@ -151,7 +151,7 @@
         ]
       },
       {
-        "class": "`.pt-{variant}`",
+        "class": "`.pt-{scale-variant}`",
         "properties": [
           "`padding-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
         ]

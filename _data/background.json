@@ -2,17 +2,14 @@
   {
     "title": "background",
     "family": "core",
-    "description": "The `background` property is similar to the background-color property however, unlike background-color the background defines gradients.",
+    "description": "The `background` property is similar to the background-color property however, unlike background-color the background property applies gradients.",
     "responsive": false,
-    "pseudos": [
-      "hover",
-      "active"
-    ],
+    "pseudos": ["none"],
     "classes": [
       {
         "class": "`.bg-{color}`",
         "properties": [
-          "`border-bottom-width:` <a href=\"/get-started/colors\" class=\"font-sm hover.underline color-indigo-500\">See Colors</a>"
+          "`background: {color}`"
         ]
       }
     ]
@@ -47,30 +44,36 @@
     ]
   },
   {
-    "title": "background-attachment",
+    "title": "background-clip",
     "family": "core",
-    "description": "The `background-attachment` property sets whether a background image scrolls with the rest of the page, or is fixed.",
+    "description": "The `background-clip` property sets whether an element's background extends underneath its border box, padding box, or content box.",
     "responsive": true,
     "pseudos": [
       "none"
     ],
     "classes": [
       {
-        "class": "`.bg-scroll`",
+        "class": "`.bg-border-box`",
         "properties": [
-          "`background-attachment: scroll;`"
+          "`background-clip: border-box;`"
         ]
       },
       {
-        "class": "`.bg-fixed`",
+        "class": "`.bg-padding-box`",
         "properties": [
-          "`background-attachment: fixed;`"
+          "`background-clip: padding-box;`"
         ]
       },
       {
-        "class": "`.bg-local`",
+        "class": "`.bg-content-box`",
         "properties": [
-          "`background-attachment: local;`"
+          "`background-clip: content-box;`"
+        ]
+      },
+      {
+        "class": "`.bg-text`",
+        "properties": [
+          "`background-clip: text;`"
         ]
       }
     ]
@@ -84,8 +87,7 @@
       "hover",
       "focus",
       "active",
-      "group-hover",
-      "focus-within"
+      "group-hover"
     ],
     "classes": [
       {
@@ -97,7 +99,7 @@
       {
         "class": "`.bg-{color}`",
         "properties": [
-          "`background-color`: <a href=\"/get-started/colors\" class=\"font-sm hover.underline color-indigo-500\">See Colors</a>"
+          "`background-color: {color}`"
         ]
       }
     ]

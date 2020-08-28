@@ -15,13 +15,13 @@
         ]
       },
       {
-        "class": "`.h-full`",
+        "class": "`.h-100p`",
         "properties": [
           "`height: 100%;`"
         ]
       },
       {
-        "class": "`.h-screen`",
+        "class": "`.h-100vh`",
         "properties": [
           "`height: 100vh;`"
         ]
@@ -33,9 +33,21 @@
         ]
       },
       {
-        "class": "`.h-{variant}`",
+        "class": "`.h-2px`",
         "properties": [
-          "`height:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`height: 1px;`"
+        ]
+      },
+      {
+        "class": "`.h-3px`",
+        "properties": [
+          "`height: 1px;`"
+        ]
+      },
+      {
+        "class": "`.h-{scale-variant}`",
+        "properties": [
+          "`height: {scale-variant}`"
         ]
       }
     ]
@@ -62,13 +74,49 @@
         ]
       },
       {
-        "class": "`.w-screen`",
+        "class": "`.w-100vw`",
         "properties": [
           "`width: 100vw;`"
         ]
       },
       {
+        "class": "`.w-screen-sm`",
+        "properties": [
+          "`width: 768px;`"
+        ]
+      },
+      {
+        "class": "`.w-screen-md`",
+        "properties": [
+          "`width: 1024px;`"
+        ]
+      },
+      {
+        "class": "`.w-screen-lg`",
+        "properties": [
+          "`width: 1280px;`"
+        ]
+      },
+      {
+        "class": "`.w-screen-xl`",
+        "properties": [
+          "`width: 1536px;`"
+        ]
+      },
+      {
         "class": "`.w-px`",
+        "properties": [
+          "`width: 1px;`"
+        ]
+      },
+      {
+        "class": "`.w-2px`",
+        "properties": [
+          "`width: 1px;`"
+        ]
+      },
+      {
+        "class": "`.w-3px`",
         "properties": [
           "`width: 1px;`"
         ]
@@ -164,9 +212,9 @@
         ]
       },
       {
-        "class": "`.w-{variant}`",
+        "class": "`.w-{scale-variant}`",
         "properties": [
-          "`width:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`width: {scale-variant}`"
         ]
       }
     ]
@@ -191,6 +239,120 @@
         "properties": [
           "`min-width: 100%;`"
         ]
+      },
+      {
+        "class": "`.min-w-100vw`",
+        "properties": [
+          "`min-width: 100vw;`"
+        ]
+      },
+      {
+        "class": "`.min-w-screen-sm`",
+        "properties": [
+          "`min-width: 768px;`"
+        ]
+      },
+      {
+        "class": "`.min-w-screen-md`",
+        "properties": [
+          "`min-width: 1024px;`"
+        ]
+      },
+      {
+        "class": "`.min-w-screen-lg`",
+        "properties": [
+          "`min-width: 1280px;`"
+        ]
+      },
+      {
+        "class": "`.min-w-screen-xl`",
+        "properties": [
+          "`min-width: 1536px;`"
+        ]
+      },
+      {
+        "class": "`.min-w-2-12`",
+        "properties": [
+          "`min-width: 16.666667%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-3-12`",
+        "properties": [
+          "`min-width: 25%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-4-12`",
+        "properties": [
+          "`min-width: 33.333333%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-5-12`",
+        "properties": [
+          "`min-width: 41.666667%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-6-12`",
+        "properties": [
+          "`min-width: 50%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-7-12`",
+        "properties": [
+          "`min-width: 58.333333%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-8-12`",
+        "properties": [
+          "`min-width: 66.666667%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-9-12`",
+        "properties": [
+          "`min-width: 75%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-10-12`",
+        "properties": [
+          "`min-width: 83.333333%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-11-12`",
+        "properties": [
+          "`min-width: 91.666667%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-1-5`",
+        "properties": [
+          "`min-width: 20%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-2-5`",
+        "properties": [
+          "`min-width: 40%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-3-5`",
+        "properties": [
+          "`min-width: 60%;`"
+        ]
+      },
+      {
+        "class": "`.min-w-4-5`",
+        "properties": [
+          "`min-width: 80%;`"
+        ]
       }
     ]
   },
@@ -210,15 +372,21 @@
         ]
       },
       {
-        "class": "`.min-h-full`",
+        "class": "`.min-h-100p`",
         "properties": [
           "`max-height: 100%;`"
         ]
       },
       {
-        "class": "`.min-h-screen`",
+        "class": "`.min-h-100vh`",
         "properties": [
           "`max-height: 100vh;`"
+        ]
+      },
+      {
+        "class": "`.max-h-{scale-variant}`",
+        "properties": [
+          "`max-height: {scale-variant}`"
         ]
       }
     ]
@@ -233,15 +401,27 @@
     ],
     "classes": [
       {
-        "class": "`.max-h-full`",
+        "class": "`.max-h-none`",
+        "properties": [
+          "`max-height: none;`"
+        ]
+      },
+      {
+        "class": "`.max-h-100p`",
         "properties": [
           "`max-height: 100%;`"
         ]
       },
       {
-        "class": "`.max-h-screen`",
+        "class": "`.max-h-100vh`",
         "properties": [
           "`max-height: 100vh;`"
+        ]
+      },
+      {
+        "class": "`.max-h-{scale-variant}`",
+        "properties": [
+          "`max-height: {scale-variant}`"
         ]
       }
     ]
@@ -280,9 +460,15 @@
         ]
       },
       {
-        "class": "`.max-w-{variant}`",
+        "class": "`.max-w-screen-xl`",
         "properties": [
-          "`max-width:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`max-width: 1536px;`"
+        ]
+      },
+      {
+        "class": "`.max-w-{scale-variant}`",
+        "properties": [
+          "`max-width: {scale-variant}`"
         ]
       }
     ]

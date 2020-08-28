@@ -109,8 +109,8 @@ $all-pseudo-map: merge($core-pseudo-map, $pseudo-map) !default;
 // ============================================================
 
 $core-screens: (
-	sm: 768px,
-	md: 1024px,
+	sm: 1024px,
+	md: 1140px,
 	lg: 1280px,
 	xl: 1536px,
 ) !default;
@@ -460,10 +460,6 @@ $core-positive-sizes: (
 	25: rem(512),
 	26: rem(640),
 	27: rem(768),
-
-	28: rem(1024),
-	29: rem(1280),
-	30: rem(1536),
 ) !default;
 
 $positive-sizes: () !default;
@@ -500,10 +496,6 @@ $core-negative-sizes: (
 	n25: rem(-512),
 	n26: rem(-640),
 	n27: rem(-768),
-
-	n28: rem(-1024),
-	n29: rem(-1280),
-	n30: rem(-1536),
 ) !default;
 
 $negative-sizes: () !default;

@@ -21,25 +21,32 @@ CUSTOM PROPERTIES
 		margin: auto;
 		padding-left: var(--wrapper-padding, size(6));
 		padding-right: var(--wrapper-padding, size(6));
+
 		@media (min-width: screen(sm)) {
-			max-width: var(--wrapper-sm-max-width, screen(sm));
-			padding-left: var(--wrapper-sm-padding, size(6));
-			padding-right: var(--wrapper-sm-padding, size(6));
+			max-width: var(--wrapper-sm-max-width, 1024px);
 		}
 		@media (min-width: screen(md)) {
-			max-width: var(--wrapper-md-max-width, screen(md));
-			padding-left: var(--wrapper-md-padding, size(6));
-			padding-right: var(--wrapper-md-padding, size(6));
+			max-width: var(--wrapper-md-max-width, 1024px);
 		}
 		@media (min-width: screen(lg)) {
-			max-width: var(--wrapper-lg-max-width, screen(lg));
-			padding-left: var(--wrapper-lg-padding, size(6));
-			padding-right: var(--wrapper-lg-padding, size(6));
+			max-width: var(--wrapper-lg-max-width, 1140px);
 		}
 		@media (min-width: screen(xl)) {
-			max-width: var(--wrapper-xl-max-width, screen(lg));
-			padding-left: var(--wrapper-xl-padding, size(6));
-			padding-right: var(--wrapper-xl-padding, size(6));
+			max-width: var(--wrapper-xl-max-width, 1280px);
+		}
+		
+	}
+	.wrapper-flush {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	@each $screen, $screen-value in screens() {
+		@media (min-width: $screen-value) {
+			.#{$screen}#{$screen-delimiter}wrapper-unflush {
+				padding-left: var(--wrapper-padding, size(6));
+				padding-right: var(--wrapper-padding, size(6));
+			}
 		}
 	}
 }
