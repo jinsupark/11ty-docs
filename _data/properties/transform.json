@@ -1,0 +1,554 @@
+[
+  {
+    "title": "transform",
+    "family": "core",
+    "description": "The `transform` property applies a set of CSS variables to allow for transform property handling. This class must be applied before applying `scale-1`,  `transform-x-1` and etc.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "active",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.transform`",
+        "properties": [
+          "`{multiple-properties}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "transform-origin",
+    "family": "core",
+    "description": "The `transform-origin` property allows you to change the position of transformed elements.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.transform-center`",
+        "properties": [
+          "`transform-origin: center;`"
+        ]
+      },
+      {
+        "class": "`.transform-center-bottom`",
+        "properties": [
+          "`transform-origin: center bottom;`"
+        ]
+      },
+      {
+        "class": "`.transform-center-left`",
+        "properties": [
+          "`transform-origin: center left;`"
+        ]
+      },
+      {
+        "class": "`.transform-center-right`",
+        "properties": [
+          "`transform-origin: center right;`"
+        ]
+      },
+      {
+        "class": "`.transform-top`",
+        "properties": [
+          "`transform-origin: top;`"
+        ]
+      },
+      {
+        "class": "`.transform-top-right`",
+        "properties": [
+          "`transform-origin: top right;`"
+        ]
+      },
+      {
+        "class": "`.transform-right`",
+        "properties": [
+          "`transform-origin: right;`"
+        ]
+      },
+      {
+        "class": "`.transform-bottom-right`",
+        "properties": [
+          "`transform-origin: bottom right;`"
+        ]
+      },
+      {
+        "class": "`.transform-bottom`",
+        "properties": [
+          "`transform-origin: bottom;`"
+        ]
+      },
+      {
+        "class": "`.transform-bottom-left`",
+        "properties": [
+          "`transform-origin: bottom left;`"
+        ]
+      },
+      {
+        "class": "`.transform-left`",
+        "properties": [
+          "`transform-origin: left;`"
+        ]
+      },
+      {
+        "class": "`.transform-top-left`",
+        "properties": [
+          "`transform-origin: top left;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "translate-x",
+    "family": "core",
+    "description": "The `transformX` function repositions an element horizontally on the 2D plane.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.transform-x-100p`",
+        "properties": [
+          "`--translate-x: 100%;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n100p`",
+        "properties": [
+          "`--translate-x: -100p;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-50p`",
+        "properties": [
+          "`--translate-x: 50%;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n50p`",
+        "properties": [
+          "`--translate-x: -50%;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-0`",
+        "properties": [
+          "`--translate-x: 0;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-1`",
+        "properties": [
+          "`--translate-x: 0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-2`",
+        "properties": [
+          "`--translate-x: 0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-4`",
+        "properties": [
+          "`--translate-x: 1rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-8`",
+        "properties": [
+          "`--translate-x: 2rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-16`",
+        "properties": [
+          "`--translate-x: 5rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n1`",
+        "properties": [
+          "`--translate-x: -0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n2`",
+        "properties": [
+          "`--translate-x: -0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n4`",
+        "properties": [
+          "`--translate-x: -1rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n8`",
+        "properties": [
+          "`--translate-x: -2rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-x-n16`",
+        "properties": [
+          "`--translate-x: -5rem;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "translate-y",
+    "family": "core",
+    "description": "The `transformY` function repositions an element vertically on the 2D plane.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.transform-y-100p`",
+        "properties": [
+          "`--translate-y: 100%;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n100p`",
+        "properties": [
+          "`--translate-y: -100p;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-50p`",
+        "properties": [
+          "`--translate-y: 50%;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n50p`",
+        "properties": [
+          "`--translate-y: -50%;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-0`",
+        "properties": [
+          "`--translate-y: 0;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-1`",
+        "properties": [
+          "`--translate-y: 0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-2`",
+        "properties": [
+          "`--translate-y: 0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-4`",
+        "properties": [
+          "`--translate-y: 1rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-8`",
+        "properties": [
+          "`--translate-y: 2rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-16`",
+        "properties": [
+          "`--translate-y: 5rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n1`",
+        "properties": [
+          "`--translate-y: -0.25rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n2`",
+        "properties": [
+          "`--translate-y: -0.5rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n4`",
+        "properties": [
+          "`--translate-y: -1rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n8`",
+        "properties": [
+          "`--translate-y: -2rem;`"
+        ]
+      },
+      {
+        "class": "`.transform-y-n16`",
+        "properties": [
+          "`--translate-y: -5rem;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "scale-x",
+    "family": "core",
+    "description": "The `scaleX` function defines a transformation that resizes an element along the x-axis (horizontally).",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.scale-x-xs`",
+        "properties": [
+          "`--scale-x: 0.8;`"
+        ]
+      },
+      {
+        "class": "`.scale-x-sm`",
+        "properties": [
+          "`--scale-x: 0.9;`"
+        ]
+      },
+      {
+        "class": "`.scale-x-md`",
+        "properties": [
+          "`--scale-x: 1;`"
+        ]
+      },
+      {
+        "class": "`.scale-x-lg`",
+        "properties": [
+          "`--scale-x: 1.1;`"
+        ]
+      },
+      {
+        "class": "`.scale-x-xl`",
+        "properties": [
+          "`--scale-x: 1.2;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "scale-y",
+    "family": "core",
+    "description": "The `scaleY` function defines a transformation that resizes an element along the y-axis (vertically).",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.scale-y-xs`",
+        "properties": [
+          "`--scale-y: 0.8;`"
+        ]
+      },
+      {
+        "class": "`.scale-y-sm`",
+        "properties": [
+          "`--scale-y: 0.9;`"
+        ]
+      },
+      {
+        "class": "`.scale-y-md`",
+        "properties": [
+          "`--scale-y: 1;`"
+        ]
+      },
+      {
+        "class": "`.scale-y-lg`",
+        "properties": [
+          "`--scale-y: 1.1;`"
+        ]
+      },
+      {
+        "class": "`.scale-y-xl`",
+        "properties": [
+          "`--scale-y: 1.2;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "skew-x",
+    "family": "core",
+    "description": "The `skewX` function defines a transformation that skews an element in the horizontal direction on the 2D plane.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.skew-x-n12`",
+        "properties": [
+          "`--skew-x: -12deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-x-n8`",
+        "properties": [
+          "`--skew-x: -8deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-x-n4`",
+        "properties": [
+          "`--skew-x: -4deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-x-0`",
+        "properties": [
+          "`--skew-x: 0`"
+        ]
+      },
+      {
+        "class": "`.skew-x-4`",
+        "properties": [
+          "`--skew-x: 4deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-x-8`",
+        "properties": [
+          "`--skew-x: 8deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-x-12`",
+        "properties": [
+          "`--skew-x: 12deg;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "skew-y",
+    "family": "core",
+    "description": "The `skewY` function defines a transformation that skews an element in the vertical direction on the 2D plane.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.skew-y-n12`",
+        "properties": [
+          "`--skew-y: -12deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-y-n8`",
+        "properties": [
+          "`--skew-y: -8deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-y-n4`",
+        "properties": [
+          "`--skew-y: -4deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-y-0`",
+        "properties": [
+          "`--skew-y: 0`"
+        ]
+      },
+      {
+        "class": "`.skew-y-4`",
+        "properties": [
+          "`--skew-y: 4deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-y-8`",
+        "properties": [
+          "`--skew-y: 8deg;`"
+        ]
+      },
+      {
+        "class": "`.skew-y-12`",
+        "properties": [
+          "`--skew-y: 12deg;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "rotate",
+    "family": "core",
+    "description": "The `rotate` function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it.",
+    "responsive": false,
+    "pseudos": [
+      "hover",
+      "group-hover"
+    ],
+    "classes": [
+      {
+        "class": "`.rotate-0`",
+        "properties": [
+          "`--rotate: 0;`"
+        ]
+      },
+      {
+        "class": "`.rotate-45`",
+        "properties": [
+          "`--rotate: 45deg;`"
+        ]
+      },
+      {
+        "class": "`.rotate-90`",
+        "properties": [
+          "`--rotate: 90deg;`"
+        ]
+      },
+      {
+        "class": "`.rotate-180`",
+        "properties": [
+          "`--rotate: 180deg;`"
+        ]
+      },
+      {
+        "class": "`.rotate-n45`",
+        "properties": [
+          "`--rotate: -45deg;`"
+        ]
+      },
+      {
+        "class": "`.rotate-n90`",
+        "properties": [
+          "`--rotate: -90deg;`"
+        ]
+      },
+      {
+        "class": "`.rotate-n180`",
+        "properties": [
+          "`--rotate: -180deg;`"
+        ]
+      }
+    ]
+  }
+]

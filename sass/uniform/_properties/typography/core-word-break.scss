@@ -2,13 +2,12 @@
 @use "sass:map";
 
 $keyword: wordbreak !default;
-$responsive: true !default;
+$responsive: false !default;
 $responsive-pseudos: false !default;
 
 $properties: (word-break) !default;
 
 $core-variants: (
-  normal: normal,
   word: break-word,
   all: break-all
 ) !default;

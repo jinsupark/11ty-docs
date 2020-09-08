@@ -24,6 +24,7 @@ By default, Uniform applies minimal resetting styles to flatten browser inconsis
   box-sizing: border-box;
   border: 0 solid var(--default-border-color, fill(silver-200));
   font: inherit;
+  color: inherit;
 }
 
 /* Prevent iOS font size change */

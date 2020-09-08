@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $keyword: color !default;
-$responsive: true !default;
+$responsive: false !default;
 $responsive-pseudos: false !default;
 
 $properties: (color) !default;

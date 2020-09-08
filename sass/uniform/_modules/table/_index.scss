@@ -51,7 +51,7 @@ CUSTOM PROPERTIES
 	}
 	td {
 		display: block;
-		padding: var(--table-td-padding, size(3, 4));
+		padding: var(--table-td-padding, size(4, 4));
 		background-color: var(--table-bg, white);
 		&:first-child {
 			border-top-right-radius: var(--table-radius, radius(sm));
@@ -67,7 +67,7 @@ CUSTOM PROPERTIES
 			&:before {
 				display: block;
 				content: attr(data-table-label);
-				margin-bottom: var(--table-label-margin, size(2));
+				margin-bottom: var(--table-label-margin, size(4));
 				font-size: var(--table-label-font-size, font-size(xs));
 				font-weight: var(--table-label-font-weight, 600);
 				text-transform: var(--table-label-text-transform, uppercase);
@@ -110,8 +110,7 @@ CUSTOM PROPERTIES
 	}
 	th {
 		height: var(--table-th-height, size(12));
-		padding: var(--table-th-padding, size(2, 4));
-		background: transparent;
+		padding: var(--table-th-padding, size(4, 4));
 		&:first-child {
 			border-top-left-radius: var(--table-radius, radius(sm));
 		}
@@ -122,7 +121,8 @@ CUSTOM PROPERTIES
 	td {
 		display: table-cell;
 		height: var(--table-td-height, size(12));
-		padding: var(--table-td-padding, size(2, 4));
+		padding: var(--table-td-padding, size(4, 4));
+		box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
 		&:first-child {
 			border-radius: 0;
 		}
@@ -143,6 +143,7 @@ CUSTOM PROPERTIES
 	.table {
 		width: 100%;
 		text-align: left;
+		line-height: leading(6);
 		border-radius: var(--table-radius, radius(sm));
 		background-color: var(--table-bg, white);
 		box-shadow: var(--table-shadow, shadow(1));
@@ -163,7 +164,7 @@ CUSTOM PROPERTIES
 		
 		th {
 			height: var(--table-th-height, size(12));
-			padding: var(--table-th-padding, size(3, 4));
+			padding: var(--table-th-padding, size(4, 4));
 			// Inset instead of border to allow for sticky headers to have border
 			box-shadow: var(--table-th-border, inset 0px -1px 0 0 fill(silver-200));
 			white-space: nowrap;
@@ -178,8 +179,8 @@ CUSTOM PROPERTIES
 	
 		td {
 			height: var(--table-td-height, size(12));
-			padding: var(--table-td-padding, size(3, 4));
-			border-bottom: var(--table-td-border, 1px solid fill(silver-200));
+			padding: var(--table-td-padding, size(4, 4));
+			box-shadow: var(--table-td-border, inset 0px -1px 0 0 var(--silver-200));
 		}
 	}
 

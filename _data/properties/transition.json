@@ -9,21 +9,63 @@
     ],
     "classes": [
       {
-        "class": "`.transition-slow`",
+        "class": "`.duration-100`",
         "properties": [
-          "`transition-duration: .4s;`"
+          "`transition-duration: 100ms;`"
         ]
       },
       {
-        "class": "`.transition-steady`",
+        "class": "`.duration-200`",
         "properties": [
-          "`transition-duration: .2s;`"
+          "`transition-duration: 200ms;`"
         ]
       },
       {
-        "class": "`.transition-fast`",
+        "class": "`.duration-300`",
         "properties": [
-          "`transition-duration: .1s;`"
+          "`transition-duration: 300ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-400`",
+        "properties": [
+          "`transition-duration: 400ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-500`",
+        "properties": [
+          "`transition-duration: 500ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-600`",
+        "properties": [
+          "`transition-duration: 600ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-700`",
+        "properties": [
+          "`transition-duration: 700ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-800`",
+        "properties": [
+          "`transition-duration: 800ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-900`",
+        "properties": [
+          "`transition-duration: 900ms;`"
+        ]
+      },
+      {
+        "class": "`.duration-1000`",
+        "properties": [
+          "`transition-duration: 1000ms;`"
         ]
       }
     ]
@@ -38,45 +80,63 @@
     ],
     "classes": [
       {
-        "class": "`.transition-none`",
+        "class": "`.delay-100`",
         "properties": [
-          "`transition-property: none;`"
+          "`transition-delay: 100ms;`"
         ]
       },
       {
-        "class": "`.transition`",
+        "class": "`.delay-200`",
         "properties": [
-          "`transition-property: all;`"
+          "`transition-delay: 200ms;`"
         ]
       },
       {
-        "class": "`.transition-visuals`",
+        "class": "`.delay-300`",
         "properties": [
-          "`transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;`"
+          "`transition-delay: 300ms;`"
         ]
       },
       {
-        "class": "`.transition-colors`",
+        "class": "`.delay-400`",
         "properties": [
-          "`transition-property: background-color, border-color, color, fill, stroke;`"
+          "`transition-delay: 400ms;`"
         ]
       },
       {
-        "class": "`.transition-opacity`",
+        "class": "`.delay-500`",
         "properties": [
-          "`transition-property: opacity;`"
+          "`transition-delay: 500ms;`"
         ]
       },
       {
-        "class": "`.transition-shadow`",
+        "class": "`.delay-600`",
         "properties": [
-          "`transition-property: box-shadow;`"
+          "`transition-delay: 600ms;`"
         ]
       },
       {
-        "class": "`.transition-transform`",
+        "class": "`.delay-700`",
         "properties": [
-          "`transition-property: transform;`"
+          "`transition-delay: 700ms;`"
+        ]
+      },
+      {
+        "class": "`.delay-800`",
+        "properties": [
+          "`transition-delay: 800ms;`"
+        ]
+      },
+      {
+        "class": "`.delay-900`",
+        "properties": [
+          "`transition-delay: 900ms;`"
+        ]
+      },
+      {
+        "class": "`.delay-1000`",
+        "properties": [
+          "`transition-delay: 1000ms;`"
         ]
       }
     ]
@@ -97,13 +157,13 @@
         ]
       },
       {
-        "class": "`.transition`",
+        "class": "`.transition-all`",
         "properties": [
           "`transition-property: all;`"
         ]
       },
       {
-        "class": "`.transition-visuals`",
+        "class": "`.transition-apperancex`",
         "properties": [
           "`transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;`"
         ]

@@ -3,10 +3,7 @@ layout: layouts/base.njk
 ---
 
 <div class="fixed t-0 l-0 w-100p z-n1 bg-hero-short">
-  <div class="h-26">
-
-  </div>
-  <div class="h-20">
+  <div class="h-100vh">
 
   </div>
 </div>
@@ -14,7 +11,7 @@ layout: layouts/base.njk
 <section>
   {% include "partials/nav.njk" %}
   <div class="wrapper">
-    <div class="pt-15 pb-18">
+    <div class="pt-14 pb-16">
       <h1 class="font-6xl font-300 mb-6 tracking-n1 color-white">
         {{ title }}
       </h1>
@@ -27,62 +24,62 @@ layout: layouts/base.njk
 </section>
 
 <section>
-	<div class="wrapper">
-		<div class="grid grid-cols-12 bg-white radius-md shadow-3">
-			<aside class="hidden md.block col-12 md.col-3 pl-8 radius-l-md" style="background: #d8e9ff47;">
+  <div class="wrapper">
+    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 bg-white radius-md shadow-3">
+      <aside class="hidden sm.block col-1 sm.col-2 lg.col-3 radius-l-md bg-blueberry-900">
         <div class="t-0 sticky h-100vh pt-11 pb-13 overflow-auto">
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              <i class="fas fa-adjust mr-2"></i> Introduction
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-adjust mr-2 color-blue-500"></i> Introduction
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-white{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              <i class="fas fa-book-reader mr-2"></i> Fundamentals
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-book-reader mr-2 color-orange-500"></i> Fundamentals
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-white{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              <i class="fas fa-cogs mr-2"></i> Customization
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-cogs mr-2 color-teal-500"></i> Customization
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-white{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              <i class="fas fa-paint-brush mr-2"></i> Theming
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-paint-brush mr-2 color-pink-500"></i> Theming
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-white{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              <i class="fas fa-box-open mr-2"></i> Module
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-box-open mr-2 color-yellow-500"></i> Module
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-gray-900">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 {% if post.url == page.url %}color-white{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -91,9 +88,71 @@ layout: layouts/base.njk
       </aside>
 
 
-			<div class="col-12 col-12 md.col-9 px-19 py-16 pb-19 markdown">
-				{{ content | safe }}
-			</div>
-		</div>
-	</div>
+      <div class="
+        col-1 
+        sm.col-4 
+        lg.col-9 
+      ">
+        <div class="block sm.hidden p-6 bg-blueberry-100 radius-t-md">
+          <div class="select">
+            <select class="js-select-url">
+              <optgroup label="Introduction">
+                {%- for post in collections.introduction -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Fundamentals">
+                {%- for post in collections.fundamentals -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Customization">
+                {%- for post in collections.customization -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Theming">
+                {%- for post in collections.theming -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Modules">
+                {%- for post in collections.modules -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+            </select>
+            <div class="select__angle">
+
+            </div>
+          </div>
+        </div>
+        <div class="
+          markdown
+
+          px-8 
+          xs.px-18 
+          sm.px-13 
+          md.px-18 
+          lg.px-19 
+          
+          py-10 
+          xs.py-14 
+          sm.py-16
+        ">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

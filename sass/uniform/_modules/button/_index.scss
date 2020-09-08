@@ -204,7 +204,7 @@ CUSTOM PROPERTIES
 		line-height: 1;
 		text-decoration: none;
 		text-transform: var(--btn-text-transform, none);
-		letter-spacing: var(--btn-tracking, tracking(0));
+		letter-spacing: var(--btn-tracking, 0);
 		color: var(--btn-color, white);
 		white-space: nowrap;
 		transition: var(--btn-transition, 100ms);
@@ -268,7 +268,7 @@ CUSTOM PROPERTIES
 	}
 	.btn-sm {
 		--btn-height: var(--btn-sm-height, #{size(8)});
-		--btn-padding: var(--btn-sm-padding, #{size(0, 3)});
+		--btn-padding: var(--btn-sm-padding, #{size(0, 4)});
 		--btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
 	}
 	.btn-md {
@@ -278,12 +278,12 @@ CUSTOM PROPERTIES
 	}
 	.btn-lg {
 		--btn-height: var(--btn-lg-height, #{size(12)});
-		--btn-padding: var(--btn-lg-padding, #{size(0, 5)});
+		--btn-padding: var(--btn-lg-padding, #{size(0, 6)});
 		--btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
 	}
 	.btn-xl {
 		--btn-height: var(--btn-xl-height, #{size(14)});
-		--btn-padding: var(--btn-xl-padding, #{size(0, 6)});
+		--btn-padding: var(--btn-xl-padding, #{size(0, 7)});
 		--btn-font-size: var(--btn-xl-font-size, #{font-size(lg)});
 	}
 
@@ -296,7 +296,7 @@ CUSTOM PROPERTIES
 			}
 			.#{$screen}#{$screen-delimiter}btn-sm {
 				--btn-height: var(--btn-sm-height, #{size(9)});
-				--btn-padding: var(--btn-sm-padding, #{size(0, 3)});
+				--btn-padding: var(--btn-sm-padding, #{size(0, 4)});
 				--btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
 			}
 			.#{$screen}#{$screen-delimiter}btn-md {
@@ -305,13 +305,13 @@ CUSTOM PROPERTIES
 				--btn-font-size: var(--btn-md-font-size, #{font-size(md)});
 			}
 			.#{$screen}#{$screen-delimiter}btn-lg {
-				--btn-height: var(--btn-lg-height, #{size(11)});
-				--btn-padding: var(--btn-lg-padding, #{size(0, 5)});
+				--btn-height: var(--btn-lg-height, #{size(12)});
+				--btn-padding: var(--btn-lg-padding, #{size(0, 6)});
 				--btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
 			}
 			.#{$screen}#{$screen-delimiter}btn-xl {
-				--btn-height: var(--btn-xl-height, #{size(12)});
-				--btn-padding: var(--btn-xl-padding, #{size(0, 6)});
+				--btn-height: var(--btn-xl-height, #{size(14)});
+				--btn-padding: var(--btn-xl-padding, #{size(0, 7)});
 				--btn-font-size: var(--btn-xl-font-size, #{font-size(lg)});
 			}
 		}

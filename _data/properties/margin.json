@@ -15,15 +15,9 @@
         ]
       },
       {
-        "class": "`.m-px`",
+        "class": "`.m-{positive-scale}`",
         "properties": [
-          "`margin: 1px;`"
-        ]
-      },
-      {
-        "class": "`.m-{scale-variant}`",
-        "properties": [
-          "`margin:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin: {positive-scale}`"
         ]
       }
     ]
@@ -43,17 +37,10 @@
         ]
       },
       {
-        "class": "`.mx-px`",
+        "class": "`.mx-{positive-scale}`",
         "properties": [
-          "`margin-left: 1px`",
-          "`margin-right: 1px`"
-        ]
-      },
-      {
-        "class": "`.mx-{scale-variant}`",
-        "properties": [
-          "margin-left: <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
-          "margin-right: <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin-left: {positive-scale}`",
+          "`margin-right: {positive-scale}`"
         ]
       }
     ]
@@ -73,17 +60,10 @@
         ]
       },
       {
-        "class": "`.my-px`",
+        "class": "`.my-{positive-scale}`",
         "properties": [
-          "`margin-top: 1px`",
-          "`margin-bottom: 1px`"
-        ]
-      },
-      {
-        "class": "`.my-{scale-variant}`",
-        "properties": [
-          "`margin-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
-          "`margin-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin-top: {positive-scale}`",
+          "`margin-bottom: {positive-scale}`"
         ]
       }
     ]
@@ -104,15 +84,9 @@
         ]
       },
       {
-        "class": "`.mb-px`",
-        "properties": [
-          "`margin-bottom: 1px;`"
-        ]
-      },
-      {
         "class": "`.mb-{scale-variant}`",
         "properties": [
-          "`margin-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin-bottom: {scale-variant}`"
         ]
       }
     ]
@@ -133,15 +107,9 @@
         ]
       },
       {
-        "class": "`.ml-px`",
-        "properties": [
-          "`margin-left: 1px;`"
-        ]
-      },
-      {
         "class": "`.ml-{scale-variant}`",
         "properties": [
-          "`margin-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin-left: {scale-variant}`"
         ]
       }
     ]
@@ -162,15 +130,9 @@
         ]
       },
       {
-        "class": "`.mr-px`",
-        "properties": [
-          "`margin-right: 1px;`"
-        ]
-      },
-      {
         "class": "`.mr-{scale-variant}`",
         "properties": [
-          "`margin-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin-right: {scale-variant}`"
         ]
       }
     ]
@@ -191,15 +153,9 @@
         ]
       },
       {
-        "class": "`.mt-px`",
-        "properties": [
-          "`margin-top: 1px;`"
-        ]
-      },
-      {
         "class": "`.mt-{scale-variant}`",
         "properties": [
-          "`margin-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`margin-top: {scale-variant}`"
         ]
       }
     ]

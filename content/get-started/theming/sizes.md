@@ -7,7 +7,7 @@ date: 1000-01-05
 
 ### Size Variant Chart
 
-Uniform provides 30 sizing units for size and spacing related properties such as `heights` and `margins`.
+Uniform provides 26 sizing units for size and spacing related properties such as `heights` and `margins`.
 
 Each size also has an negative equivalent. You can access the negative variants by appending `n` to the beginning of each variant e.g. `n10`.
 
@@ -53,10 +53,11 @@ Each size also has an negative equivalent. You can access the negative variants 
     <tr><td>24</td><td class="color-teal-700 align-right">384px</td><td class="color-gray-200 align-right">24rem</td>
     <tr><td>25</td><td class="color-teal-700 align-right">512px</td><td class="color-gray-200 align-right">32rem</td>
     <tr><td>26</td><td class="color-teal-700 align-right">640px</td><td class="color-gray-200 align-right">40rem</td>
-    <tr><td>27</td><td class="color-teal-700 align-right">768px</td><td class="color-gray-200 align-right">48rem</td>
-    <tr><td>28</td><td class="color-teal-700 align-right">1024px</td><td class="color-gray-200 align-right">64rem</td>
-    <tr><td>29</td><td class="color-teal-700 align-right">1280px</td><td class="color-gray-200 align-right">80rem</td>
-    <tr><td>30</td><td class="color-teal-700 align-right">1536px</td><td class="color-gray-200 align-right">96rem</td>
+    <tr><td>screen-xs</td><td class="color-teal-700 align-right">896px</td><td class="color-gray-200 align-right">56rem</td>
+    <tr><td>screen-sm</td><td class="color-teal-700 align-right">1024px</td><td class="color-gray-200 align-right">64rem</td>
+    <tr><td>screen-md</td><td class="color-teal-700 align-right">1152px</td><td class="color-gray-200 align-right">72rem</td>
+    <tr><td>screen-lg</td><td class="color-teal-700 align-right">1280px</td><td class="color-gray-200 align-right">80rem</td>
+    <tr><td>screen-xl</td><td class="color-teal-700 align-right">1536px</td><td class="color-gray-200 align-right">96rem</td>
   </tbody>
 </table>
 </div>
@@ -208,10 +209,6 @@ If you are using the basic configuration setup of Uniform, use the following set
   --size-24: 24rem;
   --size-25: 32rem;
   --size-26: 40rem;
-  --size-27: 48rem;
-  --size-28: 64rem;
-  --size-29: 80rem;
-  --size-30: 96rem;
   --size-n1: -0.25rem;
   --size-n2: -0.5rem;
   --size-n3: -0.75rem;
@@ -238,10 +235,6 @@ If you are using the basic configuration setup of Uniform, use the following set
   --size-n24: -24rem;
   --size-n25: -32rem;
   --size-n26: -40rem;
-  --size-n27: -48rem;
-  --size-n28: -64rem;
-  --size-n29: -80rem;
-  --size-n30: -96rem;
 }
 {% endhighlight %}
 </div>

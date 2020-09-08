@@ -65,6 +65,48 @@
         "properties": [
           "`stroke-width: 3;`"
         ]
+      },
+      {
+        "class": "`.stroke-4`",
+        "properties": [
+          "`stroke-width: 4;`"
+        ]
+      },
+      {
+        "class": "`.stroke-5`",
+        "properties": [
+          "`stroke-width: 5;`"
+        ]
+      },
+      {
+        "class": "`.stroke-6`",
+        "properties": [
+          "`stroke-width: 6;`"
+        ]
+      },
+      {
+        "class": "`.stroke-7`",
+        "properties": [
+          "`stroke-width: 7;`"
+        ]
+      },
+      {
+        "class": "`.stroke-8`",
+        "properties": [
+          "`stroke-width: 8;`"
+        ]
+      },
+      {
+        "class": "`.stroke-9`",
+        "properties": [
+          "`stroke-width: 9;`"
+        ]
+      },
+      {
+        "class": "`.stroke-10`",
+        "properties": [
+          "`stroke-width: 10;`"
+        ]
       }
     ]
   }

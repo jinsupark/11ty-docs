@@ -82,12 +82,12 @@
     "title": "background-color",
     "family": "core",
     "description": "The `background-color` property sets the background color of an element.",
-    "responsive": true,
+    "responsive": false,
     "pseudos": [
       "hover",
-      "focus",
+      "group-hover",
       "active",
-      "group-hover"
+      "focus"
     ],
     "classes": [
       {

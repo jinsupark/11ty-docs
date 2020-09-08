@@ -1,7 +1,6 @@
 ---
 title: Overview
 date: 1000-01-01
-permalink: get-started/
 ---
 
 {% include shortcodes/chapter, text: 'Introduction', color: 'blue' %}

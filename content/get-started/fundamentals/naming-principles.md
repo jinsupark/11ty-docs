@@ -24,14 +24,6 @@ If the property values are verbose and self explanatory, then use the value to d
 ...
 ```
 
-For simple properties where there are only a very limited set of possible verbose values, it is okay to introduce negative keywords in order to elegantly fulfill the first rule.
-
-```scss
-.italic {font-style: italic;}
-.non-italic {font-style: normal;}
-...
-```
-
 <div class="mb-10"></div>
 
 <h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">2</span> Truncate property names when possible</h4>
@@ -75,7 +67,7 @@ Single-characters are only reserved for directions and the `width`, `height`, `m
 
 <h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">5</span> Use single-characters for directions</h4>
 
-Common directional words such as `top`, `right`, `bottom`, and `left` are represented with the first letter of the direction e.g. `border-t` for `border-top` etc. For more than one direction, combine the direction letters e.g. `tr` for `top-right`.
+Common directional properties such as `top`, `right`, `bottom`, and `left` are represented with the first letter of the direction e.g. `border-t` for `border-top` etc. For more than one direction, combine the direction letters e.g. `tr` for `top-right`.
 
 ```scss
 .radius-tl-sm: {border-top-left-radius: 0.25rem;}
@@ -87,11 +79,11 @@ Common directional words such as `top`, `right`, `bottom`, and `left` are repres
 
 <h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">6</span> Simplify properties names</h4>
 
-Simplify the property name to its most essential and ideal version of the word provided it does not cause confusion or conflict with others properties in the same family.
+Simplify the property name to its most essential and ideal denominator of the word provided it does not cause confusion or conflict with others properties in the same family.
 
 ```scss
-.font-700: {font-weight: bold;}
-.font-h1: {font-size: 3rem;}
+.font-700: {font-weight: 700;}
+.font-xl: {font-size: 1.25rem;}
 ...
 ```
 
@@ -146,7 +138,7 @@ xl: 12px,
 ```
 
 ```scss
-// Used=defined scaling
+// Used-defined scaling
 0: 0,
 1: rem(4),
 2: rem(8),

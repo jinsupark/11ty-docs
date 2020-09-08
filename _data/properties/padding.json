@@ -11,7 +11,7 @@
       {
         "class": "`.p-{scale-variant}`",
         "properties": [
-          "`property:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`property: {scale-variant}`"
         ]
       }
     ]
@@ -26,17 +26,10 @@
     ],
     "classes": [
       {
-        "class": "`.px-px`",
-        "properties": [
-          "`padding-left: 1px`",
-          "`padding-right: 1px`"
-        ]
-      },
-      {
         "class": "`.px-{scale-variant}`",
         "properties": [
-          "`padding-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
-          "`padding-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`padding-left: {scale-variant}`",
+          "`padding-right: {scale-variant}`"
         ]
       }
     ]
@@ -51,17 +44,10 @@
     ],
     "classes": [
       {
-        "class": "`.py-px`",
-        "properties": [
-          "`padding-top: 1px`",
-          "`padding-bottom: 1px`"
-        ]
-      },
-      {
         "class": "`.py-{scale-variant}`",
         "properties": [
-          "`padding-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>",
-          "`padding-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`padding-top: {scale-variant}`",
+          "`padding-bottom: {scale-variant}`"
         ]
       }
     ]
@@ -76,15 +62,9 @@
     ],
     "classes": [
       {
-        "class": "`.pb-px`",
-        "properties": [
-          "`padding-bottom: 1px;`"
-        ]
-      },
-      {
         "class": "`.pb-{scale-variant}`",
         "properties": [
-          "`padding-bottom:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`padding-bottom: {scale-variant}`"
         ]
       }
     ]
@@ -99,15 +79,9 @@
     ],
     "classes": [
       {
-        "class": "`.pl-px`",
-        "properties": [
-          "`padding-left: 1px;`"
-        ]
-      },
-      {
         "class": "`.pl-{scale-variant}`",
         "properties": [
-          "`padding-left:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`padding-left: {scale-variant}`"
         ]
       }
     ]
@@ -122,15 +96,9 @@
     ],
     "classes": [
       {
-        "class": "`.pr-px`",
-        "properties": [
-          "`padding-right: 1px;`"
-        ]
-      },
-      {
         "class": "`.pr-{scale-variant}`",
         "properties": [
-          "`padding-right:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`padding-right: {scale-variant}`"
         ]
       }
     ]
@@ -145,15 +113,9 @@
     ],
     "classes": [
       {
-        "class": "`.pt-px`",
-        "properties": [
-          "`padding-top: 1px;`"
-        ]
-      },
-      {
         "class": "`.pt-{scale-variant}`",
         "properties": [
-          "`padding-top:` <a href=\"/get-started/sizes\" class=\"font-sm hover.underline color-indigo-500\">See Sizes</a>"
+          "`padding-top: {scale-variant}`"
         ]
       }
     ]

@@ -4,11 +4,8 @@
 CUSTOM PROPERTIES
 
 --wrapper-padding
---wrapper-sm-padding
---wrapper-md-padding
---wrapper-lg-padding
---wrapper-xl-padding
 
+--wrapper-xs-max-width
 --wrapper-sm-max-width
 --wrapper-md-max-width
 --wrapper-lg-max-width
@@ -16,37 +13,28 @@ CUSTOM PROPERTIES
 */
 
 @if $include-wrapper-module == true and $headless == false {
-	.wrapper {
-		width: 100%;
-		margin: auto;
-		padding-left: var(--wrapper-padding, size(6));
-		padding-right: var(--wrapper-padding, size(6));
-
-		@media (min-width: screen(sm)) {
-			max-width: var(--wrapper-sm-max-width, 1024px);
-		}
-		@media (min-width: screen(md)) {
-			max-width: var(--wrapper-md-max-width, 1024px);
-		}
-		@media (min-width: screen(lg)) {
-			max-width: var(--wrapper-lg-max-width, 1140px);
-		}
-		@media (min-width: screen(xl)) {
-			max-width: var(--wrapper-xl-max-width, 1280px);
-		}
-		
-	}
-	.wrapper-flush {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	
-	@each $screen, $screen-value in screens() {
-		@media (min-width: $screen-value) {
-			.#{$screen}#{$screen-delimiter}wrapper-unflush {
-				padding-left: var(--wrapper-padding, size(6));
-				padding-right: var(--wrapper-padding, size(6));
-			}
-		}
-	}
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    @media (max-width: screen(xs)) {
+      padding-left: var(--wrapper-padding, size(6));
+      padding-right: var(--wrapper-padding, size(6));
+    }
+    @media (min-width: screen(xs)) {
+      max-width: var(--wrapper-xs-max-width, 768px);
+    }
+    @media (min-width: screen(sm)) {
+      max-width: var(--wrapper-sm-max-width, 896px);
+    }
+    @media (min-width: screen(md)) {
+      max-width: var(--wrapper-md-max-width, 1024px);
+    }
+    @media (min-width: screen(lg)) {
+      max-width: var(--wrapper-lg-max-width, 1152px);
+    }
+    @media (min-width: screen(xl)) {
+      max-width: var(--wrapper-xl-max-width, 1280px);
+    }
+    
+  }
 }

@@ -82,15 +82,39 @@
     ],
     "classes": [
       {
-        "class": "`.bottom-0`",
+        "class": "`.b-auto`",
         "properties": [
-          "`bottom: 0;`"
+          "`bottom: auto;`"
         ]
       },
       {
-        "class": "`.bottom-auto`",
+        "class": "`.b-n100p`",
         "properties": [
-          "`bottom: auto;`"
+          "`bottom: n100p;`"
+        ]
+      },
+      {
+        "class": "`.b-100p`",
+        "properties": [
+          "`bottom: 100p;`"
+        ]
+      },
+      {
+        "class": "`.b-n50p`",
+        "properties": [
+          "`bottom: n50p;`"
+        ]
+      },
+      {
+        "class": "`.b-50p`",
+        "properties": [
+          "`bottom: 50p;`"
+        ]
+      },
+      {
+        "class": "`.b-0`",
+        "properties": [
+          "`bottom: 0;`"
         ]
       }
     ]
@@ -105,15 +129,39 @@
     ],
     "classes": [
       {
-        "class": "`.left-0`",
+        "class": "`.l-auto`",
         "properties": [
-          "`left: 0;`"
+          "`left: auto;`"
         ]
       },
       {
-        "class": "`.left-auto`",
+        "class": "`.l-n100p`",
         "properties": [
-          "`left: auto;`"
+          "`left: n100p;`"
+        ]
+      },
+      {
+        "class": "`.l-100p`",
+        "properties": [
+          "`left: 100p;`"
+        ]
+      },
+      {
+        "class": "`.l-n50p`",
+        "properties": [
+          "`left: n50p;`"
+        ]
+      },
+      {
+        "class": "`.l-50p`",
+        "properties": [
+          "`left: 50p;`"
+        ]
+      },
+      {
+        "class": "`.l-0`",
+        "properties": [
+          "`left: 0;`"
         ]
       }
     ]
@@ -128,15 +176,39 @@
     ],
     "classes": [
       {
-        "class": "`.right-0`",
+        "class": "`.r-auto`",
         "properties": [
-          "`right: 0;`"
+          "`right: auto;`"
         ]
       },
       {
-        "class": "`.right-auto`",
+        "class": "`.r-n100p`",
         "properties": [
-          "`right: auto;`"
+          "`right: n100p;`"
+        ]
+      },
+      {
+        "class": "`.r-100p`",
+        "properties": [
+          "`right: 100p;`"
+        ]
+      },
+      {
+        "class": "`.r-n50p`",
+        "properties": [
+          "`right: n50p;`"
+        ]
+      },
+      {
+        "class": "`.r-50p`",
+        "properties": [
+          "`right: 50p;`"
+        ]
+      },
+      {
+        "class": "`.r-0`",
+        "properties": [
+          "`right: 0;`"
         ]
       }
     ]
@@ -151,15 +223,39 @@
     ],
     "classes": [
       {
-        "class": "`.top-0`",
+        "class": "`.t-auto`",
         "properties": [
-          "`top: 0;`"
+          "`top: auto;`"
         ]
       },
       {
-        "class": "`.top-auto`",
+        "class": "`.t-n100p`",
         "properties": [
-          "`top: auto;`"
+          "`top: n100p;`"
+        ]
+      },
+      {
+        "class": "`.t-100p`",
+        "properties": [
+          "`top: 100p;`"
+        ]
+      },
+      {
+        "class": "`.t-n50p`",
+        "properties": [
+          "`top: n50p;`"
+        ]
+      },
+      {
+        "class": "`.t-50p`",
+        "properties": [
+          "`top: 50p;`"
+        ]
+      },
+      {
+        "class": "`.t-0`",
+        "properties": [
+          "`top: 0;`"
         ]
       }
     ]
@@ -250,82 +346,16 @@
   {
     "title": "absolute-center",
     "family": "core",
-    "description": "The `z-index` property specifies the stack order of an element.",
+    "description": "The `absolute-center` class combines absolute positioning with transform to center an object.",
     "responsive": false,
     "pseudos": [
       "none"
     ],
     "classes": [
       {
-        "class": "`.z-auto`",
+        "class": "`.absolute-center`",
         "properties": [
-          "`z-index: auto;`"
-        ]
-      },
-      {
-        "class": "`.z-0`",
-        "properties": [
-          "`z-index: 0;`"
-        ]
-      },
-      {
-        "class": "`.z-1`",
-        "properties": [
-          "`z-index: 1;`"
-        ]
-      },
-      {
-        "class": "`.z-2`",
-        "properties": [
-          "`z-index: 2;`"
-        ]
-      },
-      {
-        "class": "`.z-3`",
-        "properties": [
-          "`z-index: 3;`"
-        ]
-      },
-      {
-        "class": "`.z-4`",
-        "properties": [
-          "`z-index: 4;`"
-        ]
-      },
-      {
-        "class": "`.z-5`",
-        "properties": [
-          "`z-index: 5;`"
-        ]
-      },
-      {
-        "class": "`.z-6`",
-        "properties": [
-          "`z-index: 6;`"
-        ]
-      },
-      {
-        "class": "`.z-7`",
-        "properties": [
-          "`z-index: 7;`"
-        ]
-      },
-      {
-        "class": "`.z-8`",
-        "properties": [
-          "`z-index: 8;`"
-        ]
-      },
-      {
-        "class": "`.z-9`",
-        "properties": [
-          "`z-index: 9;`"
-        ]
-      },
-      {
-        "class": "`.z-10`",
-        "properties": [
-          "`z-index: 10;`"
+          "`multiple properties`"
         ]
       }
     ]

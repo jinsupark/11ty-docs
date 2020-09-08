@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $keyword: exempt !default;
-$responsive: true !default;
+$responsive: false !default;
 $responsive-pseudos: false !default;
 
 $properties: (text-transform) !default;
@@ -10,8 +10,7 @@ $properties: (text-transform) !default;
 $core-variants: (
   uppercase: uppercase,
   lowercase: lowercase,
-  capitalize: capitalize,
-  normal-case: none
+  capitalize: capitalize
 ) !default;
 
 $variants: () !default;

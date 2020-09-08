@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $keyword: bg !default;
-$responsive: true !default;
+$responsive: false !default;
 $responsive-pseudos: false !default;
 
 $properties: (background-color) !default;
@@ -17,7 +17,7 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$pseudos: (hover, focus, active, group-hover) !default;
+$pseudos: (hover, group-hover, active, focus) !default;
 
 @include constructor(
   $keyword,

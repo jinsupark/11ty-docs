@@ -32,7 +32,7 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$pseudos: () !default;
+$pseudos: (group-hover) !default;
 
 @include constructor(
   $keyword,

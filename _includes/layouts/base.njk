@@ -70,7 +70,16 @@
           console.log("changed");
           let url = $(this).val(); // get selected value
           if (url) { // require a URL
-            window.location = url; // redirect
+            window.location = '/get-started/' + url; // redirect
+          }
+          return false;
+        });
+
+        $('.js-glossary-select-url').on('change', function () {
+          console.log("changed");
+          let url = $(this).val(); // get selected value
+          if (url) { // require a URL
+            window.location = '/glossary/#' + url; // redirect
           }
           return false;
         });

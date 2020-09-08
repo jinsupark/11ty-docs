@@ -172,7 +172,7 @@ CUSTOM PROPERTIES
 		font-size: var(--label-font-size, font-size(xs));
 		font-weight: var(--label-font-weight, 600);
 		color: var(--label-color, black);
-		letter-spacing: var(--label-tracking, tracking(0));
+		letter-spacing: var(--label-tracking, 0);
 		text-transform: var(--label-text-transform, none);
 		&.is-required {
 			&:after {

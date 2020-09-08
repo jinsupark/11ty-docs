@@ -124,41 +124,6 @@
     ]
   },
   {
-    "title": "grid-auto-flow",
-    "family": "core",
-    "description": "The `grid-auto-flow` property controls how auto-placed items get inserted in the grid.",
-    "responsive": true,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
-      {
-        "class": "`.grid-flow-row`",
-        "properties": [
-          "`grid-auto-flow: row;`"
-        ]
-      },
-      {
-        "class": "`.grid-flow-col`",
-        "properties": [
-          "`grid-auto-flow: column;`"
-        ]
-      },
-      {
-        "class": "`.grid-flow-row-dense`",
-        "properties": [
-          "`grid-auto-flow: row dense;`"
-        ]
-      },
-      {
-        "class": "`.grid-flow-col-dense`",
-        "properties": [
-          "`grid-auto-flow: column dense;`"
-        ]
-      }
-    ]
-  },
-  {
     "title": "grid-column-end",
     "family": "core",
     "description": "The `grid-column-end` property defines how many columns an item will span, or on which column-line the item will end.",
@@ -364,43 +329,43 @@
         ]
       },
       {
-        "class": "`.row-span-1`",
+        "class": "`.row-1`",
         "properties": [
           "`grid-row: span 1 /span 1;`"
         ]
       },
       {
-        "class": "`.row-span-2`",
+        "class": "`.row-2`",
         "properties": [
           "`grid-row: span 2 /span 2;`"
         ]
       },
       {
-        "class": "`.row-span-3`",
+        "class": "`.row-3`",
         "properties": [
           "`grid-row: span 3 /span 3;`"
         ]
       },
       {
-        "class": "`.row-span-4`",
+        "class": "`.row-4`",
         "properties": [
           "`grid-row: span 4 /span 4;`"
         ]
       },
       {
-        "class": "`.row-span-5`",
+        "class": "`.row-5`",
         "properties": [
           "`grid-row: span 5 /span 5;`"
         ]
       },
       {
-        "class": "`.row-span-5`",
+        "class": "`.row-5`",
         "properties": [
           "`grid-row: span 5 /span 5;`"
         ]
       },
       {
-        "class": "`.row-span-6`",
+        "class": "`.row-6`",
         "properties": [
           "`grid-row: span 6 /span 6;`"
         ]
@@ -457,48 +422,6 @@
         "properties": [
           "`grid-row-end: 6;`"
         ]
-      },
-      {
-        "class": "`.row-end-7`",
-        "properties": [
-          "`grid-row-end: 7;`"
-        ]
-      },
-      {
-        "class": "`.row-end-8`",
-        "properties": [
-          "`grid-row-end: 8;`"
-        ]
-      },
-      {
-        "class": "`.row-end-9`",
-        "properties": [
-          "`grid-row-end: 9;`"
-        ]
-      },
-      {
-        "class": "`.row-end-10`",
-        "properties": [
-          "`grid-row-end: 10;`"
-        ]
-      },
-      {
-        "class": "`.row-end-11`",
-        "properties": [
-          "`grid-row-end: 11;`"
-        ]
-      },
-      {
-        "class": "`.row-end-12`",
-        "properties": [
-          "`grid-row-end: 12;`"
-        ]
-      },
-      {
-        "class": "`.row-end-13`",
-        "properties": [
-          "`grid-row-end: 13;`"
-        ]
       }
     ]
   },
@@ -551,48 +474,6 @@
         "class": "`.row-start-6`",
         "properties": [
           "`grid-row-start: 6;`"
-        ]
-      },
-      {
-        "class": "`.row-start-7`",
-        "properties": [
-          "`grid-row-start: 7;`"
-        ]
-      },
-      {
-        "class": "`.row-start-8`",
-        "properties": [
-          "`grid-row-start: 8;`"
-        ]
-      },
-      {
-        "class": "`.row-start-9`",
-        "properties": [
-          "`grid-row-start: 9;`"
-        ]
-      },
-      {
-        "class": "`.row-start-10`",
-        "properties": [
-          "`grid-row-start: 10;`"
-        ]
-      },
-      {
-        "class": "`.row-start-11`",
-        "properties": [
-          "`grid-row-start: 11;`"
-        ]
-      },
-      {
-        "class": "`.row-start-12`",
-        "properties": [
-          "`grid-row-start: 12;`"
-        ]
-      },
-      {
-        "class": "`.row-start-13`",
-        "properties": [
-          "`grid-row-start: 13;`"
         ]
       }
     ]

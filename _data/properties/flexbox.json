@@ -166,12 +166,6 @@
         ]
       },
       {
-        "class": "`.order-none`",
-        "properties": [
-          "`order: 0;`"
-        ]
-      },
-      {
         "class": "`.order-1`",
         "properties": [
           "`order: 1;`"

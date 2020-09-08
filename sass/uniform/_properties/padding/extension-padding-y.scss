@@ -9,10 +9,7 @@ $properties: (padding-top, padding-bottom) !default;
 
 $core-variants: (
 	merge(
-		positive-sizes(),
-		(
-			px: 1px,
-		)
+		positive-sizes()
 	)
 ) !default;
 

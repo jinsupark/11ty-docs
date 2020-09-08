@@ -8,13 +8,13 @@ $responsive-pseudos: false !default;
 $properties: (--skew-x) !default;
 
 $core-variants: (
-	n12d: -12deg,
-	n8d: -8deg,
-	n4d: -4deg,
+	n12: -12deg,
+	n8: -8deg,
+	n4: -4deg,
 	0: 0,
-	4d: 4deg,
-  8d: 8deg,
-	12d: 12deg,
+	4: 4deg,
+  8: 8deg,
+	12: 12deg,
 ) !default;
 
 $variants: () !default;

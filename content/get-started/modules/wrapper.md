@@ -26,11 +26,8 @@ To customize the wrapper module, override the following root variables.
 /* styles.css */
 :root {
   --wrapper-padding: ...;
-  --wrapper-sm-padding: ...;
-  --wrapper-md-padding: ...;
-  --wrapper-lg-padding: ...;
-  --wrapper-xl-padding: ...;
 
+  --wrapper-xs-max-width: ...;
   --wrapper-sm-max-width: ...;
   --wrapper-md-max-width: ...;
   --wrapper-lg-max-width: ...;

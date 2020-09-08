@@ -9,19 +9,6 @@ date: 1000-01-03
 
 You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<variant>.keyword-variant`.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-black sm.bg-teal-500 md.bg-red-500 lg.bg-blue-500 color-white align-center py-8">
-    Adjust your browser to see change
-  </div>
-</section>
-
-```html
-<div class="bg-black sm.bg-teal-500 md.bg-red-500 lg.bg-blue-500">
-	Adjust your browser to see change
-</div>
-```
-
-
 ---
 
 ### Mobile-First Design
@@ -30,15 +17,9 @@ Uniform uses a mobile-first CSS approach to allow for styles to be displayed cor
 
 This means is that by **default classes will cascade upwards in screen size** unless specified otherwise. To see this in action, adjust your browser width to see changes.
 
-<section class="flex align-items-center justify-content-center radius-sm bg-silver-100 p-6">
-  <div class="color-red-500 sm.color-blue-500 md.color-pink-500 lg.color-green-500 align-center">
-    <p>Red on mobile, blue on sm, pink on md, green on lg, green on xl (inherited)</p>
-  </div>
-</section>
-
 ```html
-<div class="color-red-500 sm.color-blue-500 md.color-pink-500 lg.color-green-500">
-  <p>Red on mobile, blue on sm, pink on md, green on lg, green on xl (inherited)</p>
+<div class="h-10 sm.h-15 md.h-20 lg.h-24">
+  ...
 </div>
 ```
 
@@ -46,15 +27,19 @@ This means is that by **default classes will cascade upwards in screen size** un
 
 ### Breakpoint Variants
 
-By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl` each assigned with the value of common screen sizes. For more information on modifying these variants, please visit the page on <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
+By default, there are **five** breakpoint variants available `xs`, `sm`, `md`, `lg` and `xl` that each increse in increments of `128` pixels. For more information on modifying these variants, please visit the page on <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
 
 ```scss
+// xs
+@media (min-width: 896px) {
+  ...
+}
 // sm
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   ...
 }
 // md
-@media (min-width: 1024px) {
+@media (min-width: 1152px) {
   ...
 }
 // lg
@@ -108,10 +93,6 @@ You can change the number of breakpoints and even change their `min-width` value
 ```scss
 @use "uniform" as * with (
   $screens: (
-    sm: 768px,
-    md: 1024px,
-    lg: 1280px,
-    xl: 1536px,
     custom-breakpoint: 1920px
   )
 );

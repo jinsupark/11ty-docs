@@ -11,8 +11,7 @@ $core-variants: (
 	merge(
 		positive-sizes(),
 		(
-			auto: auto,
-			px: 1px,
+			auto: auto
 		)
 	)
 ) !default;

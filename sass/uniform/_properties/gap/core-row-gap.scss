@@ -8,36 +8,20 @@ $responsive-pseudos: false !default;
 $properties: (row-gap) !default;
 
 $core-variants: (
-	0: 0,
-	px: 1px,
-	2px: 2px,
-	3px: 3px,
-	4px: 4px,
+	merge(
+		positive-sizes(),
+		(
+			px: 1px,
+			2px: 2px,
+			3px: 3px,
+			4px: 4px,
 
-	6px: 6px,
-	8px: 8px,
-	
-	12px: 12px,
-	1: size(1),
-	2: size(2),
-	3: size(3),
-	4: size(4),
-	5: size(5),
-	6: size(6),
-	7: size(7),
-	8: size(8),
-	9: size(9),
-	10: size(10),
-	11: size(11),
-	12: size(12),
-	13: size(13),
-	14: size(14),
-	15: size(15),
-	16: size(16),
-	17: size(17),
-	18: size(18),
-	19: size(19),
-	20: size(20),
+			6px: 6px,
+			8px: 8px,
+			
+			12px: 12px,
+		)
+	)
 ) !default;
 
 $variants: () !default;

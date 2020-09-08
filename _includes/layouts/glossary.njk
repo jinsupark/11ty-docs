@@ -3,15 +3,12 @@ layout: layouts/base.njk
 ---
 
 <div class="fixed t-0 l-0 w-100p z-n1 bg-hero-short">
-  <div class="h-26">
-
-  </div>
-  <div class="h-20">
+  <div class="h-100vh">
 
   </div>
 </div>
 
-<a href="#nav" class="flex bg-white shadow-2 color-black align-items-center justify-content-center px-5 h-11 radius-round fixed b-0 r-0 mb-6 mr-6 font-400 font-sm">
+<a href="#nav" class="flex bg-white shadow-2 color-black align-items-center justify-content-center px-5 h-11 radius-round fixed b-0 r-0 mb-6 mr-6 font-400 font-sm z-2">
   Back to top
 </a>
 
@@ -19,7 +16,7 @@ layout: layouts/base.njk
 <section>
   {% include "partials/nav.njk" %}
   <div class="wrapper">
-    <div class="pt-15 pb-18">
+    <div class="pt-14 pb-16">
       <h1 class="font-6xl font-300 mb-6 tracking-n1 color-white">
         {{ title }}
       </h1>
@@ -32,267 +29,267 @@ layout: layouts/base.njk
 </section>
 
 <section>
-	<div class="wrapper">
-		<div class="grid grid-cols-12 bg-white radius-md shadow-3">
-			<aside class="hidden md.block col-12 md.col-3 pl-8 radius-l-md" style="background: #d8e9ff47;">
+  <div class="wrapper">
+    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 bg-white radius-md shadow-3">
+      <aside class="hidden sm.block col-1 sm.col-2 lg.col-3 radius-l-md bg-blueberry-900">
         <div class="t-0 sticky h-100vh pt-11 pb-13 overflow-auto">
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Alignment
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-align-left mr-2 color-blue-500"></i> Alignment
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in alignment -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.alignment -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Appearance
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-eye mr-2 color-orange-500"></i> Appearance
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in appearance -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.appearance -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Background
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-paint-brush mr-2 color-teal-500"></i> Background
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in background -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.background -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Border
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-border-style mr-2 color-pink-500"></i> Border
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in border -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.border -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Composition
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-sort-amount-down mr-2 color-yellow-500"></i> Composition
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in composition -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.composition -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
           
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Overflow
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-arrows-alt-h mr-2 color-cyan-500"></i> Overflow
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in overflow -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.overflow -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Effect
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-star mr-2 color-red-500"></i> Effect
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in effect -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.effect -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Sizing
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-expand-alt mr-2 color-green-500"></i> Sizing
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in sizing -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.sizing -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Position
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-arrows-alt mr-2 color-indigo-300"></i> Position
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in position -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.position -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Margin
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-expand mr-2 color-blue-500"></i> Margin
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in margin -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.margin -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Padding
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-expand mr-2 color-orange-500"></i> Padding
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in padding -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.padding -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Typography
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-font mr-2 color-cyan-500"></i> Typography
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in typography -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.typography -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Grid
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-border-all mr-2 color-pink-500"></i> Grid
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in grid -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.grid -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Flexbox
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-grip-horizontal mr-2 color-orange-500"></i> Flexbox
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in flexbox -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.flexbox -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Gap
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-grip-lines-vertical mr-2 color-lime-500"></i> Gap
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in gap -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.gap -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Multi-Column
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-columns mr-2 color-pink-500"></i> Multi-Column
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in multi-column -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.multiColumn -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Transform
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-magic mr-2 color-cyan-500"></i> Transform
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in transform -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.transform -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Transition
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-bezier-curve mr-2 color-violet-300"></i> Transition
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in transition -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.transition -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              Interactive
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-mouse-pointer mr-2 color-yellow-500"></i> Interactive
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in interactive -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.interactive -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
           </div>
 
-          <div class="mb-10 last.mb-0">
-            <div class="font-sm font-600 color-gray-900 mb-4">
-              SVG
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-px border-tint-100">
+            <div class="font-sm font-600 color-white mb-4">
+              <i class="fas fa-icons mr-2 color-teal-500"></i> SVG
             </div>
             <nav class="flex flex-col">
 
-              {%- for property in svg -%}
-                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-gray-900">{{ property.title }}</a>
+              {%- for property in properties.svg -%}
+                <a href="#{{ property.title }}" class="font-sm xl.font-sm transition-appearance transform translate-x-0 color-gray-200 hover.translate-x-1 leading-9 hover.color-white">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -303,1301 +300,1537 @@ layout: layouts/base.njk
         </div>
       </aside>
 
+      <div class="
+        relative
+        col-1 
+        sm.col-4 
+        lg.col-9 
+      ">
+        <div class="sticky t-0 block sm.hidden p-6 bg-blueberry-100 radius-t-md">
+          <div class="select">
+            <select class="js-glossary-select-url">
+              <optgroup label="Alignment">
+                {%- for property in properties.alignment -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Appearance">
+                {%- for property in properties.appearance -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Background">
+                {%- for property in properties.background -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Border">
+                {%- for property in properties.border -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Composition">
+                {%- for property in properties.composition -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Overflow">
+                {%- for property in properties.overflow -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Effect">
+                {%- for property in properties.effect -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Sizing">
+                {%- for property in properties.sizing -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Position">
+                {%- for property in properties.position -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Margin">
+                {%- for property in properties.margin -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Padding">
+                {%- for property in properties.padding -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Typography">
+                {%- for property in properties.typography -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Grid">
+                {%- for property in properties.grid -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Flexbox">
+                {%- for property in properties.flexbox -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Gap">
+                {%- for property in properties.gap -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Multi-Column">
+                {%- for property in properties.multiColumn -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Transform">
+                {%- for property in properties.transform -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Transition">
+                {%- for property in properties.transition -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="Interactive">
+                {%- for property in properties.interactive -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+              <optgroup label="SVG">
+                {%- for property in properties.svg -%}
+                  <option value="{{ property.title | slug }}"
+                    {% if property.url == page.url %}selected{% endif %}
+                  >{{ property.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+            </select>
+            <div class="select__angle">
 
-			<div class="col-12 col-12 md.col-9 px-19 py-10 pb-19 markdown">
+            </div>
+          </div>
+        </div>
 
-				{%- for property in alignment -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
+        <div class="
+          px-8 
+          xs.px-18 
+          sm.px-13 
+          md.px-18 
+          lg.px-19 
+          
+          pt-8
+          pb-10 
+          xs.pb-14 
+          sm.pb-16
+        ">
+          {%- for property in properties.alignment -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
 
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
-                  </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
-                </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in appearance -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.appearance -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in background -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.background -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in border -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.border -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in composition -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.composition -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in overflow -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.overflow -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in sizing -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.effect -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in position -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.sizing -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in margin -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.position -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in padding -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.margin -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in typography -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.padding -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in grid -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.typography -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in flexbox -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.grid -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in gap -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.flexbox -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in multi-column -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.gap -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in transform -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.multiColumn -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in transition -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.transform -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in interactive -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.transition -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
-              </div>
-            </div>
+                </h5>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
-                  <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
-                  </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-
-        {%- for property in svg -%}
-          <article class="mb-8 last.mb-0">
-            <div class="markdown">
-              <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-lg md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
-                <div class="mb-4 sm.mb-0">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden ml-2 font-500 color-orange-500">#</a> </div>
-
-                {% if property.responsive == true%}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-green-500 tracking-1">
-                    <i class="fas fa-check-circle mr-1"></i> 
-                    RESPONSIVE
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
                   </div>
-                {% else %}
-                  <div class="whitespace-no-wrap font-xs font-600 tracking-1 color-gray-300 tracking-1">
-                    <i class="fas fa-times-circle mr-1"></i> 
-                    NOT RESPONSIVE
-                  </div>
-                {% endif %}
-              </h5>
-
-              <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-              <div class="mb-5 flex align-items-center">
-                <div class="mr-2 font-500 font-xs color-gray-100 tracking-1">
-                  PSEUDOS
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
                 </div>
-                {%- for pseudo in property.pseudos -%}
-                  {% if pseudo == "none" %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-200 mr-1 font-600 font-xs">
-                      {{ pseudo }}
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.interactive -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
                     </div>
                   {% else %}
-                    <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
-                      {{ pseudo }}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
                     </div>
                   {% endif %}
-                {%- endfor -%}
+                </h5>
+
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
+
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
+                  </div>
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
+                </div>
               </div>
-            </div>
 
-            <div class="font-sm md.font-md markdown">
-              {{ property.description | markdownify | safe }}
-            </div>
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
 
-            <table class="table shadow-1 mt-6">
-              <thead class="font-xs font-600 uppercase tracking-1">
-                <tr>
-                  <th class="w-5-12 md.w-4-12">Class</th>
-                  <th>Properties</th>
-                </tr>
-              </thead>
-              <tbody class="font-sm">
-                {%- for class in property.classes -%}
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
                   <tr>
-                    <td class="font-xs md.font-sm color-teal-700">
-                      {{ class.class | markdownify | safe }}
-                    </td>
-                    <td class="font-xs md.font-sm color-gray-200">
-                      {%- for property in class.properties -%}
-                        {{ property | markdownify | safe }}
-                      {%- endfor -%}
-                    </td>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
                   </tr>
-                {%- endfor -%}
-              </tbody>
-            </table>
-          </article>
-        {%- endfor -%}
-			</div>
-		</div>
-	</div>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+
+          {%- for property in properties.svg -%}
+            <article class="mb-8 last.mb-0">
+              <div class="markdown">
+                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-600 mb-6 sm.mb-4 pt-7 sm.pt-11">
+                  <div class="group mb-4 sm.mb-0 tracking-n1">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-orange-500">#</a> </div>
+
+                  {% if property.responsive == true%}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-green-500 tracking-1">
+                      <i class="fas fa-check-circle mr-1"></i> 
+                      RESPONSIVE
+                    </div>
+                  {% else %}
+                    <div class="whitespace-no-wrap font-sm font-600 tracking-1 color-gray-300 tracking-1">
+                      <i class="fas fa-times-circle mr-1"></i> 
+                      NOT RESPONSIVE
+                    </div>
+                  {% endif %}
+                </h5>
+
+                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
+
+                <div class="mb-5 flex align-items-center">
+                  <div class="mr-2 font-500 font-xs color-gray-400 tracking-1">
+                    PSEUDOS
+                  </div>
+                  {%- for pseudo in property.pseudos -%}
+                    {% if pseudo == "none" %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% else %}
+                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 color-white mr-1 font-600 font-xs">
+                        {{ pseudo }}
+                      </div>
+                    {% endif %}
+                  {%- endfor -%}
+                </div>
+              </div>
+
+              <div class="font-sm md.font-md markdown">
+                {{ property.description | markdownify | safe }}
+              </div>
+
+              <table class="table shadow-1 mt-6">
+                <thead class="font-xs font-600 uppercase tracking-1">
+                  <tr>
+                    <th class="w-5-12 md.w-4-12">Class</th>
+                    <th>Properties</th>
+                  </tr>
+                </thead>
+                <tbody class="font-sm">
+                  {%- for class in property.classes -%}
+                    <tr>
+                      <td class="font-xs md.font-sm color-teal-600">
+                        {{ class.class | markdownify | safe }}
+                      </td>
+                      <td class="font-xs md.font-sm color-gray-200">
+                        {%- for property in class.properties -%}
+                          {{ property | markdownify | safe }}
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </article>
+          {%- endfor -%}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 </section>

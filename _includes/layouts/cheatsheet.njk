@@ -1,0 +1,259 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="absolute t-0 l-0 w-100p z-n1 bg-hero-short">
+  <div class="h-26">
+
+  </div>
+  <div class="h-20">
+
+  </div>
+</div>
+
+
+<section>
+  {% include "partials/nav.njk" %}
+  <div class="wrapper align-center">
+    <div class="pt-15 pb-18">
+      <h1 class="font-6xl font-300 mb-6 tracking-n1 color-white">
+        Colors
+      </h1>
+
+      <p class="font-lg font-400 color-white">
+        A simple and useful list of all available CSS properties and variants.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mb-18">
+  <div class="wrapper">
+    <div class="grid grid-cols-1 md.grid-cols-2 lg.grid-cols-1 xl.grid-cols-1 gap-8">
+      {%- for color in cheatsheet.colors -%}
+        {% if loop.index0 < 4 %}
+          <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
+            {%- for variant in color.variants -%}
+              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition-appearance duration-200">
+                <div class="ratio-square radius-xs bg-{{ variant.name }}">
+                  
+                </div>
+                <div class="mt-4 pb-4 font-xs font-600 align-center">
+                  <span class="select-all">{{ variant.name }}</span>
+                  <div class="mt-3 font-500 color-silver-900 select-all">
+                    {{ variant.value }}
+                  </div>
+                </div>
+              </div>
+            {%- endfor -%}   
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+
+    <div class="align-center mt-12">
+      <button class="btn btn-dark radius-round shadow-2 hover.shadow-3 js-btn-reveal-colors"><i class="fas fa-swatchbook mr-2"></i> Show All Colors</button>
+    </div>
+
+    <div class="grid grid-cols-1 md.grid-cols-2 lg.grid-cols-1 xl.grid-cols-1 gap-8 mt-8 js-colors" style="display: none;">
+      {%- for color in cheatsheet.colors -%}
+        {% if loop.index0 > 3 %}
+          <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
+            {%- for variant in color.variants -%}
+              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition-appearance duration-200">
+                <div class="ratio-square radius-xs bg-{{ variant.name }}">
+                  
+                </div>
+                <div class="mt-4 pb-4 font-xs font-600 align-center">
+                  <span class="select-all">{{ variant.name }}</span>
+                  <div class="mt-3 font-500 color-silver-900 select-all">
+                    {{ variant.value }}
+                  </div>
+                </div>
+              </div>
+            {%- endfor -%}   
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="mb-18">
+  <div class="wrapper">
+    <div class="align-center mb-17">
+      <h2 class="font-7xl font-300 align-center mb-6 tracking-n1">Sizing Chart</h2>
+
+      <p class="max-w-26 mx-auto mb-10 font-lg font-400 align-center">
+        Uniform is a super customizable and infinitely scalable CSS Framework that is designed to help teams bring pixel-crisp designs to life.
+      </p>
+    </div>
+
+    <div class="max-w-screen-xs m-auto">
+      {%- for size in cheatsheet.sizes -%}
+        {% if loop.index0 < 12 %}
+          <div class="mb-4 flex align-items-center">
+            <div class="flex align-items-center flex-none mr-6 font-600 font-xs">
+              <div class="flex align-items-center justify-content-center w-13 h-5 mr-4 font-2xs tracking-1 select-all bg-black color-white radius-xs">
+                SIZE {{ size.size }}
+              </div>
+              <div class="w-10 align-right select-all">
+                {{ size.pixel }}
+              </div>
+              <div class="w-12 ml-4 align-right select-all color-silver-900">
+                {{ size.rem }}
+              </div>
+            </div>
+            <div class="h-{{ size.size }} w-100p bg-silver-600 hover.bg-silver-900 duration-200"></div>
+          </div>
+        {% endif %}
+      {%- endfor -%}
+
+      <div class="col-1 md.col-2 xl.col-1 align-center mt-12">
+        <button class="btn btn-dark radius-round shadow-2 hover.shadow-3 js-btn-reveal-sizes"><i class="fas fa-eye mr-2"></i> Show All Sizes</button>
+      </div>
+
+      {%- for size in cheatsheet.sizes -%}
+        {% if loop.index0 > 11 %}
+          <div class="mb-4 flex align-items-center js-sizes" style="display: none;">
+            <div class="flex align-items-center flex-none mr-6 font-600 font-xs">
+              <div class="flex align-items-center justify-content-center w-13 h-5 mr-4 font-2xs tracking-1 select-all bg-black color-white radius-xs">
+                SIZE {{ size.size }}
+              </div>
+              <div class="w-10 align-right select-all">
+                {{ size.pixel }}
+              </div>
+              <div class="w-12 ml-4 align-right select-all color-silver-900">
+                {{ size.rem }}
+              </div>
+            </div>
+            <div class="h-{{ size.size }} w-100p bg-silver-600 hover.bg-silver-900 duration-200">
+            </div>
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+
+    
+  </div>
+</section>
+
+<section>
+  <div class="wrapper">
+    <div class="align-center mb-17">
+      <h2 class="font-7xl font-300 align-center mb-6 tracking-n1">Typography</h2>
+
+      <p class="max-w-26 mx-auto mb-10 font-lg font-400 align-center">
+        Uniform is a super customizable and infinitely scalable CSS Framework that is designed to help teams bring pixel-crisp designs to life.
+      </p>
+    </div>
+
+    <div class="max-w-26 m-auto bg-black color-white radius-md overflow-hidden">
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xs">
+        2xs text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">10px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">0.625rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xs">
+        xs text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">12px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">0.75rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-sm">
+        sm text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">14px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">0.875rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-md">
+        md text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">16px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">1rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-lg">
+        lg text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">18px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">1.125rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xl">
+        xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">20px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">1.25rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xl">
+        2xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">24px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">1.5rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-3xl">
+        3xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">28px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">1.75rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-4xl">
+        4xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">32px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">2rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-5xl">
+        5xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">36px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">2.25rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-6xl">
+        6xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">40px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">2.5rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-7xl">
+        7xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">48px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">3rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-8xl">
+        8xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">56px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">3.5rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-9xl">
+        9xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">64px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">4rem</div>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-10xl">
+        10xl text
+        <div class="flex align-items-center font-xs">
+          <div class="w-10 align-right select-all">72px</div>
+          <div class="w-13 align-right opacity-60 ml-4 select-all">4.5rem</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

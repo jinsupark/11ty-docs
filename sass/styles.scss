@@ -22,8 +22,12 @@
 }
 
 .markdown {
-	color: fill(gray-800);
+	color: fill(gray-500);
 	font-size: font-size(md);
+
+	& > h1,h2,h3,h4,h5,h6 {
+		color: fill(black);
+	}
 	
 	& > p a {
 		color: fill(blue-500);
