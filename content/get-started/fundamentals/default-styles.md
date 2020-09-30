@@ -78,6 +78,7 @@ By default, Uniform applies very basic styling to common typographical elements 
 h1,h2,h3,h4,h5,h6 {
   line-height: var(--heading-leading, leading(3));
   margin-bottom: var(--heading-margin, 0.5em);
+  color: var(--heading-color, black);
   &:last-child {
     margin-bottom: 0;
   }
@@ -86,6 +87,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   line-height: var(--paragraph-leading, leading(8));
   margin-bottom: var(--paragraph-margin, 1.5em);
+  color: var(--paragraph-color, fill(gray-400));
   &:last-child {
     margin-bottom: 0;
   }

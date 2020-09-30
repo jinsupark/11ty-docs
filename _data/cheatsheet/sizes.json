@@ -128,5 +128,10 @@
 		"size": "26",
     "pixel": "640px",
     "rem": "40rem" 
+  },
+  {
+		"size": "27",
+    "pixel": "768px",
+    "rem": "48rem" 
   }
 ]

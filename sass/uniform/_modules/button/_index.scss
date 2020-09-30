@@ -191,7 +191,7 @@ CUSTOM PROPERTIES
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		height: var(--btn-height, size(10));
+		height: var(--btn-height, size(11));
 		padding: var(--btn-padding, size(0, 5));
 		outline: none;
 		background: var(--btn-bg, fill(indigo-500));
@@ -262,17 +262,17 @@ CUSTOM PROPERTIES
   ******************************/
 
 	.btn-xs {
-		--btn-height: var(--btn-xs-height, #{size(7)});
+		--btn-height: var(--btn-xs-height, #{size(8)});
 		--btn-padding: var(--btn-xs-padding, #{size(0, 3)});
 		--btn-font-size: var(--btn-xs-font-size, #{font-size(xs)});
 	}
 	.btn-sm {
-		--btn-height: var(--btn-sm-height, #{size(8)});
+		--btn-height: var(--btn-sm-height, #{size(9)});
 		--btn-padding: var(--btn-sm-padding, #{size(0, 4)});
 		--btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
 	}
 	.btn-md {
-		--btn-height: var(--btn-md-height, #{size(10)});
+		--btn-height: var(--btn-md-height, #{size(11)});
 		--btn-padding: var(--btn-md-padding, #{size(0, 5)});
 		--btn-font-size: var(--btn-md-font-size, #{font-size(md)});
 	}
@@ -290,7 +290,7 @@ CUSTOM PROPERTIES
 	@each $screen, $screen-value in screens() {
 		@media (min-width: $screen-value) {
 			.#{$screen}#{$screen-delimiter}btn-xs {
-				--btn-height: var(--btn-xs-height, #{size(7)});
+				--btn-height: var(--btn-xs-height, #{size(8)});
 				--btn-padding: var(--btn-xs-padding, #{size(0, 3)});
 				--btn-font-size: var(--btn-xs-font-size, #{font-size(xs)});
 			}
@@ -300,7 +300,7 @@ CUSTOM PROPERTIES
 				--btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
 			}
 			.#{$screen}#{$screen-delimiter}btn-md {
-				--btn-height: var(--btn-md-height, #{size(10)});
+				--btn-height: var(--btn-md-height, #{size(11)});
 				--btn-padding: var(--btn-md-padding, #{size(0, 5)});
 				--btn-font-size: var(--btn-md-font-size, #{font-size(md)});
 			}

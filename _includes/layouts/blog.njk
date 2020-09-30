@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "partials/nav.njk" %}
+<div class="fixed t-0 l-0 w-100p z-n1 bg-hero-short">
+  <div class="h-100vh">
+
+  </div>
+</div>
+
+
+
+<section>
+  <div class="wrapper">
+    <div class="max-w-27 mx-auto bg-white radius-md shadow-3 p-18 mt-20">
+      <h2 class="align-center font-4xl align-center">{{ title }}</h2>
+
+      {{ content | safe }}
+    </div>
+  </div>
+</section>
