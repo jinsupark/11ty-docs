@@ -1,5 +1,5 @@
 ---
-title: To design and develop an interactive
+title: To design and develop an interactive globe
 date: 1000-01-05
 author: Jin Su Park
 category: Product

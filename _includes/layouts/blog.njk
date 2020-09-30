@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
 {% include "partials/nav.njk" %}
-<div class="fixed t-0 l-0 w-100p z-n1 bg-hero-short">
+<div class="absolute t-0 l-0 w-100p z-n1 bg-hero">
   <div class="h-100vh">
 
   </div>
@@ -13,10 +13,33 @@ layout: layouts/base.njk
 
 <section>
   <div class="wrapper">
-    <div class="max-w-27 mx-auto bg-white radius-md shadow-3 p-18 mt-20">
-      <h2 class="align-center font-4xl align-center">{{ title }}</h2>
+    <div class="pt-14 pb-16 align-center">
+      <h1 class="font-6xl font-300 mb-6 tracking-n1 color-white">
+        {{ title }}
+      </h1>
 
-      {{ content | safe }}
+      <p class="max-w-26 mx-auto font-lg font-400 color-white opacity-70">
+        Read about all the latest developement news on the Uniform CSS.
+      </p>
     </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="wrapper">
+    {%- for post in collections.posts -%}
+      <article class="max-w-800px mx-auto radius-md bg-white px-8 py-15 mb-18 last.mb-0">
+        <h2 class="align-center font-2xl font-500 tracking-n2 mb-6">{{ post.data.title }}</h2>
+        <div class="mb-8 align-center font-sm">
+          {{ post.data.author }} on <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time> in {{ post.data.category }}
+        </div>
+
+        <div class="font-sm max-w-600px mx-auto">
+          {{ post.data.content | safe }}
+        </div>
+      </article>
+    {%- endfor -%}
   </div>
 </section>

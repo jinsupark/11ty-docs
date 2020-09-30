@@ -13,11 +13,7 @@
   p {
     line-height: var(--paragraph-leading, leading(8));
     margin-bottom: var(--paragraph-margin, 1.5em);
-<<<<<<< HEAD
-    color: var(--paragraph-color, fill(gray-400));
-=======
     color: var(--paragraph-color, fill(gray-500));
->>>>>>> 52dd2fa865bf6a33a3668496df9a812b801d9f03
     &:last-child {
       margin-bottom: 0;
     }
