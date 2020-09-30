@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $keyword: leading !default;
-$responsive: false !default;
+$responsive: true !default;
 $responsive-pseudos: false !default;
 
 $properties: (line-height) !default;
