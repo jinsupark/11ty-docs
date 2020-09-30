@@ -187,12 +187,8 @@
 
 
 .bg-hero {
-	background: linear-gradient(0deg, rgba(56,113,181,0) 10%, rgba(56,128,181,1) 30%, rgba(10,73,108,1) 75%, rgba(16,29,54,1) 100%);
+	background: linear-gradient(to bottom, #101D36 0%, #0A376C 20%, #519BE5 70%, #FFFFFF 100%);
 }
-.bg-hero-short {
-	background: linear-gradient(0deg, rgba(56,113,181,0) 0%, rgba(56,128,181,1) 50%, rgba(10,73,108,1) 75%, rgba(16,29,54,1) 95%);
-}
-
 .gallery {
 	display: flex;
 	position: relative;
