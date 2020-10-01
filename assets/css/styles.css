@@ -594,6 +594,7 @@ CUSTOM PROPERTIES
   color: var(--btn-active-color, var(--white));
   border: var(--btn-active-border, initial);
   box-shadow: var(--btn-active-shadow, none);
+  pointer-events: none;
 }
 .btn.is-loading {
   color: transparent;
@@ -642,7 +643,7 @@ SIZES
 }
 
 .btn-xl {
-  --btn-height: var(--btn-xl-height, var(--size-14));
+  --btn-height: var(--btn-xl-height, var(--size-13));
   --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-7));
   --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
 }
@@ -1080,7 +1081,7 @@ INPUT
 }
 
 .input-xl {
-  height: var(--input-xl-height, var(--size-14));
+  height: var(--input-xl-height, var(--size-13));
   padding: var(--input-xl-padding, var(--size-0) var(--size-5));
   font-size: var(--input-xl-font-size, var(--font-lg));
 }
@@ -25098,7 +25099,7 @@ pre[class*=language-] {
   }
 
   .xs\.btn-xl {
-    --btn-height: var(--btn-xl-height, var(--size-14));
+    --btn-height: var(--btn-xl-height, var(--size-13));
     --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-7));
     --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
   }
@@ -25127,7 +25128,7 @@ pre[class*=language-] {
   }
 
   .xs\.input-xl {
-    height: var(--input-xl-height, var(--size-14));
+    height: var(--input-xl-height, var(--size-13));
     padding: var(--input-xl-padding, var(--size-0) var(--size-5));
     font-size: var(--input-xl-font-size, var(--font-lg));
   }
@@ -30792,7 +30793,7 @@ pre[class*=language-] {
   }
 
   .sm\.btn-xl {
-    --btn-height: var(--btn-xl-height, var(--size-14));
+    --btn-height: var(--btn-xl-height, var(--size-13));
     --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-7));
     --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
   }
@@ -30821,7 +30822,7 @@ pre[class*=language-] {
   }
 
   .sm\.input-xl {
-    height: var(--input-xl-height, var(--size-14));
+    height: var(--input-xl-height, var(--size-13));
     padding: var(--input-xl-padding, var(--size-0) var(--size-5));
     font-size: var(--input-xl-font-size, var(--font-lg));
   }
@@ -36489,7 +36490,7 @@ pre[class*=language-] {
   }
 
   .md\.btn-xl {
-    --btn-height: var(--btn-xl-height, var(--size-14));
+    --btn-height: var(--btn-xl-height, var(--size-13));
     --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-7));
     --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
   }
@@ -36518,7 +36519,7 @@ pre[class*=language-] {
   }
 
   .md\.input-xl {
-    height: var(--input-xl-height, var(--size-14));
+    height: var(--input-xl-height, var(--size-13));
     padding: var(--input-xl-padding, var(--size-0) var(--size-5));
     font-size: var(--input-xl-font-size, var(--font-lg));
   }
@@ -42183,7 +42184,7 @@ pre[class*=language-] {
   }
 
   .lg\.btn-xl {
-    --btn-height: var(--btn-xl-height, var(--size-14));
+    --btn-height: var(--btn-xl-height, var(--size-13));
     --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-7));
     --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
   }
@@ -42212,7 +42213,7 @@ pre[class*=language-] {
   }
 
   .lg\.input-xl {
-    height: var(--input-xl-height, var(--size-14));
+    height: var(--input-xl-height, var(--size-13));
     padding: var(--input-xl-padding, var(--size-0) var(--size-5));
     font-size: var(--input-xl-font-size, var(--font-lg));
   }
@@ -47877,7 +47878,7 @@ pre[class*=language-] {
   }
 
   .xl\.btn-xl {
-    --btn-height: var(--btn-xl-height, var(--size-14));
+    --btn-height: var(--btn-xl-height, var(--size-13));
     --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-7));
     --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
   }
@@ -47906,7 +47907,7 @@ pre[class*=language-] {
   }
 
   .xl\.input-xl {
-    height: var(--input-xl-height, var(--size-14));
+    height: var(--input-xl-height, var(--size-13));
     padding: var(--input-xl-padding, var(--size-0) var(--size-5));
     font-size: var(--input-xl-font-size, var(--font-lg));
   }

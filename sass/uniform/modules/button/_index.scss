@@ -230,6 +230,7 @@ CUSTOM PROPERTIES
       color: var(--btn-active-color, fill(white));
       border: var(--btn-active-border, initial);
       box-shadow: var(--btn-active-shadow, none);
+      pointer-events: none;
     }
     &.is-loading {
       color: transparent;
@@ -278,7 +279,7 @@ CUSTOM PROPERTIES
     --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
   }
   .btn-xl {
-    --btn-height: var(--btn-xl-height, #{size(14)});
+    --btn-height: var(--btn-xl-height, #{size(13)});
     --btn-padding: var(--btn-xl-padding, #{size(0, 7)});
     --btn-font-size: var(--btn-xl-font-size, #{font-size(lg)});
   }
@@ -306,7 +307,7 @@ CUSTOM PROPERTIES
         --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
       }
       .#{$screen}#{$screen-delimiter}btn-xl {
-        --btn-height: var(--btn-xl-height, #{size(14)});
+        --btn-height: var(--btn-xl-height, #{size(13)});
         --btn-padding: var(--btn-xl-padding, #{size(0, 7)});
         --btn-font-size: var(--btn-xl-font-size, #{font-size(lg)});
       }
