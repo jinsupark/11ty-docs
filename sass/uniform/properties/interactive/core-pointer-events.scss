@@ -17,7 +17,7 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$core-pseudos: (disabled) !default;
+$core-pseudos: () !default;
 $pseudos: () !default;
 $final-pseudos: list.join($core-pseudos, $pseudos) !default;
 

@@ -18,7 +18,7 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
-$core-pseudos: (hover, group-hover, active, focus, disabled) !default;
+$core-pseudos: (hover, group-hover, active, focus) !default;
 $pseudos: () !default;
 $final-pseudos: list.join($core-pseudos, $pseudos) !default;
 
