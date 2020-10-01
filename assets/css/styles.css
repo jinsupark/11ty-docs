@@ -1602,14 +1602,6 @@ CUSTOM PROPERTIES
 --wrapper-lg-max-width
 --wrapper-xl-max-width
 */
-.wrapper {
-  width: 100%;
-  margin: auto;
-  max-width: var(--wrapper-max-width, var(--size-26));
-  padding-left: var(--wrapper-padding, var(--size-8));
-  padding-right: var(--wrapper-padding, var(--size-8));
-}
-
 .align-content-stretch {
   align-content: stretch;
 }
@@ -13829,7 +13821,7 @@ CUSTOM PROPERTIES
   width: auto;
 }
 
-.w-100p {
+.w-100p, .wrapper {
   width: 100%;
 }
 
@@ -14665,7 +14657,7 @@ CUSTOM PROPERTIES
   max-width: var(--size-25);
 }
 
-.max-w-26 {
+.max-w-26, .wrapper {
   max-width: var(--size-26);
 }
 
@@ -15150,7 +15142,7 @@ CUSTOM PROPERTIES
   margin: var(--size-27);
 }
 
-.m-auto {
+.m-auto, .wrapper {
   margin: auto;
 }
 .mx-0 {
@@ -17076,7 +17068,7 @@ CUSTOM PROPERTIES
   padding-left: var(--size-7);
 }
 
-.px-8 {
+.px-8, .wrapper {
   padding-right: var(--size-8);
   padding-left: var(--size-8);
 }
@@ -24084,11 +24076,6 @@ pre[class*=language-] {
   .xs\.table-unstack td[data-table-label]:before {
     display: none;
   }
-  .wrapper {
-    max-width: var(--wrapper-xs-max-width, 768px);
-    padding-left: 0;
-    padding-right: 0;
-  }
   .xs\.align-content-stretch {
     align-content: stretch;
   }
@@ -26037,7 +26024,7 @@ pre[class*=language-] {
     max-width: var(--size-26);
   }
 
-  .xs\.max-w-27 {
+  .xs\.max-w-27, .wrapper {
     max-width: var(--size-27);
   }
 
@@ -27813,7 +27800,7 @@ pre[class*=language-] {
   .xs\.p-27 {
     padding: var(--size-27);
   }
-  .xs\.px-0 {
+  .xs\.px-0, .wrapper {
     padding-right: var(--size-0);
     padding-left: var(--size-0);
   }
@@ -29778,11 +29765,6 @@ pre[class*=language-] {
   .sm\.table-unstack td[data-table-label]:before {
     display: none;
   }
-  .wrapper {
-    max-width: var(--wrapper-sm-max-width, 896px);
-    padding-left: 0;
-    padding-right: 0;
-  }
   .sm\.align-content-stretch {
     align-content: stretch;
   }
@@ -31735,7 +31717,7 @@ pre[class*=language-] {
     max-width: var(--size-27);
   }
 
-  .sm\.max-w-screen-xs {
+  .sm\.max-w-screen-xs, .wrapper {
     max-width: 896px;
   }
 
@@ -33507,7 +33489,7 @@ pre[class*=language-] {
   .sm\.p-27 {
     padding: var(--size-27);
   }
-  .sm\.px-0 {
+  .sm\.px-0, .wrapper {
     padding-right: var(--size-0);
     padding-left: var(--size-0);
   }
@@ -35475,11 +35457,6 @@ pre[class*=language-] {
   .md\.table-unstack td[data-table-label]:before {
     display: none;
   }
-  .wrapper {
-    max-width: var(--wrapper-md-max-width, 1024px);
-    padding-left: 0;
-    padding-right: 0;
-  }
   .md\.align-content-stretch {
     align-content: stretch;
   }
@@ -37436,7 +37413,7 @@ pre[class*=language-] {
     max-width: 896px;
   }
 
-  .md\.max-w-screen-sm {
+  .md\.max-w-screen-sm, .wrapper {
     max-width: 1024px;
   }
 
@@ -39204,7 +39181,7 @@ pre[class*=language-] {
   .md\.p-27 {
     padding: var(--size-27);
   }
-  .md\.px-0 {
+  .md\.px-0, .wrapper {
     padding-right: var(--size-0);
     padding-left: var(--size-0);
   }
@@ -41169,11 +41146,6 @@ pre[class*=language-] {
   .lg\.table-unstack td[data-table-label]:before {
     display: none;
   }
-  .wrapper {
-    max-width: var(--wrapper-lg-max-width, 1152px);
-    padding-left: 0;
-    padding-right: 0;
-  }
   .lg\.align-content-stretch {
     align-content: stretch;
   }
@@ -43134,7 +43106,7 @@ pre[class*=language-] {
     max-width: 1024px;
   }
 
-  .lg\.max-w-screen-md {
+  .lg\.max-w-screen-md, .wrapper {
     max-width: 1152px;
   }
 
@@ -44898,7 +44870,7 @@ pre[class*=language-] {
   .lg\.p-27 {
     padding: var(--size-27);
   }
-  .lg\.px-0 {
+  .lg\.px-0, .wrapper {
     padding-right: var(--size-0);
     padding-left: var(--size-0);
   }
@@ -46862,11 +46834,6 @@ pre[class*=language-] {
   }
   .xl\.table-unstack td[data-table-label]:before {
     display: none;
-  }
-  .wrapper {
-    max-width: var(--wrapper-xl-max-width, 1280px);
-    padding-left: 0;
-    padding-right: 0;
   }
   .xl\.align-content-stretch {
     align-content: stretch;
@@ -48832,7 +48799,7 @@ pre[class*=language-] {
     max-width: 1152px;
   }
 
-  .xl\.max-w-screen-lg {
+  .xl\.max-w-screen-lg, .wrapper {
     max-width: 1280px;
   }
 
@@ -50592,7 +50559,7 @@ pre[class*=language-] {
   .xl\.p-27 {
     padding: var(--size-27);
   }
-  .xl\.px-0 {
+  .xl\.px-0, .wrapper {
     padding-right: var(--size-0);
     padding-left: var(--size-0);
   }

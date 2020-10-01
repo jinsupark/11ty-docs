@@ -13,36 +13,36 @@ CUSTOM PROPERTIES
 */
 
 @if $include-wrapper-module == true and $headless == false {
-  .wrapper {
-    width: 100%;
-    margin: auto;
-    max-width: var(--wrapper-max-width, size(26));
-    padding-left: var(--wrapper-padding, size(8));
-    padding-right: var(--wrapper-padding, size(8));
-    @media (min-width: screen(xs)) {
-      max-width: var(--wrapper-xs-max-width, 768px);
-      padding-left: 0;
-      padding-right: 0;
-    }
-    @media (min-width: screen(sm)) {
-      max-width: var(--wrapper-sm-max-width, 896px);
-      padding-left: 0;
-      padding-right: 0;
-    }
-    @media (min-width: screen(md)) {
-      max-width: var(--wrapper-md-max-width, 1024px);
-      padding-left: 0;
-      padding-right: 0;
-    }
-    @media (min-width: screen(lg)) {
-      max-width: var(--wrapper-lg-max-width, 1152px);
-      padding-left: 0;
-      padding-right: 0;
-    }
-    @media (min-width: screen(xl)) {
-      max-width: var(--wrapper-xl-max-width, 1280px);
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
+  // .wrapper {
+  //   width: 100%;
+  //   margin: auto;
+  //   max-width: var(--wrapper-max-width, size(26));
+  //   padding-left: var(--wrapper-padding, size(8));
+  //   padding-right: var(--wrapper-padding, size(8));
+  //   @media (min-width: screen(xs)) {
+  //     max-width: var(--wrapper-xs-max-width, 768px);
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //   }
+  //   @media (min-width: screen(sm)) {
+  //     max-width: var(--wrapper-sm-max-width, 896px);
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //   }
+  //   @media (min-width: screen(md)) {
+  //     max-width: var(--wrapper-md-max-width, 1024px);
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //   }
+  //   @media (min-width: screen(lg)) {
+  //     max-width: var(--wrapper-lg-max-width, 1152px);
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //   }
+  //   @media (min-width: screen(xl)) {
+  //     max-width: var(--wrapper-xl-max-width, 1280px);
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //   }
+  // }
 }

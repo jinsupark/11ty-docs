@@ -10,7 +10,10 @@
 	)
 );
 
+@use "uniform/_modules/_wrapper2" as *;
+
 @use "vendors/prism" as *;
+
 
 :root {
 	--font-sans: 'Inter';
