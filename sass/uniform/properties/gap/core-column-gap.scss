@@ -1,0 +1,43 @@
+@use "uniform/core" as *;
+@use "sass:map";
+@use "sass:list";
+
+$keyword: col-gap !default;
+$responsive: true !default;
+$responsive-pseudos: false !default;
+
+$properties: (column-gap) !default;
+
+$core-variants: (
+	merge(
+		positive-sizes(),
+		(
+			px: 1px,
+			2px: 2px,
+			3px: 3px,
+			4px: 4px,
+
+			6px: 6px,
+			8px: 8px,
+			
+			12px: 12px,
+		)
+	)
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$core-pseudos: () !default;
+$pseudos: () !default;
+$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+
+@include constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $final-pseudos
+);

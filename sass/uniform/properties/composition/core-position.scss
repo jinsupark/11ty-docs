@@ -1,0 +1,34 @@
+@use "uniform/core" as *;
+@use "sass:map";
+@use "sass:list";
+
+$keyword: exempt !default;
+$responsive: true !default;
+$responsive-pseudos: false !default;
+
+$properties: (position) !default;
+
+$core-variants: (
+  static: static,
+  fixed: fixed,
+  absolute: absolute,
+  relative: relative,
+  sticky: sticky
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$core-pseudos: () !default;
+$pseudos: () !default;
+$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+
+@include constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $final-pseudos
+);

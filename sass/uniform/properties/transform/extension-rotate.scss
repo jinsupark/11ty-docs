@@ -1,0 +1,36 @@
+@use "uniform/core" as *;
+@use "sass:map";
+@use "sass:list";
+
+$keyword: rotate !default;
+$responsive: false !default;
+$responsive-pseudos: false !default;
+
+$properties: (--rotate) !default;
+
+$core-variants: (
+	0: 0,
+	45: 45deg,
+	90: 90deg,
+	180: 180deg,
+	n45: -45deg,
+	n90: -90deg,
+	n180: -180deg,
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$core-pseudos: (hover, group-hover) !default;
+$pseudos: () !default;
+$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+
+@include constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $final-pseudos
+);

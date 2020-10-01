@@ -1,0 +1,53 @@
+@use "uniform/core" as *;
+@use "sass:map";
+@use "sass:list";
+
+$keyword: max-h !default;
+$responsive: true !default;
+$responsive-pseudos: false !default;
+
+$properties: (max-height) !default;
+
+$core-variants: (
+	merge(
+		positive-sizes(),
+		(
+			none: none,
+			100p: 100%,
+			100vh: 100vh,
+			50p: 50%,
+			50vh: 50vh,
+			
+			px: 1px,
+			2px: 2px,
+			3px: 3px,
+
+			'100px': 100px,
+			'200px': 200px,
+			'300px': 300px,
+			'400px': 400px,
+			'500px': 500px,
+			'600px': 600px,
+			'700px': 700px,
+			'800px': 800px,
+			'900px': 900px,
+		)
+	)
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$core-pseudos: () !default;
+$pseudos: () !default;
+$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+
+@include constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $final-pseudos
+);

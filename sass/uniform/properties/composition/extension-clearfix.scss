@@ -1,0 +1,11 @@
+@use "uniform/core" as *;
+
+@if $headless == false {
+	.#{$prefix}clearfix {
+		&::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@use "uniform/core" as *;
+
+@if $include-reset-styles == true and $headless == false {
+
+  /* Reset everything */
+  *,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0 solid var(--default-border-color, fill(silver-200));
+    font: inherit;
+    color: inherit;
+  }
+
+  /* Prevent iOS font size change */
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Reset body line-height */
+  body {
+    line-height: 1;
+  }
+
+  /* All media elements set to block */
+  img,svg,video,canvas,audio,iframe,embed,object {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  /* Collapse table */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Remove list style */
+  ol,ul {
+    list-style: none;
+  }
+}

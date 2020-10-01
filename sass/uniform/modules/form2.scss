@@ -1,0 +1,271 @@
+@use "uniform" as *;
+
+/******************************
+LABEL
+******************************/
+
+.label {
+  @extend
+  .inline-block,
+  .font-xs,
+  .font-600,
+  .color-black;
+
+  &.is-required {
+    &:after {
+      content: '*';
+      position: relative;
+      display: inline-block;
+      top: -2px;
+      left: 2px;
+      color: var(--label-required-color, fill(red-500));
+    }
+  }
+}
+
+/******************************
+INPUT
+******************************/
+
+.input {
+  @extend
+  .appearance-none,
+  .outline-0,
+  .relative,
+  .w-100p,
+  .h-10,
+  .px-3,
+  .bg-white,
+  .border-px,
+  .border-silver-500,
+  .radius-xs,
+  .transition-appearance,
+  .duration-100,
+
+  .hover\.border-silver-800,
+  .focus\.border-indigo-500,
+  .disabled\.bg-silver-300,
+  .disabled\.color-gray-400,
+  .disabled\.pointer-events-none;
+  
+  /******************************
+  STATES
+  ******************************/
+
+  &.is-success {
+    @extend
+    .border-px,
+    .border-green-600;
+  }
+
+  &.is-warning {
+    @extend
+    .border-px,
+    .border-yellow-600;
+  }
+
+  &.is-danger {
+    @extend
+    .border-px,
+    .border-red-600;
+  }
+  
+  /******************************
+  SIZES
+  ******************************/
+
+  &.input-xs {
+    @extend
+    .h-8,
+    .px-2,
+    .font-xs;
+  }
+
+  &.input-sm {
+    @extend
+    .h-9,
+    .px-3,
+    .font-sm;
+  }
+
+  &.input-md {
+    @extend
+    .h-11,
+    .px-3,
+    .font-md;
+  }
+
+  &.input-lg {
+    @extend
+    .h-12,
+    .px-4,
+    .font-md;
+  }
+
+  &.input-xl {
+    @extend
+    .h-14,
+    .px-5,
+    .font-lg;
+  }
+
+  @each $screen, $screen-value in screens() {
+    &.#{$screen}\.btn-xs {
+      @extend
+      .#{$screen}\.h-8,
+      .#{$screen}\.px-3,
+      .#{$screen}\.font-xs;
+    }
+  
+    &.#{$screen}\.input-xs {
+      @extend
+      .#{$screen}\.h-8,
+      .#{$screen}\.px-2,
+      .#{$screen}\.font-xs;
+    }
+  
+    &.#{$screen}\.input-sm {
+      @extend
+      .#{$screen}\.h-9,
+      .#{$screen}\.px-3,
+      .#{$screen}\.font-sm;
+    }
+  
+    &.#{$screen}\.input-md {
+      @extend
+      .#{$screen}\.h-11,
+      .#{$screen}\.px-3,
+      .#{$screen}\.font-md;
+    }
+  
+    &.#{$screen}\.input-lg {
+      @extend
+      .#{$screen}\.h-12,
+      .#{$screen}\.px-4,
+      .#{$screen}\.font-md;
+    }
+  
+    &.#{$screen}\.input-xl {
+      @extend
+      .#{$screen}\.h-14,
+      .#{$screen}\.px-5,
+      .#{$screen}\.font-lg;
+    }
+  }
+}
+
+/******************************
+CHECKBOX
+******************************/
+
+.checkbox {
+  @extend
+  .inline-flex,
+  .align-items-center,
+  .cursor-pointer;
+
+  &:hover {
+    .checkbox#{$child-delimiter}checkmark {
+      @extend
+      .border-px,
+      .border-silver-800;
+    }
+  }
+
+  input {
+    @extend
+    .hidden;
+
+    &:checked ~ .checkbox#{$child-delimiter}checkmark {
+      @extend
+      .bg-indigo-500,
+      .border-px,
+      .border-indigo-500;
+      &:after {
+        display: block;
+      }
+    }
+    &:disabled ~ .checkbox#{$child-delimiter}checkmark {
+      @extend
+      .bg-silver-300,
+      .border-px,
+      .border-silver-500;
+      &:after {
+        @extend
+        .border-gray-400;
+      }
+    }
+  }
+}
+
+.checkbox#{$child-delimiter}checkmark {
+  @extend
+  .flex-none,
+  .relative,
+  .w-4,
+  .h-4,
+  .mr-3,
+  .bg-white,
+  .border-px,
+  .border-silver-500,
+  .radius-xs,
+  .transition-appearance,
+  .duration-200;
+  &:after {
+    content: '';
+    display: none;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+/******************************
+RADIO
+******************************/
+
+.radio {
+  @extend
+  .inline-flex,
+  .align-items-center,
+  .cursor-pointer;
+  
+  &:hover {
+    .radio#{$child-delimiter}checkmark {
+      @extend
+      .border-px,
+      .border-silver-800;
+    }
+  }
+
+  input {
+    @extend
+    .hidden;
+
+    &:checked ~ .radio#{$child-delimiter}checkmark {
+      @extend
+      .bg-indigo-500,
+      .border-px,
+      .border-indigo-500;
+      &:after {
+        display: block;
+        background: white;
+      }
+    }
+    &:disabled ~ .radio#{$child-delimiter}checkmark {
+      @extend
+      .bg-silver-300,
+      .border-px,
+      .border-silver-500;
+      &:after {
+        @extend
+        .border-gray-400;
+      }
+    }
+  }
+}

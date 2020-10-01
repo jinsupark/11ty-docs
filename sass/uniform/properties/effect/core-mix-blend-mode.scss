@@ -1,0 +1,45 @@
+@use "uniform/core" as *;
+@use "sass:map";
+@use "sass:list";
+
+$keyword: blend !default;
+$responsive: false !default;
+$responsive-pseudos: false !default;
+
+$properties: (mix-blend-mode) !default;
+
+$core-variants: (
+	normal: normal,
+	multiply: multiply,
+	screen: screen,
+	overlay: overlay,
+	darken: darken,
+	lighten: lighten,
+	color-dodge: color-dodge,
+	color-burn: color-burn,
+	hard-light: hard-light,
+	soft-light: soft-light,
+	difference: difference,
+	exclusion: exclusion,
+	hue: hue,
+	saturation: saturation,
+	color: color,
+	luminosity: luminosity,
+) !default;
+
+$variants: () !default;
+
+$final-variants: map.merge($core-variants, $variants) !default;
+
+$core-pseudos: () !default;
+$pseudos: () !default;
+$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+
+@include constructor(
+  $keyword,
+  $responsive,
+  $responsive-pseudos,
+  $properties,
+  $final-variants,
+  $final-pseudos
+);

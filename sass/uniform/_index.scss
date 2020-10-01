@@ -1,214 +1,214 @@
 /*! UniformCSS v0.1.0 | MIT License | github.com/UniformCSS/uniformcss */
 
-@forward "_core";
+@forward "core";
 
 
 // DEFAULTS (2)
-@use "_defaults/reset" as *;
-@use "_defaults/starter" as *;
+@use "defaults/reset" as *;
+@use "defaults/starter" as *;
 
 
 // MODULE (4)
-@use "_modules/button" as *;
-@use "_modules/form" as *;
-@use "_modules/table" as *;
-@use "_modules/wrapper" as *;
+@use "modules/button" as *;
+@use "modules/form" as *;
+@use "modules/table" as *;
+@use "modules/wrapper" as *;
 
 
 // CORE - ALIGNMENT (6)
-@forward "_properties/alignment/core-align-content" as align-content-*;
-@forward "_properties/alignment/core-align-items" as align-items-*;
-@forward "_properties/alignment/core-align-self" as align-self-*;
-@forward "_properties/alignment/core-justify-content" as justify-content-*;
-@forward "_properties/alignment/core-text-align" as text-align-*;
-@forward "_properties/alignment/core-vertical-align" as vertical-align-*;
+@forward "properties/alignment/core-align-content" as align-content-*;
+@forward "properties/alignment/core-align-items" as align-items-*;
+@forward "properties/alignment/core-align-self" as align-self-*;
+@forward "properties/alignment/core-justify-content" as justify-content-*;
+@forward "properties/alignment/core-text-align" as text-align-*;
+@forward "properties/alignment/core-vertical-align" as vertical-align-*;
 
 
 // CORE - APPEARANCE (6)
-@forward "_properties/appearance/core-display" as display-*;
-@forward "_properties/appearance/core-opacity" as opacity-*;
-@forward "_properties/appearance/core-outline" as outline-*;
-@forward "_properties/appearance/core-visibility" as visibility-*;
-@forward "_properties/appearance/extension-appearance" as apperance-*;
-@forward "_properties/appearance/extension-font-smooth" as font-smooth-*;
+@forward "properties/appearance/core-display" as display-*;
+@forward "properties/appearance/core-opacity" as opacity-*;
+@forward "properties/appearance/core-outline" as outline-*;
+@forward "properties/appearance/core-visibility" as visibility-*;
+@forward "properties/appearance/extension-appearance" as apperance-*;
+@forward "properties/appearance/extension-font-smooth" as font-smooth-*;
 
 
 // CORE - BACKGROUND (7)
-@forward "_properties/background/core-background" as background-*;
-@forward "_properties/background/core-background-attachment" as background-attachment-*;
-@forward "_properties/background/core-background-clip" as background-clip-*;
-@forward "_properties/background/core-background-color" as background-color-*;
-@forward "_properties/background/core-background-position" as background-position-*;
-@forward "_properties/background/core-background-repeat" as background-repeat-*;
-@forward "_properties/background/core-background-size" as background-size-*;
+@forward "properties/background/core-background" as background-*;
+@forward "properties/background/core-background-attachment" as background-attachment-*;
+@forward "properties/background/core-background-clip" as background-clip-*;
+@forward "properties/background/core-background-color" as background-color-*;
+@forward "properties/background/core-background-position" as background-position-*;
+@forward "properties/background/core-background-repeat" as background-repeat-*;
+@forward "properties/background/core-background-size" as background-size-*;
 
 
 // CORE - BORDER (17)
-@forward "_properties/border/core-border-collapse" as border-collapse-*;
-@forward "_properties/border/core-border-color" as border-color-*;
-@forward "_properties/border/core-border-style" as border-style-*;
-@forward "_properties/border/core-border-radius" as border-radius-*;
-@forward "_properties/border/extension-border-bottom-radius" as border-bottom-radius-*;
-@forward "_properties/border/extension-border-left-radius" as border-left-radius-*;
-@forward "_properties/border/extension-border-right-radius" as border-right-radius-*;
-@forward "_properties/border/extension-border-top-radius" as border-top-radius-*;
-@forward "_properties/border/core-border-bottom-left-radius" as border-bottom-left-radius-*;
-@forward "_properties/border/core-border-bottom-right-radius" as border-bottom-right-radius-*;
-@forward "_properties/border/core-border-top-left-radius" as border-top-left-radius-*;
-@forward "_properties/border/core-border-top-right-radius" as border-top-right-radius-*;
-@forward "_properties/border/core-border-width" as border-width-*;
-@forward "_properties/border/core-border-bottom-width" as border-bottom-width-*;
-@forward "_properties/border/core-border-left-width" as border-left-width-*;
-@forward "_properties/border/core-border-right-width" as border-right-width-*;
-@forward "_properties/border/core-border-top-width" as border-top-width-*;
+@forward "properties/border/core-border-collapse" as border-collapse-*;
+@forward "properties/border/core-border-color" as border-color-*;
+@forward "properties/border/core-border-style" as border-style-*;
+@forward "properties/border/core-border-radius" as border-radius-*;
+@forward "properties/border/extension-border-bottom-radius" as border-bottom-radius-*;
+@forward "properties/border/extension-border-left-radius" as border-left-radius-*;
+@forward "properties/border/extension-border-right-radius" as border-right-radius-*;
+@forward "properties/border/extension-border-top-radius" as border-top-radius-*;
+@forward "properties/border/core-border-bottom-left-radius" as border-bottom-left-radius-*;
+@forward "properties/border/core-border-bottom-right-radius" as border-bottom-right-radius-*;
+@forward "properties/border/core-border-top-left-radius" as border-top-left-radius-*;
+@forward "properties/border/core-border-top-right-radius" as border-top-right-radius-*;
+@forward "properties/border/core-border-width" as border-width-*;
+@forward "properties/border/core-border-bottom-width" as border-bottom-width-*;
+@forward "properties/border/core-border-left-width" as border-left-width-*;
+@forward "properties/border/core-border-right-width" as border-right-width-*;
+@forward "properties/border/core-border-top-width" as border-top-width-*;
 
 
 // CORE - COMPOSITION (9)
-@forward "_properties/composition/core-box-sizing" as box-sizing-*;
-@forward "_properties/composition/core-clear" as clear-*;
-@forward "_properties/composition/core-float" as float-*;
-@forward "_properties/composition/core-object-fit" as object-fit-*;
-@forward "_properties/composition/core-object-position" as object-position-*;
-@forward "_properties/composition/core-position" as position-*;
-@forward "_properties/composition/core-table-layout" as table-layout-*;
-@forward "_properties/composition/extension-clearfix" as clearfix-*;
-@forward "_properties/composition/extension-ratio" as rotate-*;
+@forward "properties/composition/core-box-sizing" as box-sizing-*;
+@forward "properties/composition/core-clear" as clear-*;
+@forward "properties/composition/core-float" as float-*;
+@forward "properties/composition/core-object-fit" as object-fit-*;
+@forward "properties/composition/core-object-position" as object-position-*;
+@forward "properties/composition/core-position" as position-*;
+@forward "properties/composition/core-table-layout" as table-layout-*;
+@forward "properties/composition/extension-clearfix" as clearfix-*;
+@forward "properties/composition/extension-ratio" as rotate-*;
 
 
 // CORE - OVERFLOW (3)
-@forward "_properties/overflow/core-overflow" as overflow-*;
-@forward "_properties/overflow/core-overflow-x" as overflow-x-*;
-@forward "_properties/overflow/core-overflow-y" as overflow-y-*;
+@forward "properties/overflow/core-overflow" as overflow-*;
+@forward "properties/overflow/core-overflow-x" as overflow-x-*;
+@forward "properties/overflow/core-overflow-y" as overflow-y-*;
 
 
 // CORE - EFFECT (3)
-@forward "_properties/effect/core-box-shadow" as box-shadow-*;
-@forward "_properties/effect/core-filter" as filter-*;
-@forward "_properties/effect/core-mix-blend-mode" as mix-blend-mode-*;
+@forward "properties/effect/core-box-shadow" as box-shadow-*;
+@forward "properties/effect/core-filter" as filter-*;
+@forward "properties/effect/core-mix-blend-mode" as mix-blend-mode-*;
 
 
 // CORE - SIZING (6)
-@forward "_properties/sizing/core-height" as height-*;
-@forward "_properties/sizing/core-width" as width-*;
-@forward "_properties/sizing/core-min-height" as min-height-*;
-@forward "_properties/sizing/core-min-width" as min-width-*;
-@forward "_properties/sizing/core-max-height" as max-height-*;
-@forward "_properties/sizing/core-max-width" as max-width-*;
+@forward "properties/sizing/core-height" as height-*;
+@forward "properties/sizing/core-width" as width-*;
+@forward "properties/sizing/core-min-height" as min-height-*;
+@forward "properties/sizing/core-min-width" as min-width-*;
+@forward "properties/sizing/core-max-height" as max-height-*;
+@forward "properties/sizing/core-max-width" as max-width-*;
 
 
 // CORE - POSITION (9)
-@forward "_properties/position/extension-xy" as xy-*;
-@forward "_properties/position/extension-x" as x-*;
-@forward "_properties/position/extension-y" as y-*;
-@forward "_properties/position/core-bottom" as bottom-*;
-@forward "_properties/position/core-left" as left-*;
-@forward "_properties/position/core-right" as right-*;
-@forward "_properties/position/core-top" as top-*;
-@forward "_properties/position/core-z-index" as z-index-*;
-@forward "_properties/position/extension-absolute-center" as rotate-*;
+@forward "properties/position/extension-xy" as xy-*;
+@forward "properties/position/extension-x" as x-*;
+@forward "properties/position/extension-y" as y-*;
+@forward "properties/position/core-bottom" as bottom-*;
+@forward "properties/position/core-left" as left-*;
+@forward "properties/position/core-right" as right-*;
+@forward "properties/position/core-top" as top-*;
+@forward "properties/position/core-z-index" as z-index-*;
+@forward "properties/position/extension-absolute-center" as rotate-*;
 
 
 // CORE - MARGIN (7)
-@forward "_properties/margin/core-margin" as margin-*;
-@forward "_properties/margin/extension-margin-x" as margin-x-*;
-@forward "_properties/margin/extension-margin-y" as margin-y-*;
-@forward "_properties/margin/core-margin-bottom" as margin-bottom-*;
-@forward "_properties/margin/core-margin-left" as margin-left-*;
-@forward "_properties/margin/core-margin-right" as margin-right-*;
-@forward "_properties/margin/core-margin-top" as margin-top-*;
+@forward "properties/margin/core-margin" as margin-*;
+@forward "properties/margin/extension-margin-x" as margin-x-*;
+@forward "properties/margin/extension-margin-y" as margin-y-*;
+@forward "properties/margin/core-margin-bottom" as margin-bottom-*;
+@forward "properties/margin/core-margin-left" as margin-left-*;
+@forward "properties/margin/core-margin-right" as margin-right-*;
+@forward "properties/margin/core-margin-top" as margin-top-*;
 
 
 // CORE - PADDING (7)
-@forward "_properties/padding/core-padding" as padding-*;
-@forward "_properties/padding/extension-padding-x" as padding-x-*;
-@forward "_properties/padding/extension-padding-y" as padding-y-*;
-@forward "_properties/padding/core-padding-bottom" as padding-bottom-*;
-@forward "_properties/padding/core-padding-left" as padding-left-*;
-@forward "_properties/padding/core-padding-right" as padding-right-*;
-@forward "_properties/padding/core-padding-top" as padding-top-*;
+@forward "properties/padding/core-padding" as padding-*;
+@forward "properties/padding/extension-padding-x" as padding-x-*;
+@forward "properties/padding/extension-padding-y" as padding-y-*;
+@forward "properties/padding/core-padding-bottom" as padding-bottom-*;
+@forward "properties/padding/core-padding-left" as padding-left-*;
+@forward "properties/padding/core-padding-right" as padding-right-*;
+@forward "properties/padding/core-padding-top" as padding-top-*;
 
 
 // CORE - TYPOGRAPHY (14)
-@forward "_properties/typography/core-color" as color-*;
-@forward "_properties/typography/core-font-family" as font-family-*;
-@forward "_properties/typography/core-font-size" as font-size-*;
-@forward "_properties/typography/core-font-style" as font-style-*;
-@forward "_properties/typography/core-font-weight" as font-weight-*;
-@forward "_properties/typography/core-letter-spacing" as letter-spacing-*;
-@forward "_properties/typography/core-line-height" as line-height-*;
-@forward "_properties/typography/core-list-style-position" as list-style-position-*;
-@forward "_properties/typography/core-list-style-type" as list-style-type-*;
-@forward "_properties/typography/core-text-decoration" as text-decoration-*;
-@forward "_properties/typography/core-text-overflow" as text-overflow-*;
-@forward "_properties/typography/core-text-transform" as text-transform-*;
-@forward "_properties/typography/core-white-space" as white-space-*;
-@forward "_properties/typography/core-word-break" as word-break-*;
+@forward "properties/typography/core-color" as color-*;
+@forward "properties/typography/core-font-family" as font-family-*;
+@forward "properties/typography/core-font-size" as font-size-*;
+@forward "properties/typography/core-font-style" as font-style-*;
+@forward "properties/typography/core-font-weight" as font-weight-*;
+@forward "properties/typography/core-letter-spacing" as letter-spacing-*;
+@forward "properties/typography/core-line-height" as line-height-*;
+@forward "properties/typography/core-list-style-position" as list-style-position-*;
+@forward "properties/typography/core-list-style-type" as list-style-type-*;
+@forward "properties/typography/core-text-decoration" as text-decoration-*;
+@forward "properties/typography/core-text-overflow" as text-overflow-*;
+@forward "properties/typography/core-text-transform" as text-transform-*;
+@forward "properties/typography/core-white-space" as white-space-*;
+@forward "properties/typography/core-word-break" as word-break-*;
 
 
 // CORE - GRID (9)
-@forward "_properties/grid/core-grid-auto-flow" as grid-auto-flow-*;
-@forward "_properties/grid/core-grid-column" as grid-column-*;
-@forward "_properties/grid/core-grid-column-end" as grid-column-end-*;
-@forward "_properties/grid/core-grid-column-start" as grid-column-start-*;
-@forward "_properties/grid/core-grid-row" as grid-row-*;
-@forward "_properties/grid/core-grid-row-end" as grid-row-end-*;
-@forward "_properties/grid/core-grid-row-start" as grid-row-start-*;
-@forward "_properties/grid/core-grid-template-columns" as grid-template-columns-*;
-@forward "_properties/grid/core-grid-template-rows" as grid-template-rows-*;
+@forward "properties/grid/core-grid-auto-flow" as grid-auto-flow-*;
+@forward "properties/grid/core-grid-column" as grid-column-*;
+@forward "properties/grid/core-grid-column-end" as grid-column-end-*;
+@forward "properties/grid/core-grid-column-start" as grid-column-start-*;
+@forward "properties/grid/core-grid-row" as grid-row-*;
+@forward "properties/grid/core-grid-row-end" as grid-row-end-*;
+@forward "properties/grid/core-grid-row-start" as grid-row-start-*;
+@forward "properties/grid/core-grid-template-columns" as grid-template-columns-*;
+@forward "properties/grid/core-grid-template-rows" as grid-template-rows-*;
 
 
 // CORE - FLEXBOX (6)
-@forward "_properties/flexbox/core-flex" as flex-*;
-@forward "_properties/flexbox/core-flex-direction" as flex-direction-*;
-@forward "_properties/flexbox/core-flex-grow" as flex-grow-*;
-@forward "_properties/flexbox/core-flex-shrink" as flex-shrink-*;
-@forward "_properties/flexbox/core-flex-wrap" as flex-wrap-*;
-@forward "_properties/flexbox/core-order" as order-*;
+@forward "properties/flexbox/core-flex" as flex-*;
+@forward "properties/flexbox/core-flex-direction" as flex-direction-*;
+@forward "properties/flexbox/core-flex-grow" as flex-grow-*;
+@forward "properties/flexbox/core-flex-shrink" as flex-shrink-*;
+@forward "properties/flexbox/core-flex-wrap" as flex-wrap-*;
+@forward "properties/flexbox/core-order" as order-*;
 
 
 // CORE - GAP (3)
-@forward "_properties/gap/core-gap" as gap-*;
-@forward "_properties/gap/core-column-gap" as column-gap-*;
-@forward "_properties/gap/core-row-gap" as row-gap-*;
+@forward "properties/gap/core-gap" as gap-*;
+@forward "properties/gap/core-column-gap" as column-gap-*;
+@forward "properties/gap/core-row-gap" as row-gap-*;
 
 
 // CORE - MULTI-COLUMN (6)
-@forward "_properties/multi-column/core-column-count" as column-count-*;
-@forward "_properties/multi-column/core-column-fill" as column-fill-*;
-@forward "_properties/multi-column/core-column-rule-color" as column-rule-color-*;
-@forward "_properties/multi-column/core-column-rule-style" as column-rule-style-*;
-@forward "_properties/multi-column/core-column-rule-width" as column-rule-width-*;
-@forward "_properties/multi-column/core-column-span" as column-span-*;
+@forward "properties/multi-column/core-column-count" as column-count-*;
+@forward "properties/multi-column/core-column-fill" as column-fill-*;
+@forward "properties/multi-column/core-column-rule-color" as column-rule-color-*;
+@forward "properties/multi-column/core-column-rule-style" as column-rule-style-*;
+@forward "properties/multi-column/core-column-rule-width" as column-rule-width-*;
+@forward "properties/multi-column/core-column-span" as column-span-*;
 
 
 // CORE - TRANSFORM (9)
-@forward "_properties/transform/core-transform" as transform-*;
-@forward "_properties/transform/core-transform-origin" as transform-origin-*;
-@forward "_properties/transform/extension-translate-x" as translate-x-*;
-@forward "_properties/transform/extension-translate-y" as translate-y-*;
-@forward "_properties/transform/extension-scale-x" as scale-x-*;
-@forward "_properties/transform/extension-scale-y" as scale-y-*;
-@forward "_properties/transform/extension-skew-x" as skew-x-*;
-@forward "_properties/transform/extension-skew-y" as skew-y-*;
-@forward "_properties/transform/extension-rotate" as rotate-*;
+@forward "properties/transform/core-transform" as transform-*;
+@forward "properties/transform/core-transform-origin" as transform-origin-*;
+@forward "properties/transform/extension-translate-x" as translate-x-*;
+@forward "properties/transform/extension-translate-y" as translate-y-*;
+@forward "properties/transform/extension-scale-x" as scale-x-*;
+@forward "properties/transform/extension-scale-y" as scale-y-*;
+@forward "properties/transform/extension-skew-x" as skew-x-*;
+@forward "properties/transform/extension-skew-y" as skew-y-*;
+@forward "properties/transform/extension-rotate" as rotate-*;
 
 
 // CORE - TRANSITION (4)
-@forward "_properties/transition/core-transition-duration" as transition-duration-*;
-@forward "_properties/transition/core-transition-delay" as transition-delay-*;
-@forward "_properties/transition/core-transition-property" as transition-property-*;
-@forward "_properties/transition/core-transition-timing-function" as transition-timing-function-*;
+@forward "properties/transition/core-transition-duration" as transition-duration-*;
+@forward "properties/transition/core-transition-delay" as transition-delay-*;
+@forward "properties/transition/core-transition-property" as transition-property-*;
+@forward "properties/transition/core-transition-timing-function" as transition-timing-function-*;
 
 
 // CORE - INTERACTIVE (5)
-@forward "_properties/interactive/core-cursor" as cursor-*;
-@forward "_properties/interactive/core-pointer-events" as pointer-events-*;
-@forward "_properties/interactive/core-resize" as resize-*;
-@forward "_properties/interactive/core-scrolling" as scrolling-*;
-@forward "_properties/interactive/core-user-select" as user-select-*;
+@forward "properties/interactive/core-cursor" as cursor-*;
+@forward "properties/interactive/core-pointer-events" as pointer-events-*;
+@forward "properties/interactive/core-resize" as resize-*;
+@forward "properties/interactive/core-scrolling" as scrolling-*;
+@forward "properties/interactive/core-user-select" as user-select-*;
 
 
 // CORE - SVG (3)
-@forward "_properties/svg/core-fill" as fill-*;
-@forward "_properties/svg/core-stroke" as stroke-*;
-@forward "_properties/svg/core-stroke-width" as stroke-width-*;
+@forward "properties/svg/core-fill" as fill-*;
+@forward "properties/svg/core-stroke" as stroke-*;
+@forward "properties/svg/core-stroke-width" as stroke-width-*;

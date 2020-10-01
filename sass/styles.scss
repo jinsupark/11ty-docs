@@ -1,16 +1,18 @@
 @use "uniform" as * with (
 	$background-color-pseudos: (
-		first, last, first-type, last-type, odd, even, hover, focus, active, disabled, empty, group-hover
+		first, last, first-type, last-type, odd, even, empty
 	),
 	$border-color-pseudos: (
 		focus-within
 	),
 	$color-pseudos: (
-		hover, group-hover, group-focus
+		group-focus
 	)
 );
 
-@use "uniform/_modules/_wrapper2" as *;
+@use "uniform/modules/wrapper2" as *;
+@use "uniform/modules/button2" as *;
+@use "uniform/modules/form2" as *;
 
 @use "vendors/prism" as *;
 

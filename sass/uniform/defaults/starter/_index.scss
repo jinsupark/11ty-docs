@@ -1,0 +1,50 @@
+@use "uniform/core" as *;
+
+@if $include-starter-styles == true and $headless == false {
+  h1,h2,h3,h4,h5,h6 {
+    line-height: var(--heading-leading, leading(3));
+    margin-bottom: var(--heading-margin, 0.5em);
+    color: var(--heading-color, black);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    line-height: var(--paragraph-leading, leading(8));
+    margin-bottom: var(--paragraph-margin, 1.5em);
+    color: var(--paragraph-color, fill(gray-500));
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    transition: var(--anchor-transition, 200ms);
+    text-decoration: none;
+  }
+
+  b,strong {
+    font-weight: var(--bold-font-weight, 700);
+  }
+
+  sub,sup {
+    position: relative;
+    font-size: .75em;
+  }
+
+  sub {
+    bottom: -0.25em;
+    left: 0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+    left: 0.25em;
+  }
+
+  pre,code {
+		font-family: font-family(mono);
+	}
+}
