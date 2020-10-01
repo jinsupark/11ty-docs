@@ -104,7 +104,6 @@ $pseudo-map: () !default;
 $all-pseudos: merge($core-pseudo-map, $pseudo-map) !default;
 
 
-
 // CORE BREAKPOINTS
 // ============================================================
 
@@ -140,6 +139,7 @@ $named-screens: name-screens($all-screens);
   $result: $named-screens;
   @return $result;
 }
+
 
 // CORE FILLS
 // ============================================================
@@ -423,7 +423,6 @@ $var-fills: variablize-map($fills, '');
 }
 
 
-
 // CORE SCALES
 // ============================================================
 
@@ -606,7 +605,6 @@ $var-all-sizes: variablize-map($all-sizes, 'size');
 }
 
 
-
 // BOX SHADOWS
 // ============================================================
 
@@ -666,7 +664,6 @@ $var-shadows: variablize-map($all-shadows, 'shadow');
   }
   @return $result;
 }
-
 
 
 // TYPOGRAPHY API
@@ -867,7 +864,6 @@ $var-trackings: variablize-map($all-trackings, 'tracking');
 }
 
 
-
 // CORE BORDER RADIUSES
 // ============================================================
 
@@ -912,7 +908,6 @@ $var-radiuses: variablize-map($all-radiuses, 'radius');
   }
   @return $result;
 }
-
 
 
 // ROOT VARIABLES
@@ -985,7 +980,6 @@ $var-radiuses: variablize-map($all-radiuses, 'radius');
     }
   }
 }
-
 
 
 // CONSTRUCTOR
