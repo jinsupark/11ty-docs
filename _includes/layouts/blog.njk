@@ -19,7 +19,7 @@ layout: layouts/base.njk
       </h1>
 
       <p class="max-w-26 mx-auto font-lg font-400 color-white opacity-70">
-        Read about all the latest developement news on the Uniform CSS.
+        Read about all the latest developement news on Uniform CSS.
       </p>
     </div>
   </div>
@@ -29,15 +29,49 @@ layout: layouts/base.njk
 
 <section>
   <div class="wrapper">
-    {%- for post in collections.posts -%}
-      <article class="max-w-800px mx-auto radius-md bg-white px-8 py-15 mb-18 last.mb-0">
-        <h2 class="align-center font-2xl font-500 tracking-n2 mb-6">{{ post.data.title }}</h2>
-        <div class="mb-8 align-center font-sm">
-          {{ post.data.author }} on <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time> in {{ post.data.category }}
+    {% set postslist = collections.posts | head(-3) %}
+    {% set postslistCounter = collections.posts | length %}
+
+    {%- for post in postslist | reverse -%}
+      <article class="max-w-800px mx-auto radius-md overflow-hidden shadow-3 bg-white px-10 py-10 mb-12 last.mb-0">
+        
+        <h2 class="font-2xl font-500 tracking-n2 mb-4">
+          <a href="{{ post.url }}">
+            {{ post.data.title }}
+          </a>
+        </h2>
+        
+
+        <div class="flex align-items-center mb-8">
+          <img src="/assets/img/{{ post.data.authorImage }}" class="w-8 h-8 radius-round shadow-2 border-2px border-white mr-3">
+          <div class="font-sm">
+            {{ post.data.author }} on <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          </div>
+        </div>
+
+        <div class="flex align-items-center justify-content-between">
+          <div class="flex">
+            <div class="px-2 py-1 font-xs font-600 bg-red-700 color-white radius-xs mr-4">
+              #{{ post.data.category }}
+            </div>
+
+            {%- for emoji in post.data.emojis -%}
+              <div class="mr-4">
+                {{ emoji.icon }} <span class="font-xs opacity-50">{{ emoji.count }}</span>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <a href="{{ post.url }}" class="flex align-items-center font-sm font-600">
+            Read more
+            <div class="flex align-items-center justify-content-center font-xs w-7 h-7 ml-3 radius-round bg-silver-200">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </a>
         </div>
 
         <div class="font-sm max-w-600px mx-auto">
-          {{ post.data.content | safe }}
+          {{ post.page.excerpt | safe }}
         </div>
       </article>
     {%- endfor -%}
