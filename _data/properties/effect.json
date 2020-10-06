@@ -13,6 +13,12 @@
     ],
     "classes": [
       {
+        "class": "`.shadow-none`",
+        "properties": [
+          "`box-shadow: none`"
+        ]
+      },
+      {
         "class": "`.shadow-{scale-variant}`",
         "properties": [
           "`box-shadow:` <a href=\"/get-started/effects\" class=\"font-sm hover.underline color-indigo-500\">See Effects</a>"

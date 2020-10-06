@@ -93,7 +93,7 @@ When dealing with multi-word properties such as `line-height`, simplifying it to
 
 <h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">7</span> Append unit as alphabetical characters</h4>
 
-All negative values are suffixed have `n` (negative) at the beginning of the variant name. Append units to avoid conflicts with similarly numbered variants.
+Over qualify the unit by appending an abbreviated characters that represent the unit only if it causes conflict without. All negative values are suffixed have `n` (negative) at the beginning of the variant name. Append units to avoid conflicts with similarly numbered variants.
 
 
 ```scss
