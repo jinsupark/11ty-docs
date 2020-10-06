@@ -4,18 +4,18 @@
   .#{$prefix}ratio-square,
   .#{$prefix}ratio-16-9,
   .#{$prefix}ratio-4-3 {
-    position: relative;
-    width: 100%;
+    position: relative if($important == true, !important, null);
+    width: 100% if($important == true, !important, null);
   }
   .#{$prefix}ratio-square {
-    padding-top: 100%;
+    padding-top: 100% if($important == true, !important, null);
   }
 
   .#{$prefix}ratio-16-9 {
-    padding-top: 56.25%;
+    padding-top: 56.25% if($important == true, !important, null);
   }
 
   .#{$prefix}ratio-4-3 {
-    padding-top: 75%;
+    padding-top: 75% if($important == true, !important, null);
   }
 }

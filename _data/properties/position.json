@@ -276,6 +276,66 @@
         ]
       },
       {
+        "class": "`.z-n1`",
+        "properties": [
+          "`z-index: -1;`"
+        ]
+      },
+      {
+        "class": "`.z-n2`",
+        "properties": [
+          "`z-index: -2;`"
+        ]
+      },
+      {
+        "class": "`.z-n3`",
+        "properties": [
+          "`z-index: -3;`"
+        ]
+      },
+      {
+        "class": "`.z-n4`",
+        "properties": [
+          "`z-index: -4;`"
+        ]
+      },
+      {
+        "class": "`.z-n5`",
+        "properties": [
+          "`z-index: -5;`"
+        ]
+      },
+      {
+        "class": "`.z-n6`",
+        "properties": [
+          "`z-index: -6;`"
+        ]
+      },
+      {
+        "class": "`.z-n7`",
+        "properties": [
+          "`z-index: -7;`"
+        ]
+      },
+      {
+        "class": "`.z-n8`",
+        "properties": [
+          "`z-index: -8;`"
+        ]
+      },
+      {
+        "class": "`.z-n9`",
+        "properties": [
+          "`z-index: -9;`"
+        ]
+      },
+      {
+        "class": "`.z-n10`",
+        "properties": [
+          "`z-index: -10;`"
+        ]
+      },
+      {
         "class": "`.z-0`",
         "properties": [
           "`z-index: 0;`"

@@ -110,7 +110,7 @@
     "description": "The `border-bottom-radius` extension modifies the bottom border radius of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "last"
     ],
     "classes": [
       {
@@ -135,7 +135,7 @@
     "description": "The `border-left-radius` extension modifies the left border radius of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first"
     ],
     "classes": [
       {
@@ -160,7 +160,7 @@
     "description": "The `border-right-radius` extension modifies the right border radius of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "last"
     ],
     "classes": [
       {
@@ -185,7 +185,7 @@
     "description": "The `border-top-radius` extension modifies the top border radius of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first"
     ],
     "classes": [
       {
@@ -210,7 +210,7 @@
     "description": "The `border-bottom-left-radius` property defines the radius of the bottom-left corner.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first"
     ],
     "classes": [
       {
@@ -233,7 +233,7 @@
     "description": "The `border-bottom-right-radius` property defines the radius of the bottom-right corner.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "last"
     ],
     "classes": [
       {
@@ -256,7 +256,7 @@
     "description": "The `border-top-left-radius` property defines the radius of the top-left corner.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first"
     ],
     "classes": [
       {
@@ -279,7 +279,7 @@
     "description": "The `border-top-right-radius` property defines the radius of the top-right corner.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "last"
     ],
     "classes": [
       {

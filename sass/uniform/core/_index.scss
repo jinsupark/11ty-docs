@@ -13,7 +13,7 @@ $pseudo-delimiter: '\\.' !default;
 $screen-delimiter: '\\.' !default;
 $variablize: true !default;
 $headless: false !default;
-$headless-with-root: false !default;
+$root: true !default;
 $debugger: false !default; // ! enable with caution !
 
 // INCLUDE SETTINGS
@@ -915,7 +915,7 @@ $var-radiuses: variablize-map($all-radiuses, 'radius');
 
 // Create root variables if CSS custom property setting is enabled
 @if ($variablize == true) {
-  @if ($headless == false) {
+  @if ($root == true) {
 
     :root {
       @each $key, $value in $fills {
@@ -942,41 +942,6 @@ $var-radiuses: variablize-map($all-radiuses, 'radius');
       @each $key, $value in $all-radiuses {
         --radius-#{'' + $key}: #{$value};
       }
-    }
-
-  } @else if ($headless == true) {
-    
-    @if ($headless-with-root == true) {
-
-      :root {
-        @each $key, $value in $fills {
-          --#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-sizes {
-          --size-#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-shadows {
-          --shadow-#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-font-families {
-          --font-#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-font-sizes {
-          --font-#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-leadings {
-          --leading-#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-trackings {
-          --tracking-#{'' + $key}: #{$value};
-        }
-        @each $key, $value in $all-radiuses {
-          --radius-#{'' + $key}: #{$value};
-        }
-      }
-
-    } @else {
-
     }
   }
 }

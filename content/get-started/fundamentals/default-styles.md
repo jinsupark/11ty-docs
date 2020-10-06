@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   line-height: var(--paragraph-leading, leading(8));
   margin-bottom: var(--paragraph-margin, 1.5em);
-  color: var(--paragraph-color, fill(gray-400));
+  color: var(--paragraph-color, fill(gray-500));
   &:last-child {
     margin-bottom: 0;
   }

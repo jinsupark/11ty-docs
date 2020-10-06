@@ -27,6 +27,7 @@
     "responsive": false,
     "pseudos": [
       "hover",
+      "group-hover",
       "active"
     ],
     "classes": [
@@ -37,9 +38,9 @@
         ]
       },
       {
-        "class": "`.filter-graysize`",
+        "class": "`.filter-grayscale`",
         "properties": [
-          "`filter: graysize(100%);`"
+          "`filter: grayscale(100%);`"
         ]
       }
     ]
@@ -47,23 +48,106 @@
   {
     "title": "mix-blend-mode",
     "family": "core",
-    "description": "The `filter` property defines visual effects (like blur and saturation) to an element.",
+    "description": "The `mix-blend-mode` property sets how an element's content should blend with the content of the element's parent and the element's background.",
     "responsive": false,
     "pseudos": [
-      "hover",
-      "active"
+      "none"
     ],
     "classes": [
       {
-        "class": "`.filter-none`",
+        "class": "`.blend-normal`",
         "properties": [
-          "`filter: none;`"
+          "`mix-blend-mode: normal;`"
         ]
       },
       {
-        "class": "`.filter-graysize`",
+        "class": "`.blend-multiply`",
         "properties": [
-          "`filter: graysize(100%);`"
+          "`mix-blend-mode: multiply;`"
+        ]
+      },
+      {
+        "class": "`.blend-screen`",
+        "properties": [
+          "`mix-blend-mode: screen;`"
+        ]
+      },
+      {
+        "class": "`.blend-overlay`",
+        "properties": [
+          "`mix-blend-mode: overlay;`"
+        ]
+      },
+      {
+        "class": "`.blend-darken`",
+        "properties": [
+          "`mix-blend-mode: darken;`"
+        ]
+      },
+      {
+        "class": "`.blend-lighten`",
+        "properties": [
+          "`mix-blend-mode: lighten;`"
+        ]
+      },
+      {
+        "class": "`.blend-color-dodge`",
+        "properties": [
+          "`mix-blend-mode: color-dodge;`"
+        ]
+      },
+      {
+        "class": "`.blend-color-burn`",
+        "properties": [
+          "`mix-blend-mode: color-burn;`"
+        ]
+      },
+      {
+        "class": "`.blend-hard-light`",
+        "properties": [
+          "`mix-blend-mode: hard-light;`"
+        ]
+      },
+      {
+        "class": "`.blend-soft-light`",
+        "properties": [
+          "`mix-blend-mode: soft-light;`"
+        ]
+      },
+      {
+        "class": "`.blend-difference`",
+        "properties": [
+          "`mix-blend-mode: difference;`"
+        ]
+      },
+      {
+        "class": "`.blend-exclusion`",
+        "properties": [
+          "`mix-blend-mode: exclusion;`"
+        ]
+      },
+      {
+        "class": "`.blend-hue`",
+        "properties": [
+          "`mix-blend-mode: hue;`"
+        ]
+      },
+      {
+        "class": "`.blend-saturation`",
+        "properties": [
+          "`mix-blend-mode: saturation;`"
+        ]
+      },
+      {
+        "class": "`.blend-color`",
+        "properties": [
+          "`mix-blend-mode: color;`"
+        ]
+      },
+      {
+        "class": "`.blend-luminosity`",
+        "properties": [
+          "`mix-blend-mode: luminosity;`"
         ]
       }
     ]

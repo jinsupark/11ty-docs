@@ -39,7 +39,9 @@ $variants: () !default;
 
 $final-variants: map.merge($core-variants, $variants) !default;
 
+$core-pseudos: () !default;
 $pseudos: () !default;
+$final-pseudos: list.join($core-pseudos, $pseudos) !default;
 
 @include constructor(
   $keyword,
@@ -47,7 +49,7 @@ $pseudos: () !default;
   $responsive-pseudos,
   $properties,
   $final-variants,
-  $pseudos
+  $final-pseudos
 );
 
 ```

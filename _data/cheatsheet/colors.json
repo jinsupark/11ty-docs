@@ -12,7 +12,7 @@
       },
       {
         "name": "red-300", 
-        "value": "#fdb0b0"
+        "value": "#fdbfbf"
       },
       {
         "name": "red-400", 
@@ -20,23 +20,23 @@
       },
       {
         "name": "red-500", 
-        "value": "#fa6060"
+        "value": "#fc5f5f"
       },
       {
         "name": "red-600", 
-        "value": "#e04646"
+        "value": "#ec4b4b"
       },
       {
         "name": "red-700", 
-        "value": "#cf3535"
+        "value": "#ca2929"
       },
       {
         "name": "red-800", 
-        "value": "#a72929"
+        "value": "#901d1d"
       },
       {
         "name": "red-900", 
-        "value": "#6f1b1b"
+        "value": "#561111"
       }
     ]
   },
@@ -53,7 +53,7 @@
       },
       {
         "name": "orange-300", 
-        "value": "#febd96"
+        "value": "#fecaaa"
       },
       {
         "name": "orange-400", 
@@ -61,23 +61,23 @@
       },
       {
         "name": "orange-500", 
-        "value": "#fc7b2d"
+        "value": "#fd7b2c"
       },
       {
         "name": "orange-600", 
-        "value": "#e1661b"
+        "value": "#ee6c1d"
       },
       {
         "name": "orange-700", 
-        "value": "#c75919"
+        "value": "#bd5313"
       },
       {
         "name": "orange-800", 
-        "value": "#9f4814"
+        "value": "#873c0e"
       },
       {
         "name": "orange-900", 
-        "value": "#69300d"
+        "value": "#512408"
       }
     ]
   },
@@ -94,7 +94,7 @@
       },
       {
         "name": "brown-300", 
-        "value": "#dbac88"
+        "value": "#e2bca0"
       },
       {
         "name": "brown-400", 
@@ -102,23 +102,23 @@
       },
       {
         "name": "brown-500", 
-        "value": "#a75a21"
+        "value": "#b15818"
       },
       {
         "name": "brown-600", 
-        "value": "#8e4c1c"
+        "value": "#9b5119"
       },
       {
         "name": "brown-700", 
-        "value": "#7e4319"
+        "value": "#783e14"
       },
       {
         "name": "brown-800", 
-        "value": "#643614"
+        "value": "#572c0e"
       },
       {
         "name": "brown-900", 
-        "value": "#43240d"
+        "value": "#341b08"
       }
     ]
   },
@@ -127,15 +127,15 @@
     "variants": [
       {
         "name": "yellow-100", 
-        "value": "#fff7e8"
+        "value": "#fffbf3"
       },
       {
         "name": "yellow-200", 
-        "value": "#ffefd0"
+        "value": "#fff3dc"
       },
       {
         "name": "yellow-300", 
-        "value": "#ffd78b"
+        "value": "#ffdfa2"
       },
       {
         "name": "yellow-400", 
@@ -147,19 +147,19 @@
       },
       {
         "name": "yellow-600", 
-        "value": "#df970d"
+        "value": "#e1970b"
       },
       {
         "name": "yellow-700", 
-        "value": "#c4850c"
+        "value": "#ac7408"
       },
       {
         "name": "yellow-800", 
-        "value": "#9d6a09"
+        "value": "#845907"
       },
       {
         "name": "yellow-900", 
-        "value": "#694706"
+        "value": "#503604"
       }
     ]
   },
@@ -176,7 +176,7 @@
       },
       {
         "name": "lime-300", 
-        "value": "#cae776"
+        "value": "#d4eb91"
       },
       {
         "name": "lime-400", 
@@ -188,19 +188,19 @@
       },
       {
         "name": "lime-600", 
-        "value": "#759d00"
+        "value": "#7ca700"
       },
       {
         "name": "lime-700", 
-        "value": "#688b00"
+        "value": "#618200"
       },
       {
         "name": "lime-800", 
-        "value": "#536f00"
+        "value": "#455d00"
       },
       {
         "name": "lime-900", 
-        "value": "#374a00"
+        "value": "#293800"
       }
     ]
   },
@@ -217,7 +217,7 @@
       },
       {
         "name": "green-300", 
-        "value": "#7ee675"
+        "value": "#98eb90"
       },
       {
         "name": "green-400", 
@@ -229,19 +229,19 @@
       },
       {
         "name": "green-600", 
-        "value": "#0d9b00"
+        "value": "#0ea400"
       },
       {
         "name": "green-700", 
-        "value": "#0b8900"
+        "value": "#0b7f00"
       },
       {
         "name": "green-800", 
-        "value": "#096d00"
+        "value": "#085b00"
       },
       {
         "name": "green-900", 
-        "value": "#064900"
+        "value": "#053700"
       }
     ]
   },
@@ -258,7 +258,7 @@
       },
       {
         "name": "teal-300", 
-        "value": "#78ebcf"
+        "value": "#92f0d8"
       },
       {
         "name": "teal-400", 
@@ -270,19 +270,19 @@
       },
       {
         "name": "teal-600", 
-        "value": "#00a980"
+        "value": "#00b388"
       },
       {
         "name": "teal-700", 
-        "value": "#009571"
+        "value": "#008b6a"
       },
       {
         "name": "teal-800", 
-        "value": "#00775b"
+        "value": "#00644c"
       },
       {
         "name": "teal-900", 
-        "value": "#00503c"
+        "value": "#003c2d"
       }
     ]
   },
@@ -299,7 +299,7 @@
       },
       {
         "name": "cyan-300", 
-        "value": "#7becf4"
+        "value": "#95f0f6"
       },
       {
         "name": "cyan-400", 
@@ -311,19 +311,19 @@
       },
       {
         "name": "cyan-600", 
-        "value": "#00b2bd"
+        "value": "#00bcc8"
       },
       {
         "name": "cyan-700", 
-        "value": "#009da7"
+        "value": "#00929b"
       },
       {
         "name": "cyan-800", 
-        "value": "#007d85"
+        "value": "#00696f"
       },
       {
         "name": "cyan-900", 
-        "value": "#005459"
+        "value": "#003f43"
       }
     ]
   },
@@ -340,7 +340,7 @@
       },
       {
         "name": "blue-300", 
-        "value": "#80c9ff"
+        "value": "#99d3ff"
       },
       {
         "name": "blue-400", 
@@ -352,19 +352,19 @@
       },
       {
         "name": "blue-600", 
-        "value": "#007cd9"
+        "value": "#0083e6"
       },
       {
         "name": "blue-700", 
-        "value": "#006ebf"
+        "value": "#0066b3"
       },
       {
         "name": "blue-800", 
-        "value": "#005899"
+        "value": "#004980"
       },
       {
         "name": "blue-900", 
-        "value": "#003a66"
+        "value": "#002c4d"
       }
     ]
   },
@@ -381,7 +381,7 @@
       },
       {
         "name": "indigo-300", 
-        "value": "#80abff"
+        "value": "#99bcff"
       },
       {
         "name": "indigo-400", 
@@ -393,19 +393,19 @@
       },
       {
         "name": "indigo-600", 
-        "value": "#004ad9"
+        "value": "#004ee6"
       },
       {
         "name": "indigo-700", 
-        "value": "#0041bf"
+        "value": "#003db3"
       },
       {
         "name": "indigo-800", 
-        "value": "#003499"
+        "value": "#002c80"
       },
       {
         "name": "indigo-900", 
-        "value": "#002366"
+        "value": "#001a4d"
       }
     ]
   },
@@ -422,7 +422,7 @@
       },
       {
         "name": "blueberry-300", 
-        "value": "#8c99d2"
+        "value": "#a2aedb"
       },
       {
         "name": "blueberry-400", 
@@ -430,23 +430,23 @@
       },
       {
         "name": "blueberry-500", 
-        "value": "#2c3f90"
+        "value": "#20389d"
       },
       {
         "name": "blueberry-600", 
-        "value": "#26367a"
+        "value": "#223688"
       },
       {
         "name": "blueberry-700", 
-        "value": "#212f6c"
+        "value": "#1a2b6a"
       },
       {
         "name": "blueberry-800", 
-        "value": "#1b2656"
+        "value": "#131e4c"
       },
       {
         "name": "blueberry-900", 
-        "value": "#121a3a"
+        "value": "#0b132e"
       }
     ]
   },
@@ -463,7 +463,7 @@
       },
       {
         "name": "violet-300", 
-        "value": "#b080ff"
+        "value": "#c099ff"
       },
       {
         "name": "violet-400", 
@@ -475,19 +475,19 @@
       },
       {
         "name": "violet-600", 
-        "value": "#5200d9"
+        "value": "#5700e6"
       },
       {
         "name": "violet-700", 
-        "value": "#4900bf"
+        "value": "#4400b3"
       },
       {
         "name": "violet-800", 
-        "value": "#3a0099"
+        "value": "#310080"
       },
       {
         "name": "violet-900", 
-        "value": "#270066"
+        "value": "#1d004d"
       }
     ]
   },
@@ -496,15 +496,15 @@
     "variants": [
       {
         "name": "purple-100", 
-        "value": "#f1e4fb"
+        "value": "#f8f1fd"
       },
       {
         "name": "purple-200", 
-        "value": "#e3c9f7"
+        "value": "#ead7f9"
       },
       {
         "name": "purple-300", 
-        "value": "#bb78eb"
+        "value": "#c892f0"
       },
       {
         "name": "purple-400", 
@@ -520,15 +520,15 @@
       },
       {
         "name": "purple-700", 
-        "value": "#570095"
+        "value": "#4b0081"
       },
       {
         "name": "purple-800", 
-        "value": "#460077"
+        "value": "#3a0064"
       },
       {
         "name": "purple-900", 
-        "value": "#2e0050"
+        "value": "#23003c"
       }
     ]
   },
@@ -545,7 +545,7 @@
       },
       {
         "name": "magenta-300", 
-        "value": "#fd80ff"
+        "value": "#fd99ff"
       },
       {
         "name": "magenta-400", 
@@ -557,19 +557,19 @@
       },
       {
         "name": "magenta-600", 
-        "value": "#d500d9"
+        "value": "#e100e6"
       },
       {
         "name": "magenta-700", 
-        "value": "#bc00bf"
+        "value": "#af00b3"
       },
       {
         "name": "magenta-800", 
-        "value": "#960099"
+        "value": "#7d0080"
       },
       {
         "name": "magenta-900", 
-        "value": "#640066"
+        "value": "#4b004d"
       }
     ]
   },
@@ -586,7 +586,7 @@
       },
       {
         "name": "pink-300", 
-        "value": "#ff99be"
+        "value": "#ffadcb"
       },
       {
         "name": "pink-400", 
@@ -598,19 +598,19 @@
       },
       {
         "name": "pink-600", 
-        "value": "#e42066"
+        "value": "#f0246d"
       },
       {
         "name": "pink-700", 
-        "value": "#ca1b5a"
+        "value": "#c11653"
       },
       {
         "name": "pink-800", 
-        "value": "#a21647"
+        "value": "#8a103b"
       },
       {
         "name": "pink-900", 
-        "value": "#6c0e30"
+        "value": "#530923"
       }
     ]
   },
@@ -619,39 +619,39 @@
     "variants": [
       {
         "name": "silver-100", 
-        "value": "#f3f3f5"
+        "value": "#f5f5f7"
       },
       {
         "name": "silver-200", 
-        "value": "#e6e8eb"
+        "value": "#eaebee"
       },
       {
         "name": "silver-300", 
-        "value": "#dadce1"
+        "value": "#e0e2e6"
       },
       {
         "name": "silver-400", 
-        "value": "#ced0d7"
+        "value": "#d6d8de"
       },
       {
         "name": "silver-500", 
-        "value": "#c2c5ce"
+        "value": "#ccced6"
       },
       {
         "name": "silver-600", 
-        "value": "#b5b9c4"
+        "value": "#c1c4cd"
       },
       {
         "name": "silver-700", 
-        "value": "#a9adba"
+        "value": "#b7bac5"
       },
       {
         "name": "silver-800", 
-        "value": "#9da1b0"
+        "value": "#adb1bd"
       },
       {
         "name": "silver-900", 
-        "value": "#9096a6"
+        "value": "#a2a7b4"
       }
     ]
   },
@@ -660,39 +660,39 @@
     "variants": [
       {
         "name": "gray-100", 
-        "value": "#848a9c"
+        "value": "#c6c8d0"
       },
       {
         "name": "gray-200", 
-        "value": "#747b8f"
+        "value": "#b0b3be"
       },
       {
         "name": "gray-300", 
-        "value": "#676d80"
+        "value": "#999dab"
       },
       {
         "name": "gray-400", 
-        "value": "#5a5f70"
+        "value": "#838899"
       },
       {
         "name": "gray-500", 
-        "value": "#4d5260"
+        "value": "#6e7386"
       },
       {
         "name": "gray-600", 
-        "value": "#404450"
+        "value": "#5c606f"
       },
       {
         "name": "gray-700", 
-        "value": "#333640"
+        "value": "#494d59"
       },
       {
         "name": "gray-800", 
-        "value": "#272930"
+        "value": "#373943"
       },
       {
         "name": "gray-900", 
-        "value": "#1a1b20"
+        "value": "#25262d"
       }
     ]
   }

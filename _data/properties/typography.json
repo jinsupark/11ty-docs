@@ -214,7 +214,7 @@
     "title": "line-height",
     "family": "core",
     "description": "The `line-height` property specifies the height of a line.",
-    "responsive": false,
+    "responsive": true,
     "pseudos": [
       "none"
     ],
